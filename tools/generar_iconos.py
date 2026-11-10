@@ -15,9 +15,9 @@ for nombre, (leg, fg) in DENS.items():
     os.makedirs(carpeta, exist_ok=True)
     FUENTE.resize((leg, leg), Image.LANCZOS).save(os.path.join(carpeta, 'ic_launcher.png'))
     FUENTE.resize((leg, leg), Image.LANCZOS).save(os.path.join(carpeta, 'ic_launcher_round.png'))
-    # Primer plano adaptativo: la obra al 92 % centrada sobre transparente.
+    # Primer plano adaptativo: la obra al 66 % (zona segura adaptativa) centrada sobre transparente.
     lienzo = Image.new('RGBA', (fg, fg), (0, 0, 0, 0))
-    t = int(fg * 0.92)
+    t = int(fg * 0.66)
     lienzo.paste(FUENTE.resize((t, t), Image.LANCZOS), ((fg - t) // 2, (fg - t) // 2))
     lienzo.save(os.path.join(carpeta, 'ic_launcher_foreground.png'))
 print('iconos generados en', RES)
