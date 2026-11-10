@@ -10,6 +10,34 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Reparar codificacion de archivos y guardar la reparacion
+        run: |
+          python3 - <<'PYEOF'
+          import base64, os, re
+          for root, dirs, files in os.walk('.'):
+              dirs[:] = [d for d in dirs if d not in ('.git', '.github', 'node_modules', 'dataset', 'android')]
+              for f in files:
+                  p = os.path.join(root, f)
+                  try:
+                      data = open(p, 'rb').read()
+                      txt = data.decode('ascii').strip()
+                  except Exception:
+                      continue
+                  limpia = txt.replace('\n', '').replace('\r', '')
+                  if len(limpia) > 20 and re.fullmatch(r'[A-Za-z0-9+/=]+', limpia):
+                      try:
+                          dec = base64.b64decode(limpia)
+                      except Exception:
+                          continue
+                      if dec and dec != data:
+                          open(p, 'wb').write(dec)
+                          print('reparado', p)
+          PYEOF
+          git config user.name "ironloop-ci"
+          git config user.email "ci@ironloop.local"
+          git add -A
+          git diff --cached --quiet || git commit -m "Reparar codificacion de archivos [skip ci]"
+          git push origin HEAD:main || true
       - name: Traer el dataset (fotos y GIF oficiales)
         run: git clone --depth 1 https://github.com/camo043099-eng/exercises-dataset.git dataset
       - name: Preparar media (fotos + GIF convertidos a MP4)
