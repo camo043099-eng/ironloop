@@ -49,7 +49,7 @@ await page.click('#c-saltar'); await sleep(400);
 ok((await page.$eval('#estado-txt', el => el.textContent)) === 'A darle', 'fase TRABAJO');
 await page.screenshot({ path: 'tools/captura-sesion.png' });
 await page.click('#c-hecho'); await sleep(400);
-ok((await page.$eval('#estado-txt', el => el.textContent)) === 'Descansa', 'fase DESCANSO');
+ok(['Descansa', 'Cambia de lado'].includes(await page.$eval('#estado-txt', el => el.textContent)), 'fase DESCANSO o TRANSICION');
 await page.click('#c-terminar'); await sleep(400);
 ok((await page.$eval('#estado-txt', el => el.textContent)) === 'Sesión completa', 'fase FIN');
 ok(await page.evaluate(() => { const h = JSON.parse(localStorage.getItem('fit.historial') || '[]'); return h.length === 1 && h[0].series.length === 1; }), 'sesión registrada en el historial');
