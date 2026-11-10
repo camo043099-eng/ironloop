@@ -11,8 +11,8 @@ export function mulberry32(semilla) {
   };
 }
 
-const RE_TIEMPO = /plancha|isométr|estático|contra la pared|posición de|sostén/i;
-const RE_UNILATERAL = /a un brazo|a una pierna|unilateral|con un brazo|con una pierna|a un solo brazo/i;
+const RE_TIEMPO = /plancha|isométr|estático|contra la pared|sostén|aguante/i;
+const RE_UNILATERAL = /a un brazo|a una pierna|unilateral|con un brazo|con una pierna|a un solo brazo|un brazo|una mano|un pie/i;
 const RE_IMPACTO = /salto|pliométr|brinco|burpee/i;
 
 export function derivarFlags(ej) {
