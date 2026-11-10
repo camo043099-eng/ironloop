@@ -17,7 +17,8 @@ export class Sesion {
     this.fase = fase; this.dur = durMs; this.finEn = Date.now() + durMs;
     this.aviso10 = false; this.ultCuenta = 0;
     if (anuncio) hablar(anuncio);
-    if (fase === 'DESCANSO' || fase === 'TRANSICION') vibrar(60);
+    if (fase === 'DESCANSO' || fase === 'TRANSICION') vibrar([45, 50, 45]);
+    else if (fase === 'TRABAJO') vibrar(35);
     this.alPintar(this);
   }
   iniciar() {
@@ -25,6 +26,22 @@ export class Sesion {
     const e = this.ejercicio, b = this.bloque;
     this._entrar('PREPARA', 5000, frase(this.frases.preparate, { ejercicio: e.ne, n: 1, total: b.series }));
     this.reloj = setInterval(() => this._tick(), 200);
+  }
+  // Reanuda una sesión guardada (la app se cerró a mitad): entra en PREPARA
+  // del bloque y la serie donde iba, conservando las series ya hechas.
+  continuar(estado) {
+    this.iEj = Math.min(estado.iEj || 0, this.bloques.length - 1);
+    this.serie = estado.serie || 1; this.lado = estado.lado || 'A';
+    this.hechas = Array.isArray(estado.hechas) ? estado.hechas : [];
+    this.tInicio = estado.tInicio || Date.now();
+    const e = this.ejercicio, b = this.bloque;
+    this._entrar('PREPARA', 5000, frase(this.frases.preparate, { ejercicio: e.ne, n: this.serie, total: b.series }));
+    this.reloj = setInterval(() => this._tick(), 200);
+  }
+  // Detiene el reloj sin registrar nada (al reemplazar la sesión por otra).
+  detener() {
+    if (this.reloj) clearInterval(this.reloj);
+    this.reloj = null; this.fase = 'INACTIVA';
   }
   _tick() {
     if (this.pausa || this.fase === 'FIN' || this.fase === 'INACTIVA') return;
