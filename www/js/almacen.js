@@ -1,14 +1,21 @@
 // Ironloop — almacenamiento local versionado (localStorage).
 // Las lecturas validan la FORMA de lo guardado: un dato corrupto o de una
 // versión rara nunca tumba una vista; se trata como si no existiera.
-const PREFIJO = 'fit.';
+// El prefijo depende de la cuenta activa (cuentas.js): fit.c.<id>.
+// Sin cuenta activa NO se lee ni se escribe nada: jamás se toca el
+// espacio de otra cuenta ni un espacio global (diseño de Claude).
+let PREFIJO = null;
+export function activarCuenta(id) { PREFIJO = id ? `fit.c.${id}.` : null; }
+export function hayCuentaActiva() { return PREFIJO !== null; }
 export function leer(clave, defecto = null) {
+  if (!PREFIJO) return defecto;
   try {
     const v = localStorage.getItem(PREFIJO + clave);
     return v === null ? defecto : JSON.parse(v);
   } catch { return defecto; }
 }
 export function guardar(clave, valor) {
+  if (!PREFIJO) return false;
   try { localStorage.setItem(PREFIJO + clave, JSON.stringify(valor)); return true; }
   catch { return false; /* cuota llena o almacenamiento bloqueado */ }
 }
@@ -61,5 +68,6 @@ export function sesionActiva() {
 }
 export const guardarSesionActiva = s => guardar('sesion_activa', s);
 export function borrarSesionActiva() {
+  if (!PREFIJO) return;
   try { localStorage.removeItem(PREFIJO + 'sesion_activa'); } catch { /* sin almacenamiento */ }
 }

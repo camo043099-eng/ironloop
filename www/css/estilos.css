@@ -166,3 +166,65 @@ nav button{border:none; background:transparent; color:var(--texto-3); font-size:
 nav button.activo{background:var(--capa-2); color:var(--texto)}
 nav.oculta{display:none}
 .cargando{padding:60px 20px; text-align:center; color:var(--texto-3); font-size:14px; letter-spacing:.2em; text-transform:uppercase}
+
+/* ICONOS VECTORIALES */
+.ic{width:20px;height:20px;vertical-align:-4px;flex:none}
+.opcion .ic{width:18px;height:18px;vertical-align:-3px}
+.btn .ic{width:18px;height:18px;vertical-align:-3px}
+
+/* SPLASH DE BIENVENIDA */
+#splash{position:fixed;inset:0;background:var(--fondo);z-index:200;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;transition:opacity .3s ease}
+#splash[hidden]{display:none}
+#splash.fuera{opacity:0;pointer-events:none}
+#splash .arco{opacity:0}
+#splash .arco-1{--off:0px;animation:arcoIn .5s ease 0s forwards}
+#splash .arco-2{--off:-97px;animation:arcoIn .5s ease .5s forwards}
+#splash .arco-3{--off:-194px;animation:arcoIn .32s ease 1s forwards}
+@keyframes arcoIn{from{opacity:0;stroke-dashoffset:calc(var(--off) + 46px)}to{opacity:1;stroke-dashoffset:var(--off)}}
+#splash-anillo{animation:splashPulso .34s ease 1.06s}
+@keyframes splashPulso{0%{transform:scale(1)}40%{transform:scale(1.05)}100%{transform:scale(1)}}
+.splash-nombre{font-size:34px;font-weight:900;letter-spacing:.06em;opacity:0;animation:splashNom .2s ease 1.28s forwards}
+.splash-nombre .iron{color:var(--texto)} .splash-nombre .loop{color:var(--trabajo)}
+@keyframes splashNom{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+#splash.estatico .arco,#splash.estatico .splash-nombre{animation:none;opacity:1}
+#splash.estatico #splash-anillo{animation:none}
+
+/* CUENTA */
+#hdr-avatar{background:none;border:none;cursor:pointer;padding:0;margin-left:auto;align-self:center}
+.avatar{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;border:2.5px solid var(--color,#FF6B3D);color:var(--texto);font-weight:800;font-size:16px;background:var(--capa-2);flex:none}
+.cuenta-box{max-width:400px;margin:24px auto 0}
+.cuenta-box h1{font-size:26px;font-weight:800;margin:10px 0 4px}
+.cuenta-sub{color:var(--texto-2);font-size:14px;line-height:1.5;margin-bottom:12px}
+.cuenta-lista{display:flex;flex-direction:column;gap:10px;margin-top:14px}
+.cuenta-ficha{display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:var(--capa-1);border:1px solid var(--linea);border-radius:var(--r-m);padding:12px 14px;color:var(--texto);cursor:pointer;font-family:inherit}
+.cuenta-ficha .avatar{width:44px;height:44px;font-size:18px}
+.cf-nom{font-size:17px;font-weight:700;flex:1}
+.cf-pin{color:var(--texto-3);display:inline-flex}
+.cf-pin .ic{width:18px;height:18px}
+.btn-pin-toggle{display:flex;align-items:center;gap:8px;width:100%;justify-content:flex-start}
+.pin-puntos{display:flex;gap:14px;justify-content:center;margin:20px 0 6px}
+.pin-puntos span{width:15px;height:15px;border-radius:50%;border:2px solid var(--texto-3)}
+.pin-puntos span.lleno{background:var(--trabajo);border-color:var(--trabajo)}
+.pin-pad{display:grid;grid-template-columns:repeat(3,72px);gap:10px;justify-content:center;margin-top:10px}
+.pin-pad button{height:56px;border-radius:16px;border:1px solid var(--linea);background:var(--capa-2);color:var(--texto);font-size:21px;font-weight:700;cursor:pointer;font-family:inherit}
+.pin-pad button:active{transform:scale(.96)}
+.pin-pad button:disabled{opacity:.4}
+.cuenta-cab{display:flex;align-items:center;gap:12px}
+.hoja-btns{display:flex;flex-direction:column;gap:8px;margin-top:12px}
+.hoja-btns .btn{display:flex;align-items:center;gap:9px;justify-content:flex-start;width:100%}
+.btn-peligro{border-color:#5A2B26!important;color:#FF9B85!important}
+.copia-txt{width:100%;min-height:110px;background:var(--capa-2);border:1px solid var(--linea);border-radius:12px;color:var(--texto-2);padding:10px;font-size:11px;margin-top:8px;font-family:ui-monospace,monospace}
+.hola{font-size:21px;font-weight:800;margin-top:8px}
+
+/* GUÍA POR RUTINA */
+.guia-hoy{display:flex;align-items:center;gap:8px;color:var(--descanso);font-size:14px;font-weight:600;margin-top:10px}
+.guia-hoy .ic{width:19px;height:19px}
+.guia-card{background:var(--capa-1);border:1px solid var(--linea);border-radius:var(--r-m);padding:14px;margin-top:14px;text-align:left}
+.guia-cab{display:flex;align-items:baseline;justify-content:space-between;gap:8px}
+.guia-enf{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--texto-3);text-align:right}
+.guia-linea{display:flex;align-items:center;gap:10px;padding:7px 0 1px;font-size:15px;color:var(--texto)}
+.guia-ic{color:var(--trabajo);display:inline-flex}
+.guia-ic .ic{width:21px;height:21px}
+.guia-aviso{color:var(--texto-3);font-size:11.5px;margin-top:9px}
+.fav-ic{display:inline-flex;color:var(--alerta)}
+.fav-ic .ic{width:14px;height:14px}

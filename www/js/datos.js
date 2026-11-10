@@ -3,7 +3,7 @@ import { derivarFlags } from './generador.js';
 
 export const D = {
   ejercicios: [], porId: new Map(), prescripcion: null, grupos: null,
-  lesiones: null, voz: null, salud: null, listo: false,
+  lesiones: null, voz: null, salud: null, guia: null, listo: false,
 };
 
 const norm = s => (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
@@ -19,15 +19,16 @@ const TRAD_MUSCULOS = {
 const tradMusculo = m => TRAD_MUSCULOS[(m || '').toLowerCase()] || m;
 
 export async function cargarDatos() {
-  const [ej, pr, gr, le, vo, sa] = await Promise.all([
+  const [ej, pr, gr, le, vo, sa, gu] = await Promise.all([
     fetch('data/ejercicios.json').then(r => r.json()),
     fetch('data/prescripcion.json').then(r => r.json()),
     fetch('data/grupos.json').then(r => r.json()),
     fetch('data/lesiones.json').then(r => r.json()),
     fetch('data/voz.json').then(r => r.json()),
     fetch('data/salud.json').then(r => r.json()),
+    fetch('data/guia.json').then(r => r.json()),
   ]);
-  D.ejercicios = ej; D.prescripcion = pr; D.grupos = gr; D.lesiones = le; D.voz = vo; D.salud = sa;
+  D.ejercicios = ej; D.prescripcion = pr; D.grupos = gr; D.lesiones = le; D.voz = vo; D.salud = sa; D.guia = gu;
   for (const e of ej) {
     e.m = tradMusculo(e.m);
     if (Array.isArray(e.s)) e.s = [...new Set(e.s.map(tradMusculo))];

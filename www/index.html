@@ -4,16 +4,27 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Ironloop</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230A0C11'/%3E%3Ccircle cx='25' cy='32' r='13' fill='none' stroke='%23FF6B3D' stroke-width='6'/%3E%3Ccircle cx='41' cy='32' r='13' fill='none' stroke='%2335D5C3' stroke-width='6'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230A0C11'/%3E%3Ccircle cx='32' cy='32' r='17' fill='none' stroke='%23232B3A' stroke-width='7'/%3E%3Cpath d='M32 15a17 17 0 0 1 14.7 8.5' fill='none' stroke='%23FF6B3D' stroke-width='7' stroke-linecap='round'/%3E%3Cpath d='M46.7 40.5A17 17 0 0 1 32 49' fill='none' stroke='%2335D5C3' stroke-width='7' stroke-linecap='round'/%3E%3Cpath d='M17.3 23.5A17 17 0 0 1 32 15' fill='none' stroke='%23B6F24A' stroke-width='7' stroke-linecap='round'/%3E%3Crect x='29' y='24' width='6' height='16' rx='2' fill='white'/%3E%3Crect x='24.5' y='27' width='3.4' height='10' rx='1.6' fill='white'/%3E%3Crect x='36.1' y='27' width='3.4' height='10' rx='1.6' fill='white'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
+<div id="splash" hidden>
+  <svg id="splash-anillo" viewBox="0 0 120 120" width="132" height="132">
+    <circle cx="60" cy="60" r="46" fill="none" stroke="#232B3A" stroke-width="11"/>
+    <circle class="arco arco-1" cx="60" cy="60" r="46" fill="none" stroke="#FF6B3D" stroke-width="11" stroke-linecap="round" stroke-dasharray="92 197" transform="rotate(-90 60 60)"/>
+    <circle class="arco arco-2" cx="60" cy="60" r="46" fill="none" stroke="#35D5C3" stroke-width="11" stroke-linecap="round" stroke-dasharray="92 197" stroke-dashoffset="-97" transform="rotate(-90 60 60)"/>
+    <circle class="arco arco-3" cx="60" cy="60" r="46" fill="none" stroke="#B6F24A" stroke-width="11" stroke-linecap="round" stroke-dasharray="92 197" stroke-dashoffset="-194" transform="rotate(-90 60 60)"/>
+  </svg>
+  <div class="splash-nombre display"><span class="iron">IRON</span><span class="loop">LOOP</span></div>
+</div>
 <header>
   <div class="logo display"><span class="iron">IRON</span><span class="loop">LOOP</span></div>
   <div class="tag" id="tag">Tablero de entrenamiento</div>
+  <button id="hdr-avatar" hidden aria-label="Mi cuenta"></button>
 </header>
 <main id="principal">
   <div class="cargando" id="cargando">Cargando tu tablero…</div>
+  <section id="v-cuenta" class="vista"></section>
   <section id="v-hoy" class="vista"></section>
   <section id="v-cuerpo" class="vista"></section>
   <section id="v-rutina" class="vista"></section>
