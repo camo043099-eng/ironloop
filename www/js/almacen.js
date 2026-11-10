@@ -1,1 +1,30 @@
-Ly8gSXJvbmxvb3Ag4oCUIGFsbWFjZW5hbWllbnRvIGxvY2FsIHZlcnNpb25hZG8gKGxvY2FsU3RvcmFnZSkuCmNvbnN0IFBSRUZJSk8gPSAnZml0Lic7CmV4cG9ydCBmdW5jdGlvbiBsZWVyKGNsYXZlLCBkZWZlY3RvID0gbnVsbCkgewogIHRyeSB7CiAgICBjb25zdCB2ID0gbG9jYWxTdG9yYWdlLmdldEl0ZW0oUFJFRklKTyArIGNsYXZlKTsKICAgIHJldHVybiB2ID09PSBudWxsID8gZGVmZWN0byA6IEpTT04ucGFyc2Uodik7CiAgfSBjYXRjaCB7IHJldHVybiBkZWZlY3RvOyB9Cn0KZXhwb3J0IGZ1bmN0aW9uIGd1YXJkYXIoY2xhdmUsIHZhbG9yKSB7CiAgdHJ5IHsgbG9jYWxTdG9yYWdlLnNldEl0ZW0oUFJFRklKTyArIGNsYXZlLCBKU09OLnN0cmluZ2lmeSh2YWxvcikpOyB9IGNhdGNoIHsgLyogY3VvdGEgbGxlbmE6IHNlIGlnbm9yYSAqLyB9Cn0KZXhwb3J0IGNvbnN0IHBlcmZpbCA9ICgpID0+IGxlZXIoJ3BlcmZpbCcpOwpleHBvcnQgY29uc3QgZ3VhcmRhclBlcmZpbCA9IHAgPT4gZ3VhcmRhcigncGVyZmlsJywgcCk7CmV4cG9ydCBjb25zdCBydXRpbmEgPSAoKSA9PiBsZWVyKCdydXRpbmEnKTsKZXhwb3J0IGNvbnN0IGd1YXJkYXJSdXRpbmEgPSByID0+IGd1YXJkYXIoJ3J1dGluYScsIHIpOwpleHBvcnQgY29uc3QgaGlzdG9yaWFsID0gKCkgPT4gbGVlcignaGlzdG9yaWFsJywgW10pOwpleHBvcnQgZnVuY3Rpb24gcmVnaXN0cmFyU2VzaW9uKHJlZ2lzdHJvKSB7CiAgY29uc3QgaCA9IGhpc3RvcmlhbCgpOwogIGgucHVzaChyZWdpc3Rybyk7CiAgZ3VhcmRhcignaGlzdG9yaWFsJywgaC5zbGljZSgtNDAwKSk7Cn0KZXhwb3J0IGNvbnN0IGZhdm9yaXRvcyA9ICgpID0+IG5ldyBTZXQobGVlcignZmF2b3JpdG9zJywgW10pKTsKZXhwb3J0IGZ1bmN0aW9uIGFsdGVybmFyRmF2b3JpdG8oaWQpIHsKICBjb25zdCBmID0gZmF2b3JpdG9zKCk7CiAgaWYgKGYuaGFzKGlkKSkgZi5kZWxldGUoaWQpOyBlbHNlIGYuYWRkKGlkKTsKICBndWFyZGFyKCdmYXZvcml0b3MnLCBbLi4uZl0pOwogIHJldHVybiBmLmhhcyhpZCk7Cn0KZXhwb3J0IGNvbnN0IGFqdXN0ZXMgPSAoKSA9PiBsZWVyKCdhanVzdGVzJywgeyB2b3o6IHRydWUsIHBpdGlkb3M6IHRydWUsIHZpYnJhY2lvbjogdHJ1ZSB9KTsKZXhwb3J0IGNvbnN0IGd1YXJkYXJBanVzdGVzID0gYSA9PiBndWFyZGFyKCdhanVzdGVzJywgYSk7Cg==
+// Ironloop — almacenamiento local versionado (localStorage).
+const PREFIJO = 'fit.';
+export function leer(clave, defecto = null) {
+  try {
+    const v = localStorage.getItem(PREFIJO + clave);
+    return v === null ? defecto : JSON.parse(v);
+  } catch { return defecto; }
+}
+export function guardar(clave, valor) {
+  try { localStorage.setItem(PREFIJO + clave, JSON.stringify(valor)); } catch { /* cuota llena: se ignora */ }
+}
+export const perfil = () => leer('perfil');
+export const guardarPerfil = p => guardar('perfil', p);
+export const rutina = () => leer('rutina');
+export const guardarRutina = r => guardar('rutina', r);
+export const historial = () => leer('historial', []);
+export function registrarSesion(registro) {
+  const h = historial();
+  h.push(registro);
+  guardar('historial', h.slice(-400));
+}
+export const favoritos = () => new Set(leer('favoritos', []));
+export function alternarFavorito(id) {
+  const f = favoritos();
+  if (f.has(id)) f.delete(id); else f.add(id);
+  guardar('favoritos', [...f]);
+  return f.has(id);
+}
+export const ajustes = () => leer('ajustes', { voz: true, pitidos: true, vibracion: true });
+export const guardarAjustes = a => guardar('ajustes', a);

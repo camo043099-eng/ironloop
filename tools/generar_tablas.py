@@ -1,1 +1,187 @@
-IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwojIFBhc28gMjogdGFibGFzIGRlY2xhcmF0aXZhcyBkZSBJcm9ubG9vcCAocHJlc2NyaXBjaW9uL2dydXBvcy9sZXNpb25lcy92b3ovc2FsdWQpCiMgRnVlbnRlOiBkaXNlbm8tdjItZ2VtaW5pLm1kIChjaWVuY2lhKSArIHJldmlzaW9uIFBybyBkZSBHZW1pbmkgKyBhcnF1aXRlY3R1cmEgZGUgQ2xhdWRlLgppbXBvcnQganNvbiwgb3MKCkRBVEEgPSBvcy5wYXRoLmpvaW4ob3MucGF0aC5kaXJuYW1lKG9zLnBhdGguZGlybmFtZShvcy5wYXRoLmFic3BhdGgoX19maWxlX18pKSksICd3d3cnLCAnZGF0YScpCm9zLm1ha2VkaXJzKERBVEEsIGV4aXN0X29rPVRydWUpCgpkZWYgZHVtcChub21icmUsIG9iaik6CiAgICB3aXRoIG9wZW4ob3MucGF0aC5qb2luKERBVEEsIG5vbWJyZSksICd3JykgYXMgZjoKICAgICAgICBqc29uLmR1bXAob2JqLCBmLCBlbnN1cmVfYXNjaWk9RmFsc2UsIGluZGVudD0xKQogICAgcHJpbnQobm9tYnJlLCAnb2snKQoKIyAtLS0tLS0tLS0tLS0tLS0tIHByZXNjcmlwY2lvbi5qc29uIChHZW1pbmkpIC0tLS0tLS0tLS0tLS0tLS0KIyBzZXJpZXMvcmVwcy9kZXNjYW5zbyBkZWwgcm9sIHByaW5jaXBhbCBzYWxlbiBkZSBsYSBtYXRyaXogZGUgR2VtaW5pOwojIGVsIGFjY2Vzb3JpbyBiYWphIDEgc2VyaWUgeSBhY29ydGEgZWwgZGVzY2Fuc287IGVsIGNvcmUgdmEgcG9yIHJlcHMgbyB0aWVtcG8uCmRlZiByb2xlcyhwcmluLCBhY2NlLCBjb3JlX3Nlcmllcz0zKToKICAgIHJldHVybiB7CiAgICAgICAgJ2NhbGVudGFtaWVudG8nOiB7J3Nlcmllcyc6IDEsICdyZXBzJzogWzgsIDEyXSwgJ2Rlc2NhbnNvX3MnOiAzMH0sCiAgICAgICAgJ3ByaW5jaXBhbCc6IHByaW4sCiAgICAgICAgJ2FjY2Vzb3Jpbyc6IGFjY2UsCiAgICAgICAgJ2NvcmUnOiB7J3Nlcmllcyc6IGNvcmVfc2VyaWVzLCAncmVwcyc6IFsxMCwgMjBdLCAndGllbXBvX3MnOiBbMjAsIDQ1XSwgJ2Rlc2NhbnNvX3MnOiA0NX0sCiAgICB9CgpwcmVzY3JpcGNpb24gPSB7CiAgICAndmVyc2lvbic6ICcxLjAuMCcsICdhdXRvcic6ICdnZW1pbmknLCAncmV2aXNhZG9fcG9yJzogJ3Nob3Jla2VlcGVyJywKICAgICdvYmpldGl2b3MnOiB7CiAgICAgICAgJ2Z1ZXJ6YSc6IHsnbm9tYnJlJzogJ0Z1ZXJ6YScsICdwb3Jfbml2ZWwnOiB7CiAgICAgICAgICAgICdwcmluY2lwaWFudGUnOiByb2xlcyh7J3Nlcmllcyc6IDMsICdyZXBzJzogWzUsIDZdLCAnZGVzY2Fuc29fcyc6IDE2NSwgJ3Jpcic6IFszLCAzXX0sIHsnc2VyaWVzJzogMiwgJ3JlcHMnOiBbNiwgOF0sICdkZXNjYW5zb19zJzogMTIwLCAncmlyJzogWzMsIDNdfSwgMiksCiAgICAgICAgICAgICdpbnRlcm1lZGlvJzogcm9sZXMoeydzZXJpZXMnOiA0LCAncmVwcyc6IFs0LCA2XSwgJ2Rlc2NhbnNvX3MnOiAyMTAsICdyaXInOiBbMiwgMl19LCB7J3Nlcmllcyc6IDMsICdyZXBzJzogWzYsIDhdLCAnZGVzY2Fuc29fcyc6IDE1MCwgJ3Jpcic6IFsyLCAyXX0sIDIpLAogICAgICAgICAgICAnYXZhbnphZG8nOiByb2xlcyh7J3Nlcmllcyc6IDUsICdyZXBzJzogWzMsIDVdLCAnZGVzY2Fuc29fcyc6IDI0MCwgJ3Jpcic6IFsxLCAyXX0sIHsnc2VyaWVzJzogMywgJ3JlcHMnOiBbNSwgOF0sICdkZXNjYW5zb19zJzogMTgwLCAncmlyJzogWzEsIDJdfSwgMyl9fSwKICAgICAgICAnaGlwZXJ0cm9maWEnOiB7J25vbWJyZSc6ICdHYW5hciBtw7pzY3VsbycsICdwb3Jfbml2ZWwnOiB7CiAgICAgICAgICAgICdwcmluY2lwaWFudGUnOiByb2xlcyh7J3Nlcmllcyc6IDMsICdyZXBzJzogWzgsIDEyXSwgJ2Rlc2NhbnNvX3MnOiAxMDUsICdyaXInOiBbMiwgM119LCB7J3Nlcmllcyc6IDIsICdyZXBzJzogWzEwLCAxNV0sICdkZXNjYW5zb19zJzogNzUsICdyaXInOiBbMiwgM119LCAyKSwKICAgICAgICAgICAgJ2ludGVybWVkaW8nOiByb2xlcyh7J3Nlcmllcyc6IDQsICdyZXBzJzogWzgsIDEyXSwgJ2Rlc2NhbnNvX3MnOiAxMDUsICdyaXInOiBbMiwgMl19LCB7J3Nlcmllcyc6IDMsICdyZXBzJzogWzEwLCAxNV0sICdkZXNjYW5zb19zJzogNzUsICdyaXInOiBbMiwgMl19LCAzKSwKICAgICAgICAgICAgJ2F2YW56YWRvJzogcm9sZXMoeydzZXJpZXMnOiA0LCAncmVwcyc6IFs2LCAxMl0sICdkZXNjYW5zb19zJzogMTIwLCAncmlyJzogWzEsIDFdfSwgeydzZXJpZXMnOiAzLCAncmVwcyc6IFsxMCwgMTVdLCAnZGVzY2Fuc29fcyc6IDkwLCAncmlyJzogWzEsIDFdfSwgMyl9fSwKICAgICAgICAncGVyZGlkYV9ncmFzYSc6IHsnbm9tYnJlJzogJ1BlcmRlciBncmFzYScsICdwb3Jfbml2ZWwnOiB7CiAgICAgICAgICAgICdwcmluY2lwaWFudGUnOiByb2xlcyh7J3Nlcmllcyc6IDMsICdyZXBzJzogWzEyLCAxNV0sICdkZXNjYW5zb19zJzogNjgsICdyaXInOiBbMywgM119LCB7J3Nlcmllcyc6IDIsICdyZXBzJzogWzEyLCAxNV0sICdkZXNjYW5zb19zJzogNjAsICdyaXInOiBbMywgM119LCAyKSwKICAgICAgICAgICAgJ2ludGVybWVkaW8nOiByb2xlcyh7J3Nlcmllcyc6IDMsICdyZXBzJzogWzEyLCAxNV0sICdkZXNjYW5zb19zJzogNTIsICdyaXInOiBbMiwgM119LCB7J3Nlcmllcyc6IDMsICdyZXBzJzogWzEyLCAxOF0sICdkZXNjYW5zb19zJzogNDUsICdyaXInOiBbMiwgM119LCAzKSwKICAgICAgICAgICAgJ2F2YW56YWRvJzogcm9sZXMoeydzZXJpZXMnOiA0LCAncmVwcyc6IFsxMiwgMjBdLCAnZGVzY2Fuc29fcyc6IDUyLCAncmlyJzogWzIsIDJdfSwgeydzZXJpZXMnOiAzLCAncmVwcyc6IFsxNSwgMjBdLCAnZGVzY2Fuc29fcyc6IDQ1LCAncmlyJzogWzIsIDJdfSwgMyl9fSwKICAgICAgICAnc2FsdWQnOiB7J25vbWJyZSc6ICdTYWx1ZCBnZW5lcmFsJywgJ3Bvcl9uaXZlbCc6IHsKICAgICAgICAgICAgJ3ByaW5jaXBpYW50ZSc6IHJvbGVzKHsnc2VyaWVzJzogMiwgJ3JlcHMnOiBbMTAsIDEyXSwgJ2Rlc2NhbnNvX3MnOiA5MCwgJ3Jpcic6IFszLCA0XX0sIHsnc2VyaWVzJzogMiwgJ3JlcHMnOiBbMTAsIDEyXSwgJ2Rlc2NhbnNvX3MnOiA3NSwgJ3Jpcic6IFszLCA0XX0sIDIpLAogICAgICAgICAgICAnaW50ZXJtZWRpbyc6IHJvbGVzKHsnc2VyaWVzJzogMywgJ3JlcHMnOiBbMTAsIDE1XSwgJ2Rlc2NhbnNvX3MnOiA3NSwgJ3Jpcic6IFszLCAzXX0sIHsnc2VyaWVzJzogMiwgJ3JlcHMnOiBbMTAsIDE1XSwgJ2Rlc2NhbnNvX3MnOiA2MCwgJ3Jpcic6IFszLCAzXX0sIDIpLAogICAgICAgICAgICAnYXZhbnphZG8nOiByb2xlcyh7J3Nlcmllcyc6IDMsICdyZXBzJzogWzEwLCAxNV0sICdkZXNjYW5zb19zJzogNjAsICdyaXInOiBbMiwgM119LCB7J3Nlcmllcyc6IDMsICdyZXBzJzogWzEyLCAxNV0sICdkZXNjYW5zb19zJzogNjAsICdyaXInOiBbMiwgM119LCAzKX19LAogICAgfSwKICAgICdhanVzdGVzX2VkYWQnOiBbCiAgICAgICAgeydpZCc6ICdlMTgnLCAnZWRhZF9taW4nOiAwLCAnZWRhZF9tYXgnOiAyOSwgJ3Nlcmllc19tdWx0JzogMS4wLCAnZGVzY2Fuc29fYWRkX3MnOiAwLCAnZXZpdGFyX2ltcGFjdG8nOiBGYWxzZX0sCiAgICAgICAgeydpZCc6ICdlMzAnLCAnZWRhZF9taW4nOiAzMCwgJ2VkYWRfbWF4JzogNDQsICdzZXJpZXNfbXVsdCc6IDAuOTUsICdkZXNjYW5zb19hZGRfcyc6IDE1LCAnZXZpdGFyX2ltcGFjdG8nOiBGYWxzZX0sCiAgICAgICAgeydpZCc6ICdlNDUnLCAnZWRhZF9taW4nOiA0NSwgJ2VkYWRfbWF4JzogNTksICdzZXJpZXNfbXVsdCc6IDAuOCwgJ2Rlc2NhbnNvX2FkZF9zJzogMzAsICdldml0YXJfaW1wYWN0byc6IEZhbHNlLCAncmVwc19taW5fcHJpbic6IDZ9LAogICAgICAgIHsnaWQnOiAnZTYwJywgJ2VkYWRfbWluJzogNjAsICdlZGFkX21heCc6IDEyMCwgJ3Nlcmllc19tdWx0JzogMC43LCAnZGVzY2Fuc29fYWRkX3MnOiA1MiwgJ2V2aXRhcl9pbXBhY3RvJzogVHJ1ZSwgJ3JlcHNfbWluX3ByaW4nOiA4fSwKICAgIF0sCiAgICAnY2FyZ2FzX2luaWNpYWxlcyc6IFsKICAgICAgICB7J3BhdHJvbic6ICdzZW50YWRpbGxhJywgJ2ZhY3RvcmVzJzogeydwcmluY2lwaWFudGUnOiAwLjM1LCAnaW50ZXJtZWRpbyc6IDAuNjUsICdhdmFuemFkbyc6IDAuOTB9fSwKICAgICAgICB7J3BhdHJvbic6ICdwcmVzcyBkZSBiYW5jYScsICdmYWN0b3Jlcyc6IHsncHJpbmNpcGlhbnRlJzogMC4zMCwgJ2ludGVybWVkaW8nOiAwLjU1LCAnYXZhbnphZG8nOiAwLjc1fX0sCiAgICAgICAgeydwYXRyb24nOiAncGVzbyBtdWVydG8nLCAnZmFjdG9yZXMnOiB7J3ByaW5jaXBpYW50ZSc6IDAuNDUsICdpbnRlcm1lZGlvJzogMC44MCwgJ2F2YW56YWRvJzogMS4xMH19LAogICAgICAgIHsncGF0cm9uJzogJ3JlbW8nLCAnZmFjdG9yZXMnOiB7J3ByaW5jaXBpYW50ZSc6IDAuMjUsICdpbnRlcm1lZGlvJzogMC40NSwgJ2F2YW56YWRvJzogMC42NX19LAogICAgICAgIHsncGF0cm9uJzogJ3ByZXNzIGRlIGhvbWJyb3xwcmVzcyBtaWxpdGFyfHByZXNzIHNvYnJlIGxhIGNhYmV6YScsICdmYWN0b3Jlcyc6IHsncHJpbmNpcGlhbnRlJzogMC4yMCwgJ2ludGVybWVkaW8nOiAwLjM1LCAnYXZhbnphZG8nOiAwLjUwfX0sCiAgICBdLAogICAgJ3Blc29fYmFycmFfa2cnOiAyMCwKICAgICdwcm9ncmVzaW9uJzogeyd0cmVuX3N1cGVyaW9yX2tnJzogWzEsIDJdLCAndHJlbl9pbmZlcmlvcl9rZyc6IFsyLjUsIDVdLAogICAgICAgICAgICAgICAgICAgJ3JlZ2xhJzogJ1NpIGNvbXBsZXRhcyB0b2RhcyBsYXMgc2VyaWVzIGVuIGVsIHRvcGUgZGVsIHJhbmdvIGRlIHJlcGV0aWNpb25lcyBjb24gYnVlbmEgdMOpY25pY2EsIHN1YmUgbGEgY2FyZ2EgZW4gbGEgcHLDs3hpbWEgc2VzacOzbi4nfSwKICAgICdzZW1hbmFfcGF0cm9uJzogeycyJzogWzAsIDNdLCAnMyc6IFswLCAyLCA0XSwgJzQnOiBbMCwgMSwgMywgNF0sICc1JzogWzAsIDEsIDIsIDQsIDVdLCAnNic6IFswLCAxLCAyLCAzLCA0LCA1XX0sCiAgICAnZGl2aXNpb25lcyc6IHsKICAgICAgICAnMic6IHsnbm9tYnJlJzogJ0N1ZXJwbyBjb21wbGV0byBBL0InLCAnc2VzaW9uZXMnOiBbCiAgICAgICAgICAgIHsnaWQnOiAnQScsICdub21icmUnOiAnQ3VlcnBvIGNvbXBsZXRvIEEnLCAnc2xvdHMnOiBbCiAgICAgICAgICAgICAgICB7J2cnOiAncGllcm5hJywgJ3JvbCc6ICdwcmluY2lwYWwnLCAnbic6IDF9LCB7J2cnOiAncGVjaG8nLCAncm9sJzogJ3ByaW5jaXBhbCcsICduJzogMX0sCiAgICAgICAgICAgICAgICB7J2cnOiAnZXNwYWxkYScsICdyb2wnOiAncHJpbmNpcGFsJywgJ24nOiAxfSwgeydnJzogJ2NvcmUnLCAncm9sJzogJ2NvcmUnLCAnbic6IDF9XX0sCiAgICAgICAgICAgIHsnaWQnOiAnQicsICdub21icmUnOiAnQ3VlcnBvIGNvbXBsZXRvIEInLCAnc2xvdHMnOiBbCiAgICAgICAgICAgICAgICB7J2cnOiAnZ2x1dGVvcycsICdyb2wnOiAncHJpbmNpcGFsJywgJ24nOiAxfSwgeydnJzogJ2hvbWJybycsICdyb2wnOiAncHJpbmNpcGFsJywgJ24nOiAxfSwKICAgICAgICAgICAgICAgIHsnZyc6ICdiaWNlcHMnLCAncm9sJzogJ2FjY2Vzb3JpbycsICduJzogMX0sIHsnZyc6ICd0cmljZXBzJywgJ3JvbCc6ICdhY2Nlc29yaW8nLCAnbic6IDF9LAogICAgICAgICAgICAgICAgeydnJzogJ3BhbnRvcnJpbGxhcycsICdyb2wnOiAnYWNjZXNvcmlvJywgJ24nOiAxfV19XX0sCiAgICAgICAgJzMnOiB7J25vbWJyZSc6ICdFbXB1amUgLyBUcmFjY2nDs24gLyBQaWVybmFzJywgJ3Nlc2lvbmVzJzogWwogICAgICAgICAgICB7J2lkJzogJ0UnLCAnbm9tYnJlJzogJ0VtcHVqZScsICdzbG90cyc6IFsKICAgICAgICAgICAgICAgIHsnZyc6ICdwZWNobycsICdyb2wnOiAncHJpbmNpcGFsJywgJ24nOiAxfSwgeydnJzogJ3BlY2hvJywgJ3JvbCc6ICdhY2Nlc29yaW8nLCAnbic6IDF9LAogICAgICAgICAgICAgICAgeydnJzogJ2hvbWJybycsICdyb2wnOiAnYWNjZXNvcmlvJywgJ24nOiAxfSwgeydnJzogJ3RyaWNlcHMnLCAncm9sJzogJ2FjY2Vzb3JpbycsICduJzogMX1dfSwKICAgICAgICAgICAgeydpZCc6ICdUJywgJ25vbWJyZSc6ICdUcmFjY2nDs24nLCAnc2xvdHMnOiBbCiAgICAgICAgICAgICAgICB7J2cnOiAnZXNwYWxkYScsICdyb2wnOiAncHJpbmNpcGFsJywgJ24nOiAxfSwgeydnJzogJ2VzcGFsZGFfYWx0YScsICdyb2wnOiAnYWNjZXNvcmlvJywgJ24nOiAxfSwKICAgICAgICAgICAgICAgIHsnZyc6ICdiaWNlcHMnLCAncm9sJzogJ2FjY2Vzb3JpbycsICduJzogMX0sIHsnZyc6ICdhbnRlYnJhem9zJywgJ3JvbCc6ICdhY2Nlc29yaW8nLCAnbic6IDF9XX0sCiAgICAgICAgICAgIHsnaWQnOiAnUCcsICdub21icmUnOiAnUGllcm5hcyB5IGNvcmUnLCAnc2xvdHMnOiBbCiAgICAgICAgICAgICAgICB7J2cnOiAncGllcm5hJywgJ3JvbCc6ICdwcmluY2lwYWwnLCAnbic6IDF9LCB7J2cnOiAnZ2x1dGVvcycsICdyb2wnOiAnYWNjZXNvcmlvJywgJ24nOiAxfSwKICAgICAgICAgICAgICAgIHsnZyc6ICdwYW50b3JyaWxsYXMnLCAncm9sJzogJ2FjY2Vzb3JpbycsICduJzogMX0sIHsnZyc6ICdjb3JlJywgJ3JvbCc6ICdjb3JlJywgJ24nOiAxfV19XX0sCiAgICAgICAgJzQnOiB7J25vbWJyZSc6ICdUb3JzbyAvIFBpZXJuYSDDlzInLCAnc2VzaW9uZXMnOiBbCiAgICAgICAgICAgIHsnaWQnOiAnVEEnLCAnbm9tYnJlJzogJ1RvcnNvIEEnLCAnc2xvdHMnOiBbCiAgICAgICAgICAgICAgICB7J2cnOiAncGVjaG8nLCAncm9sJzogJ3ByaW5jaXBhbCcsICduJzogMX0sIHsnZyc6ICdlc3BhbGRhJywgJ3JvbCc6ICdwcmluY2lwYWwnLCAnbic6IDF9LAogICAgICAgICAgICAgICAgeydnJzogJ3RyaWNlcHMnLCAncm9sJzogJ2FjY2Vzb3JpbycsICduJzogMX0sIHsnZyc6ICdiaWNlcHMnLCAncm9sJzogJ2FjY2Vzb3JpbycsICduJzogMX1dfSwKICAgICAgICAgICAgeydpZCc6ICdQQScsICdub21icmUnOiAnUGllcm5hIEEnLCAnc2xvdHMnOiBbCiAgICAgICAgICAgICAgICB7J2cnOiAncGllcm5hJywgJ3JvbCc6ICdwcmluY2lwYWwnLCAnbic6IDF9LCB7J2cnOiAncGFudG9ycmlsbGFzJywgJ3JvbCc6ICdhY2Nlc29yaW8nLCAnbic6IDF9LAogICAgICAgICAgICAgICAgeydnJzogJ2NvcmUnLCAncm9sJzogJ2NvcmUnLCAnbic6IDF9XX0sCiAgICAgICAgICAgIHsnaWQnOiAnVEInLCAnbm9tYnJlJzogJ1RvcnNvIEInLCAnc2xvdHMnOiBbCiAgICAgICAgICAgICAgICB7J2cnOiAnaG9tYnJvJywgJ3JvbCc6ICdwcmluY2lwYWwnLCAnbic6IDF9LCB7J2cnOiAnZXNwYWxkYV9hbHRhJywgJ3JvbCc6ICdhY2Nlc29yaW8nLCAnbic6IDF9LAogICAgICAgICAgICAgICAgeydnJzogJ3BlY2hvJywgJ3JvbCc6ICdhY2Nlc29yaW8nLCAnbic6IDF9LCB7J2cnOiAnYmljZXBzJywgJ3JvbCc6ICdhY2Nlc29yaW8nLCAnbic6IDF9XX0sCiAgICAgICAgICAgIHsnaWQnOiAnUEInLCAnbm9tYnJlJzogJ1BpZXJuYSBCJywgJ3Nsb3RzJzogWwogICAgICAgICAgICAgICAgeydnJzogJ2dsdXRlb3MnLCAncm9sJzogJ3ByaW5jaXBhbCcsICduJzogMX0sIHsnZyc6ICdpc3F1aW9zJywgJ3JvbCc6ICdhY2Nlc29yaW8nLCAnbic6IDF9LAogICAgICAgICAgICAgICAgeydnJzogJ3BhbnRvcnJpbGxhcycsICdyb2wnOiAnYWNjZXNvcmlvJywgJ24nOiAxfSwgeydnJzogJ2NvcmUnLCAncm9sJzogJ2NvcmUnLCAnbic6IDF9XX1dfSwKICAgICAgICAnNSc6IHsnbm9tYnJlJzogJ0VzcGVjaWFsaXphY2nDs24nLCAnc2VzaW9uZXMnOiBbCiAgICAgICAgICAgIHsnaWQnOiAnRDEnLCAnbm9tYnJlJzogJ1BlY2hvIHkgY29yZScsICdzbG90cyc6IFsKICAgICAgICAgICAgICAgIHsnZyc6ICdwZWNobycsICdyb2wnOiAncHJpbmNpcGFsJywgJ24nOiAxfSwgeydnJzogJ3BlY2hvJywgJ3JvbCc6ICdhY2Nlc29yaW8nLCAnbic6IDF9LAogICAgICAgICAgICAgICAgeydnJzogJ3RyaWNlcHMnLCAncm9sJzogJ2FjY2Vzb3JpbycsICduJzogMX0sIHsnZyc6ICdjb3JlJywgJ3JvbCc6ICdjb3JlJywgJ24nOiAxfV19LAogICAgICAgICAgICB7J2lkJzogJ0QyJywgJ25vbWJyZSc6ICdFc3BhbGRhIHkgcGFudG9ycmlsbGFzJywgJ3Nsb3RzJzogWwogICAgICAgICAgICAgICAgeydnJzogJ2VzcGFsZGEnLCAncm9sJzogJ3ByaW5jaXBhbCcsICduJzogMX0sIHsnZyc6ICdlc3BhbGRhX2FsdGEnLCAncm9sJzogJ2FjY2Vzb3JpbycsICduJzogMX0sCiAgICAgICAgICAgICAgICB7J2cnOiAncGFudG9ycmlsbGFzJywgJ3JvbCc6ICdhY2Nlc29yaW8nLCAnbic6IDF9XX0sCiAgICAgICAgICAgIHsnaWQnOiAnRDMnLCAnbm9tYnJlJzogJ1BpZXJuYXMnLCAnc2xvdHMnOiBbCiAgICAgICAgICAgICAgICB7J2cnOiAncGllcm5hJywgJ3JvbCc6ICdwcmluY2lwYWwnLCAnbic6IDF9LCB7J2cnOiAnZ2x1dGVvcycsICdyb2wnOiAnYWNjZXNvcmlvJywgJ24nOiAxfSwKICAgICAgICAgICAgICAgIHsnZyc6ICdpc3F1aW9zJywgJ3JvbCc6ICdhY2Nlc29yaW8nLCAnbic6IDF9LCB7J2cnOiAncGFudG9ycmlsbGFzJywgJ3JvbCc6ICdhY2Nlc29yaW8nLCAnbic6IDF9XX0sCiAgICAgICAgICAgIHsnaWQnOiAnRDQnLCAnbm9tYnJlJzogJ0hvbWJyb3MnLCAnc2xvdHMnOiBbCiAgICAgICAgICAgICAgICB7J2cnOiAnaG9tYnJvJywgJ3JvbCc6ICdwcmluY2lwYWwnLCAnbic6IDF9LCB7J2cnOiAnaG9tYnJvJywgJ3JvbCc6ICdhY2Nlc29yaW8nLCAnbic6IDF9LAogICAgICAgICAgICAgICAgeydnJzogJ2VzcGFsZGFfYWx0YScsICdyb2wnOiAnYWNjZXNvcmlvJywgJ24nOiAxfV19LAogICAgICAgICAgICB7J2lkJzogJ0Q1JywgJ25vbWJyZSc6ICdCcmF6b3MgeSBjb3JlJywgJ3Nsb3RzJzogWwogICAgICAgICAgICAgICAgeydnJzogJ2JpY2VwcycsICdyb2wnOiAncHJpbmNpcGFsJywgJ24nOiAxfSwgeydnJzogJ3RyaWNlcHMnLCAncm9sJzogJ3ByaW5jaXBhbCcsICduJzogMX0sCiAgICAgICAgICAgICAgICB7J2cnOiAnYW50ZWJyYXpvcycsICdyb2wnOiAnYWNjZXNvcmlvJywgJ24nOiAxfSwgeydnJzogJ2NvcmUnLCAncm9sJzogJ2NvcmUnLCAnbic6IDF9XX1dfSwKICAgIH0sCn0KZHVtcCgncHJlc2NyaXBjaW9uLmpzb24nLCBwcmVzY3JpcGNpb24pCgojIC0tLS0tLS0tLS0tLS0tLS0gZ3J1cG9zLmpzb24gLS0tLS0tLS0tLS0tLS0tLQpncnVwb3MgPSB7CiAgICAncGVjaG8nOiB7J25vbWJyZSc6ICdQZWNobycsICdtdXNjdWxvcyc6IFsnUGVjdG9yYWxlcyddfSwKICAgICdlc3BhbGRhJzogeydub21icmUnOiAnRXNwYWxkYScsICdtdXNjdWxvcyc6IFsnRG9yc2FsZXMnXX0sCiAgICAnZXNwYWxkYV9hbHRhJzogeydub21icmUnOiAnRXNwYWxkYSBhbHRhJywgJ211c2N1bG9zJzogWydFc3BhbGRhIGFsdGEnLCAnVHJhcGVjaW9zJ119LAogICAgJ2hvbWJybyc6IHsnbm9tYnJlJzogJ0hvbWJyb3MnLCAnbXVzY3Vsb3MnOiBbJ0RlbHRvaWRlcyddfSwKICAgICdiaWNlcHMnOiB7J25vbWJyZSc6ICdCw61jZXBzJywgJ211c2N1bG9zJzogWydCw61jZXBzJ119LAogICAgJ3RyaWNlcHMnOiB7J25vbWJyZSc6ICdUcsOtY2VwcycsICdtdXNjdWxvcyc6IFsnVHLDrWNlcHMnXX0sCiAgICAnYW50ZWJyYXpvcyc6IHsnbm9tYnJlJzogJ0FudGVicmF6b3MnLCAnbXVzY3Vsb3MnOiBbJ0FudGVicmF6b3MnXX0sCiAgICAncGllcm5hJzogeydub21icmUnOiAnUGllcm5hcycsICdtdXNjdWxvcyc6IFsnQ3XDoWRyaWNlcHMnLCAnR2zDunRlb3MnLCAnSXNxdWlvdGliaWFsZXMnLCAnQWR1Y3RvcmVzJywgJ0FiZHVjdG9yZXMnXSwgJ3BhcnRlcyc6IFsnUGllcm5hcyddfSwKICAgICdnbHV0ZW9zJzogeydub21icmUnOiAnR2zDunRlb3MnLCAnbXVzY3Vsb3MnOiBbJ0dsw7p0ZW9zJ119LAogICAgJ2lzcXVpb3MnOiB7J25vbWJyZSc6ICdJc3F1aW90aWJpYWxlcycsICdtdXNjdWxvcyc6IFsnSXNxdWlvdGliaWFsZXMnXX0sCiAgICAncGFudG9ycmlsbGFzJzogeydub21icmUnOiAnUGFudG9ycmlsbGFzJywgJ211c2N1bG9zJzogWydQYW50b3JyaWxsYXMnXSwgJ3BhcnRlcyc6IFsnUGFudG9ycmlsbGFzJ119LAogICAgJ2NvcmUnOiB7J25vbWJyZSc6ICdDb3JlJywgJ211c2N1bG9zJzogWydBYmRvbWluYWxlcyddLCAncGFydGVzJzogWydDaW50dXJhJ119LAogICAgJ2NhcmRpbyc6IHsnbm9tYnJlJzogJ0NhcmRpbycsICdtdXNjdWxvcyc6IFsnU2lzdGVtYSBjYXJkaW92YXNjdWxhciddLCAncGFydGVzJzogWydDYXJkaW8nXX0sCn0KZHVtcCgnZ3J1cG9zLmpzb24nLCBncnVwb3MpCgojIC0tLS0tLS0tLS0tLS0tLS0gbGVzaW9uZXMuanNvbiAoY29uc29saWRhZG8gcG9yIFNob3Jla2VlcGVyKSAtLS0tLS0tLS0tLS0tLS0tCiMgRFNMOiBleGNsdWlyID0gbGlzdGEgZGUgcmVnbGFzIChPUik7IGNhZGEgcmVnbGEgY29tYmluYSBjYW1wb3MgY29uIEFORC4KIyBDYW1wb3M6IG8gKG11c2N1bG8gb2JqZXRpdm8pLCBvX2luLCBlIChlcXVpcG8pLCBlX2luLCBub21icmVfcmVnZXggKHNvYnJlIGVsIG5vbWJyZSBFUykuCmxlc2lvbmVzID0gewogICAgJ3ZlcnNpb24nOiAnMS4wLjAnLAogICAgJ3pvbmFzJzogewogICAgICAgICdob21icm8nOiB7J2V0aXF1ZXRhJzogJ0hvbWJybycsICdleGNsdWlyJzogWwogICAgICAgICAgICB7J28nOiAnRGVsdG9pZGVzJywgJ25vbWJyZV9yZWdleCc6ICd0cmFzIG51Y2F8cHJlc3MgbWlsaXRhcnxhcm5vbGR8Zm9uZG9zfGRldHLDoXMgZGUgbGEgbnVjYSd9LAogICAgICAgICAgICB7J25vbWJyZV9yZWdleCc6ICd0cmFzIG51Y2F8ZGV0csOhcyBkZSBsYSBudWNhfHByZXNzIHRyYXMgbnVjYSd9XSwKICAgICAgICAgICAgJ3ByZWZlcmlyX2VxdWlwbyc6IFsnUG9sZWEnLCAnQmFuZGEnLCAnQmFuZGEgZGUgcmVzaXN0ZW5jaWEnXX0sCiAgICAgICAgJ3JvZGlsbGEnOiB7J2V0aXF1ZXRhJzogJ1JvZGlsbGEnLCAnZXhjbHVpcic6IFsKICAgICAgICAgICAgeydub21icmVfcmVnZXgnOiAnc2FsdG98cGxpb23DqXRyfHBpc3RvbGF8c2lzc3l8emFuY2FkYSBjb24gc2FsdG98ZXN0b2NhZGEgY29uIHNhbHRvJ30sCiAgICAgICAgICAgIHsnbyc6ICdDdcOhZHJpY2VwcycsICdlJzogJ1Blc28gY29ycG9yYWwnLCAnbm9tYnJlX3JlZ2V4JzogJ3NlbnRhZGlsbGEgKGNvbiBzYWx0b3xiw7psZ2FyYSBwcm9mdW5kYSknfV0sCiAgICAgICAgICAgICdwcmVmZXJpcl9lcXVpcG8nOiBbJ03DoXF1aW5hIGRlIHBhbGFuY2EnLCAnTcOhcXVpbmEgU21pdGgnLCAnUG9sZWEnXX0sCiAgICAgICAgJ2VzcGFsZGFfYmFqYSc6IHsnZXRpcXVldGEnOiAnRXNwYWxkYSBiYWphJywgJ2V4Y2x1aXInOiBbCiAgICAgICAgICAgIHsnbm9tYnJlX3JlZ2V4JzogJ2J1ZW5vcyBkw61hc3xoaXBlcmV4dGVuc2nDs24gc2luIHNvcG9ydGUnfSwKICAgICAgICAgICAgeydub21icmVfcmVnZXgnOiAncGVzbyBtdWVydG8nLCAnZV9pbic6IFsnQmFycmEnLCAnQmFycmEgb2zDrW1waWNhJywgJ0JhcnJhIGhleGFnb25hbCcsICdNYW5jdWVybmFzJ119LAogICAgICAgICAgICB7J28nOiAnQ29sdW1uYScsICdlX2luJzogWydCYXJyYScsICdCYXJyYSBvbMOtbXBpY2EnLCAnTWFuY3Vlcm5hcycsICdQZXNvIGNvcnBvcmFsJ119XSwKICAgICAgICAgICAgJ3ByZWZlcmlyX2VxdWlwbyc6IFsnTcOhcXVpbmEgZGUgcGFsYW5jYScsICdNw6FxdWluYSBTbWl0aCcsICdUcmluZW8nLCAnUG9sZWEnXX0sCiAgICAgICAgJ2NvZG8nOiB7J2V0aXF1ZXRhJzogJ0NvZG8nLCAnZXhjbHVpcic6IFsKICAgICAgICAgICAgeydvJzogJ1Ryw61jZXBzJywgJ25vbWJyZV9yZWdleCc6ICdwcmVzcyBmcmFuY8Opc3xjb3BhfHJvbXBlY3LDoW5lb3xza3VsbCd9LAogICAgICAgICAgICB7J25vbWJyZV9yZWdleCc6ICdwcmVkaWNhZG9yJywgJ2VfaW4nOiBbJ0JhcnJhJywgJ0JhcnJhIG9sw61tcGljYSddfV0sCiAgICAgICAgICAgICdwcmVmZXJpcl9lcXVpcG8nOiBbJ1BvbGVhJywgJ01hbmN1ZXJuYXMnXX0sCiAgICAgICAgJ211bmVjYSc6IHsnZXRpcXVldGEnOiAnTXXDsWVjYScsICdleGNsdWlyJzogWwogICAgICAgICAgICB7J25vbWJyZV9yZWdleCc6ICdjdXJsIGRlIG11w7FlY2F8ZGUgbXXDsWVjYXxmbGV4acOzbiBkZSBtdcOxZWNhfGV4dGVuc2nDs24gZGUgbXXDsWVjYSd9LAogICAgICAgICAgICB7J29faW4nOiBbJ0FudGVicmF6b3MnLCAnQsOtY2VwcyddLCAnZV9pbic6IFsnQmFycmEnLCAnQmFycmEgb2zDrW1waWNhJ119XSwKICAgICAgICAgICAgJ3ByZWZlcmlyX2VxdWlwbyc6IFsnQmFycmEgWicsICdNYW5jdWVybmFzJywgJ1BvbGVhJ119LAogICAgICAgICdjYWRlcmEnOiB7J2V0aXF1ZXRhJzogJ0NhZGVyYScsICdleGNsdWlyJzogWwogICAgICAgICAgICB7J25vbWJyZV9yZWdleCc6ICdzZW50YWRpbGxhIHByb2Z1bmRhfHBpc3RvbGF8c3VtbyBwcm9mdW5kbyd9XSwKICAgICAgICAgICAgJ3ByZWZlcmlyX2VxdWlwbyc6IFsnTcOhcXVpbmEgZGUgcGFsYW5jYScsICdNw6FxdWluYSBTbWl0aCddfSwKICAgICAgICAndG9iaWxsbyc6IHsnZXRpcXVldGEnOiAnVG9iaWxsbycsICdleGNsdWlyJzogWwogICAgICAgICAgICB7J25vbWJyZV9yZWdleCc6ICdzYWx0b3xwbGlvbcOpdHJ8YnJpbmNvJ31dLAogICAgICAgICAgICAncHJlZmVyaXJfZXF1aXBvJzogWydNw6FxdWluYSBkZSBwYWxhbmNhJywgJ1BvbGVhJ119LAogICAgICAgICdjdWVsbG8nOiB7J2V0aXF1ZXRhJzogJ0N1ZWxsbycsICdleGNsdWlyJzogWwogICAgICAgICAgICB7J28nOiAnRGVsdG9pZGVzJywgJ25vbWJyZV9yZWdleCc6ICdlbmNvZ2ltaWVudG98c2hydWcnfV0sCiAgICAgICAgICAgICdwcmVmZXJpcl9lcXVpcG8nOiBbXX0sCiAgICB9LAp9CmR1bXAoJ2xlc2lvbmVzLmpzb24nLCBsZXNpb25lcykKCiMgLS0tLS0tLS0tLS0tLS0tLSB2b3ouanNvbiAtLS0tLS0tLS0tLS0tLS0tCnZveiA9IHsKICAgICdpZGlvbWEnOiAnZXMtRVMnLAogICAgJ3ByZXBhcmF0ZSc6ICdQcmVww6FyYXRlLiB7ZWplcmNpY2lvfSwgc2VyaWUge259IGRlIHt0b3RhbH0uJywKICAgICd0cmFiYWpvX3JlcHMnOiAnQWRlbGFudGUuIHtyZXBzfSByZXBldGljaW9uZXMuJywKICAgICd0cmFiYWpvX3RpZW1wbyc6ICdNYW50w6luIGxhIHBvc2ljacOzbiwge3NlZ30gc2VndW5kb3MuJywKICAgICdkZXNjYW5zbyc6ICdEZXNjYW5zYSB7c2VnfSBzZWd1bmRvcy4nLAogICAgJ2F2aXNvXzEwJzogJ0RpZXogc2VndW5kb3MuJywKICAgICd2dWVsdmUnOiAnVnVlbHZlIGFsIGVqZXJjaWNpby4ge2VqZXJjaWNpb30sIHNlcmllIHtufSBkZSB7dG90YWx9LicsCiAgICAnY2FtYmlvX2xhZG8nOiAnQ2FtYmlhIGRlIGxhZG8uJywKICAgICd0cmFuc2ljaW9uJzogJ1NpZ3VpZW50ZSBlamVyY2ljaW86IHtlamVyY2ljaW99LicsCiAgICAncGF1c2EnOiAnRW4gcGF1c2EuJywKICAgICdmaW4nOiAnU2VzacOzbiB0ZXJtaW5hZGEuIEJ1ZW4gdHJhYmFqby4nLAp9CmR1bXAoJ3Zvei5qc29uJywgdm96KQpwcmludCgndGFibGFzIGJhc2UgbGlzdGFzJykK
+#!/usr/bin/env python3
+# Paso 2: tablas declarativas de Ironloop (prescripcion/grupos/lesiones/voz/salud)
+# Fuente: diseno-v2-gemini.md (ciencia) + revision Pro de Gemini + arquitectura de Claude.
+import json, os
+
+DATA = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'www', 'data')
+os.makedirs(DATA, exist_ok=True)
+
+def dump(nombre, obj):
+    with open(os.path.join(DATA, nombre), 'w') as f:
+        json.dump(obj, f, ensure_ascii=False, indent=1)
+    print(nombre, 'ok')
+
+# ---------------- prescripcion.json (Gemini) ----------------
+# series/reps/descanso del rol principal salen de la matriz de Gemini;
+# el accesorio baja 1 serie y acorta el descanso; el core va por reps o tiempo.
+def roles(prin, acce, core_series=3):
+    return {
+        'calentamiento': {'series': 1, 'reps': [8, 12], 'descanso_s': 30},
+        'principal': prin,
+        'accesorio': acce,
+        'core': {'series': core_series, 'reps': [10, 20], 'tiempo_s': [20, 45], 'descanso_s': 45},
+    }
+
+prescripcion = {
+    'version': '1.0.0', 'autor': 'gemini', 'revisado_por': 'shorekeeper',
+    'objetivos': {
+        'fuerza': {'nombre': 'Fuerza', 'por_nivel': {
+            'principiante': roles({'series': 3, 'reps': [5, 6], 'descanso_s': 165, 'rir': [3, 3]}, {'series': 2, 'reps': [6, 8], 'descanso_s': 120, 'rir': [3, 3]}, 2),
+            'intermedio': roles({'series': 4, 'reps': [4, 6], 'descanso_s': 210, 'rir': [2, 2]}, {'series': 3, 'reps': [6, 8], 'descanso_s': 150, 'rir': [2, 2]}, 2),
+            'avanzado': roles({'series': 5, 'reps': [3, 5], 'descanso_s': 240, 'rir': [1, 2]}, {'series': 3, 'reps': [5, 8], 'descanso_s': 180, 'rir': [1, 2]}, 3)}},
+        'hipertrofia': {'nombre': 'Ganar músculo', 'por_nivel': {
+            'principiante': roles({'series': 3, 'reps': [8, 12], 'descanso_s': 105, 'rir': [2, 3]}, {'series': 2, 'reps': [10, 15], 'descanso_s': 75, 'rir': [2, 3]}, 2),
+            'intermedio': roles({'series': 4, 'reps': [8, 12], 'descanso_s': 105, 'rir': [2, 2]}, {'series': 3, 'reps': [10, 15], 'descanso_s': 75, 'rir': [2, 2]}, 3),
+            'avanzado': roles({'series': 4, 'reps': [6, 12], 'descanso_s': 120, 'rir': [1, 1]}, {'series': 3, 'reps': [10, 15], 'descanso_s': 90, 'rir': [1, 1]}, 3)}},
+        'perdida_grasa': {'nombre': 'Perder grasa', 'por_nivel': {
+            'principiante': roles({'series': 3, 'reps': [12, 15], 'descanso_s': 68, 'rir': [3, 3]}, {'series': 2, 'reps': [12, 15], 'descanso_s': 60, 'rir': [3, 3]}, 2),
+            'intermedio': roles({'series': 3, 'reps': [12, 15], 'descanso_s': 52, 'rir': [2, 3]}, {'series': 3, 'reps': [12, 18], 'descanso_s': 45, 'rir': [2, 3]}, 3),
+            'avanzado': roles({'series': 4, 'reps': [12, 20], 'descanso_s': 52, 'rir': [2, 2]}, {'series': 3, 'reps': [15, 20], 'descanso_s': 45, 'rir': [2, 2]}, 3)}},
+        'salud': {'nombre': 'Salud general', 'por_nivel': {
+            'principiante': roles({'series': 2, 'reps': [10, 12], 'descanso_s': 90, 'rir': [3, 4]}, {'series': 2, 'reps': [10, 12], 'descanso_s': 75, 'rir': [3, 4]}, 2),
+            'intermedio': roles({'series': 3, 'reps': [10, 15], 'descanso_s': 75, 'rir': [3, 3]}, {'series': 2, 'reps': [10, 15], 'descanso_s': 60, 'rir': [3, 3]}, 2),
+            'avanzado': roles({'series': 3, 'reps': [10, 15], 'descanso_s': 60, 'rir': [2, 3]}, {'series': 3, 'reps': [12, 15], 'descanso_s': 60, 'rir': [2, 3]}, 3)}},
+    },
+    'ajustes_edad': [
+        {'id': 'e18', 'edad_min': 0, 'edad_max': 29, 'series_mult': 1.0, 'descanso_add_s': 0, 'evitar_impacto': False},
+        {'id': 'e30', 'edad_min': 30, 'edad_max': 44, 'series_mult': 0.95, 'descanso_add_s': 15, 'evitar_impacto': False},
+        {'id': 'e45', 'edad_min': 45, 'edad_max': 59, 'series_mult': 0.8, 'descanso_add_s': 30, 'evitar_impacto': False, 'reps_min_prin': 6},
+        {'id': 'e60', 'edad_min': 60, 'edad_max': 120, 'series_mult': 0.7, 'descanso_add_s': 52, 'evitar_impacto': True, 'reps_min_prin': 8},
+    ],
+    'cargas_iniciales': [
+        {'patron': 'sentadilla', 'factores': {'principiante': 0.35, 'intermedio': 0.65, 'avanzado': 0.90}},
+        {'patron': 'press de banca', 'factores': {'principiante': 0.30, 'intermedio': 0.55, 'avanzado': 0.75}},
+        {'patron': 'peso muerto', 'factores': {'principiante': 0.45, 'intermedio': 0.80, 'avanzado': 1.10}},
+        {'patron': 'remo', 'factores': {'principiante': 0.25, 'intermedio': 0.45, 'avanzado': 0.65}},
+        {'patron': 'press de hombro|press militar|press sobre la cabeza', 'factores': {'principiante': 0.20, 'intermedio': 0.35, 'avanzado': 0.50}},
+    ],
+    'peso_barra_kg': 20,
+    'progresion': {'tren_superior_kg': [1, 2], 'tren_inferior_kg': [2.5, 5],
+                   'regla': 'Si completas todas las series en el tope del rango de repeticiones con buena técnica, sube la carga en la próxima sesión.'},
+    'semana_patron': {'2': [0, 3], '3': [0, 2, 4], '4': [0, 1, 3, 4], '5': [0, 1, 2, 4, 5], '6': [0, 1, 2, 3, 4, 5]},
+    'divisiones': {
+        '2': {'nombre': 'Cuerpo completo A/B', 'sesiones': [
+            {'id': 'A', 'nombre': 'Cuerpo completo A', 'slots': [
+                {'g': 'pierna', 'rol': 'principal', 'n': 1}, {'g': 'pecho', 'rol': 'principal', 'n': 1},
+                {'g': 'espalda', 'rol': 'principal', 'n': 1}, {'g': 'core', 'rol': 'core', 'n': 1}]},
+            {'id': 'B', 'nombre': 'Cuerpo completo B', 'slots': [
+                {'g': 'gluteos', 'rol': 'principal', 'n': 1}, {'g': 'hombro', 'rol': 'principal', 'n': 1},
+                {'g': 'biceps', 'rol': 'accesorio', 'n': 1}, {'g': 'triceps', 'rol': 'accesorio', 'n': 1},
+                {'g': 'pantorrillas', 'rol': 'accesorio', 'n': 1}]}]},
+        '3': {'nombre': 'Empuje / Tracción / Piernas', 'sesiones': [
+            {'id': 'E', 'nombre': 'Empuje', 'slots': [
+                {'g': 'pecho', 'rol': 'principal', 'n': 1}, {'g': 'pecho', 'rol': 'accesorio', 'n': 1},
+                {'g': 'hombro', 'rol': 'accesorio', 'n': 1}, {'g': 'triceps', 'rol': 'accesorio', 'n': 1}]},
+            {'id': 'T', 'nombre': 'Tracción', 'slots': [
+                {'g': 'espalda', 'rol': 'principal', 'n': 1}, {'g': 'espalda_alta', 'rol': 'accesorio', 'n': 1},
+                {'g': 'biceps', 'rol': 'accesorio', 'n': 1}, {'g': 'antebrazos', 'rol': 'accesorio', 'n': 1}]},
+            {'id': 'P', 'nombre': 'Piernas y core', 'slots': [
+                {'g': 'pierna', 'rol': 'principal', 'n': 1}, {'g': 'gluteos', 'rol': 'accesorio', 'n': 1},
+                {'g': 'pantorrillas', 'rol': 'accesorio', 'n': 1}, {'g': 'core', 'rol': 'core', 'n': 1}]}]},
+        '4': {'nombre': 'Torso / Pierna ×2', 'sesiones': [
+            {'id': 'TA', 'nombre': 'Torso A', 'slots': [
+                {'g': 'pecho', 'rol': 'principal', 'n': 1}, {'g': 'espalda', 'rol': 'principal', 'n': 1},
+                {'g': 'triceps', 'rol': 'accesorio', 'n': 1}, {'g': 'biceps', 'rol': 'accesorio', 'n': 1}]},
+            {'id': 'PA', 'nombre': 'Pierna A', 'slots': [
+                {'g': 'pierna', 'rol': 'principal', 'n': 1}, {'g': 'pantorrillas', 'rol': 'accesorio', 'n': 1},
+                {'g': 'core', 'rol': 'core', 'n': 1}]},
+            {'id': 'TB', 'nombre': 'Torso B', 'slots': [
+                {'g': 'hombro', 'rol': 'principal', 'n': 1}, {'g': 'espalda_alta', 'rol': 'accesorio', 'n': 1},
+                {'g': 'pecho', 'rol': 'accesorio', 'n': 1}, {'g': 'biceps', 'rol': 'accesorio', 'n': 1}]},
+            {'id': 'PB', 'nombre': 'Pierna B', 'slots': [
+                {'g': 'gluteos', 'rol': 'principal', 'n': 1}, {'g': 'isquios', 'rol': 'accesorio', 'n': 1},
+                {'g': 'pantorrillas', 'rol': 'accesorio', 'n': 1}, {'g': 'core', 'rol': 'core', 'n': 1}]}]},
+        '5': {'nombre': 'Especialización', 'sesiones': [
+            {'id': 'D1', 'nombre': 'Pecho y core', 'slots': [
+                {'g': 'pecho', 'rol': 'principal', 'n': 1}, {'g': 'pecho', 'rol': 'accesorio', 'n': 1},
+                {'g': 'triceps', 'rol': 'accesorio', 'n': 1}, {'g': 'core', 'rol': 'core', 'n': 1}]},
+            {'id': 'D2', 'nombre': 'Espalda y pantorrillas', 'slots': [
+                {'g': 'espalda', 'rol': 'principal', 'n': 1}, {'g': 'espalda_alta', 'rol': 'accesorio', 'n': 1},
+                {'g': 'pantorrillas', 'rol': 'accesorio', 'n': 1}]},
+            {'id': 'D3', 'nombre': 'Piernas', 'slots': [
+                {'g': 'pierna', 'rol': 'principal', 'n': 1}, {'g': 'gluteos', 'rol': 'accesorio', 'n': 1},
+                {'g': 'isquios', 'rol': 'accesorio', 'n': 1}, {'g': 'pantorrillas', 'rol': 'accesorio', 'n': 1}]},
+            {'id': 'D4', 'nombre': 'Hombros', 'slots': [
+                {'g': 'hombro', 'rol': 'principal', 'n': 1}, {'g': 'hombro', 'rol': 'accesorio', 'n': 1},
+                {'g': 'espalda_alta', 'rol': 'accesorio', 'n': 1}]},
+            {'id': 'D5', 'nombre': 'Brazos y core', 'slots': [
+                {'g': 'biceps', 'rol': 'principal', 'n': 1}, {'g': 'triceps', 'rol': 'principal', 'n': 1},
+                {'g': 'antebrazos', 'rol': 'accesorio', 'n': 1}, {'g': 'core', 'rol': 'core', 'n': 1}]}]},
+    },
+}
+dump('prescripcion.json', prescripcion)
+
+# ---------------- grupos.json ----------------
+grupos = {
+    'pecho': {'nombre': 'Pecho', 'musculos': ['Pectorales']},
+    'espalda': {'nombre': 'Espalda', 'musculos': ['Dorsales']},
+    'espalda_alta': {'nombre': 'Espalda alta', 'musculos': ['Espalda alta', 'Trapecios']},
+    'hombro': {'nombre': 'Hombros', 'musculos': ['Deltoides']},
+    'biceps': {'nombre': 'Bíceps', 'musculos': ['Bíceps']},
+    'triceps': {'nombre': 'Tríceps', 'musculos': ['Tríceps']},
+    'antebrazos': {'nombre': 'Antebrazos', 'musculos': ['Antebrazos']},
+    'pierna': {'nombre': 'Piernas', 'musculos': ['Cuádriceps', 'Glúteos', 'Isquiotibiales', 'Aductores', 'Abductores'], 'partes': ['Piernas']},
+    'gluteos': {'nombre': 'Glúteos', 'musculos': ['Glúteos']},
+    'isquios': {'nombre': 'Isquiotibiales', 'musculos': ['Isquiotibiales']},
+    'pantorrillas': {'nombre': 'Pantorrillas', 'musculos': ['Pantorrillas'], 'partes': ['Pantorrillas']},
+    'core': {'nombre': 'Core', 'musculos': ['Abdominales'], 'partes': ['Cintura']},
+    'cardio': {'nombre': 'Cardio', 'musculos': ['Sistema cardiovascular'], 'partes': ['Cardio']},
+}
+dump('grupos.json', grupos)
+
+# ---------------- lesiones.json (consolidado por Shorekeeper) ----------------
+# DSL: excluir = lista de reglas (OR); cada regla combina campos con AND.
+# Campos: o (musculo objetivo), o_in, e (equipo), e_in, nombre_regex (sobre el nombre ES).
+lesiones = {
+    'version': '1.0.0',
+    'zonas': {
+        'hombro': {'etiqueta': 'Hombro', 'excluir': [
+            {'o': 'Deltoides', 'nombre_regex': 'tras nuca|press militar|arnold|fondos|detrás de la nuca'},
+            {'nombre_regex': 'tras nuca|detrás de la nuca|press tras nuca'}],
+            'preferir_equipo': ['Polea', 'Banda', 'Banda de resistencia']},
+        'rodilla': {'etiqueta': 'Rodilla', 'excluir': [
+            {'nombre_regex': 'salto|pliométr|pistola|sissy|zancada con salto|estocada con salto'},
+            {'o': 'Cuádriceps', 'e': 'Peso corporal', 'nombre_regex': 'sentadilla (con salto|búlgara profunda)'}],
+            'preferir_equipo': ['Máquina de palanca', 'Máquina Smith', 'Polea']},
+        'espalda_baja': {'etiqueta': 'Espalda baja', 'excluir': [
+            {'nombre_regex': 'buenos días|hiperextensión sin soporte'},
+            {'nombre_regex': 'peso muerto', 'e_in': ['Barra', 'Barra olímpica', 'Barra hexagonal', 'Mancuernas']},
+            {'o': 'Columna', 'e_in': ['Barra', 'Barra olímpica', 'Mancuernas', 'Peso corporal']}],
+            'preferir_equipo': ['Máquina de palanca', 'Máquina Smith', 'Trineo', 'Polea']},
+        'codo': {'etiqueta': 'Codo', 'excluir': [
+            {'o': 'Tríceps', 'nombre_regex': 'press francés|copa|rompecráneo|skull'},
+            {'nombre_regex': 'predicador', 'e_in': ['Barra', 'Barra olímpica']}],
+            'preferir_equipo': ['Polea', 'Mancuernas']},
+        'muneca': {'etiqueta': 'Muñeca', 'excluir': [
+            {'nombre_regex': 'curl de muñeca|de muñeca|flexión de muñeca|extensión de muñeca'},
+            {'o_in': ['Antebrazos', 'Bíceps'], 'e_in': ['Barra', 'Barra olímpica']}],
+            'preferir_equipo': ['Barra Z', 'Mancuernas', 'Polea']},
+        'cadera': {'etiqueta': 'Cadera', 'excluir': [
+            {'nombre_regex': 'sentadilla profunda|pistola|sumo profundo'}],
+            'preferir_equipo': ['Máquina de palanca', 'Máquina Smith']},
+        'tobillo': {'etiqueta': 'Tobillo', 'excluir': [
+            {'nombre_regex': 'salto|pliométr|brinco'}],
+            'preferir_equipo': ['Máquina de palanca', 'Polea']},
+        'cuello': {'etiqueta': 'Cuello', 'excluir': [
+            {'o': 'Deltoides', 'nombre_regex': 'encogimiento|shrug'}],
+            'preferir_equipo': []},
+    },
+}
+dump('lesiones.json', lesiones)
+
+# ---------------- voz.json ----------------
+voz = {
+    'idioma': 'es-ES',
+    'preparate': 'Prepárate. {ejercicio}, serie {n} de {total}.',
+    'trabajo_reps': 'Adelante. {reps} repeticiones.',
+    'trabajo_tiempo': 'Mantén la posición, {seg} segundos.',
+    'descanso': 'Descansa {seg} segundos.',
+    'aviso_10': 'Diez segundos.',
+    'vuelve': 'Vuelve al ejercicio. {ejercicio}, serie {n} de {total}.',
+    'cambio_lado': 'Cambia de lado.',
+    'transicion': 'Siguiente ejercicio: {ejercicio}.',
+    'pausa': 'En pausa.',
+    'fin': 'Sesión terminada. Buen trabajo.',
+}
+dump('voz.json', voz)
+print('tablas base listas')

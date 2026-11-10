@@ -1,1 +1,6 @@
-bm9kZV9tb2R1bGVzLwp3d3cvbWVkaWEvCmFuZHJvaWQvCmRhdGFzZXQvCioubG9nCnRvb2xzL2NhcHR1cmEtKi5wbmcK
+node_modules/
+www/media/
+android/
+dataset/
+*.log
+tools/captura-*.png

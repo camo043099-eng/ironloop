@@ -1,1 +1,49 @@
-IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwojIFBhc28gMSBkZSBsYSBjb25zdHJ1Y2Npw7NuIGRlIElyb25sb29wOiBkZWwgZGF0YXNldC92MS4yIGEgbGEgZXN0cnVjdHVyYSB3d3cvIGRlIGxhIHYyLgojIFNhbGlkYTogd3d3L2RhdGEvZWplcmNpY2lvcy5qc29uICh0ZXh0bykgKyB3d3cvbWVkaWEvaW1nL3tpZH0uanBnICsgd3d3L21lZGlhL3ZpZC97aWR9Lm1wNAppbXBvcnQganNvbiwgYmFzZTY0LCBvcywgc2h1dGlsLCBzeXMKClJBSVogPSBvcy5wYXRoLmRpcm5hbWUob3MucGF0aC5kaXJuYW1lKG9zLnBhdGguYWJzcGF0aChfX2ZpbGVfXykpKSAgICAgICAjIGlyb25sb29wLwpHWU0gPSBvcy5wYXRoLmRpcm5hbWUoUkFJWikgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIyBneW0tYXBwLwpXV1cgPSBvcy5wYXRoLmpvaW4oUkFJWiwgJ3d3dycpCm9zLm1ha2VkaXJzKG9zLnBhdGguam9pbihXV1csICdkYXRhJyksIGV4aXN0X29rPVRydWUpCm9zLm1ha2VkaXJzKG9zLnBhdGguam9pbihXV1csICdtZWRpYScsICdpbWcnKSwgZXhpc3Rfb2s9VHJ1ZSkKb3MubWFrZWRpcnMob3MucGF0aC5qb2luKFdXVywgJ21lZGlhJywgJ3ZpZCcpLCBleGlzdF9vaz1UcnVlKQoKZGF0b3MgPSBqc29uLmxvYWQob3Blbihvcy5wYXRoLmpvaW4oR1lNLCAnZGF0b3MuanNvbicpKSkKbm9tYnJlcyA9IGpzb24ubG9hZChvcGVuKG9zLnBhdGguam9pbihHWU0sICdub21icmVzX2VzLmpzb24nKSkpCgpzYWxpZGEsIHNpbl92aWQsIHNpbl9pbWcgPSBbXSwgMCwgMApmb3IgeCBpbiBkYXRvczoKICAgIGlkXyA9IHhbJ2lkJ10KICAgICMgdmlkZW86IHBvciBlbCBzdGVtIGRlbCBnaWYgb3JpZ2luYWwKICAgIHN0ZW0gPSBvcy5wYXRoLmJhc2VuYW1lKHhbJ2dpZiddKVs6LTRdCiAgICBzcmNfdmlkID0gb3MucGF0aC5qb2luKEdZTSwgJ21wNHMnLCBzdGVtICsgJy5tcDQnKQogICAgaWYgb3MucGF0aC5leGlzdHMoc3JjX3ZpZCk6CiAgICAgICAgc2h1dGlsLmNvcHlmaWxlKHNyY192aWQsIG9zLnBhdGguam9pbihXV1csICdtZWRpYScsICd2aWQnLCBpZF8gKyAnLm1wNCcpKQogICAgZWxzZToKICAgICAgICBzaW5fdmlkICs9IDEKICAgICMgZm90bzogZGVjb2RpZmljYXIgZWwgYmFzZTY0IGluY3J1c3RhZG8gKGZ1ZW50ZSBtYXMgZmlhYmxlIHF1ZSBlbCBub21icmUgZGUgYXJjaGl2bykKICAgIGltZyA9IHguZ2V0KCdpbWcnLCAnJykKICAgIGlmIGltZy5zdGFydHN3aXRoKCdkYXRhOmltYWdlJyk6CiAgICAgICAgd2l0aCBvcGVuKG9zLnBhdGguam9pbihXV1csICdtZWRpYScsICdpbWcnLCBpZF8gKyAnLmpwZycpLCAnd2InKSBhcyBmOgogICAgICAgICAgICBmLndyaXRlKGJhc2U2NC5iNjRkZWNvZGUoaW1nLnNwbGl0KCcsJywgMSlbMV0pKQogICAgZWxzZToKICAgICAgICBzaW5faW1nICs9IDEKICAgIHNhbGlkYS5hcHBlbmQoewogICAgICAgICdpZCc6IGlkXywgJ25lJzogbm9tYnJlc1tpZF9dLCAnbic6IHhbJ24nXSwKICAgICAgICAncCc6IHhbJ3AnXSwgJ2UnOiB4WydlJ10sICdvJzogeFsnbyddLCAnbSc6IHguZ2V0KCdtJywgJycpLAogICAgICAgICdzJzogeFsncyddLCAncGFzb3MnOiB4WydwYXNvcyddLAogICAgfSkKCndpdGggb3Blbihvcy5wYXRoLmpvaW4oV1dXLCAnZGF0YScsICdlamVyY2ljaW9zLmpzb24nKSwgJ3cnKSBhcyBmOgogICAganNvbi5kdW1wKHNhbGlkYSwgZiwgZW5zdXJlX2FzY2lpPUZhbHNlLCBzZXBhcmF0b3JzPSgnLCcsICc6JykpCgpuX2ltZyA9IGxlbihvcy5saXN0ZGlyKG9zLnBhdGguam9pbihXV1csICdtZWRpYScsICdpbWcnKSkpCm5fdmlkID0gbGVuKG9zLmxpc3RkaXIob3MucGF0aC5qb2luKFdXVywgJ21lZGlhJywgJ3ZpZCcpKSkKdGFtID0gbGFtYmRhIHA6IHN1bShvcy5wYXRoLmdldHNpemUob3MucGF0aC5qb2luKHAsIGYpKSBmb3IgZiBpbiBvcy5saXN0ZGlyKHApKQpwcmludChmJ2VqZXJjaWNpb3MuanNvbjoge2xlbihzYWxpZGEpfSBlamVyY2ljaW9zLCB7b3MucGF0aC5nZXRzaXplKG9zLnBhdGguam9pbihXV1csImRhdGEiLCJlamVyY2ljaW9zLmpzb24iKSkvMWU2Oi4yZn0gTUInKQpwcmludChmJ2ltZzoge25faW1nfSBhcmNoaXZvcywge3RhbShvcy5wYXRoLmpvaW4oV1dXLCJtZWRpYSIsImltZyIpKS8xZTY6LjJmfSBNQiB8IHZpZDoge25fdmlkfSBhcmNoaXZvcywge3RhbShvcy5wYXRoLmpvaW4oV1dXLCJtZWRpYSIsInZpZCIpKS8xZTY6LjJmfSBNQicpCnByaW50KGYnc2luIHZpZGVvOiB7c2luX3ZpZH0gfCBzaW4gZm90bzoge3Npbl9pbWd9JykKYXNzZXJ0IGxlbihzYWxpZGEpID09IG5faW1nID09IG5fdmlkID09IDEzMjQgYW5kIHNpbl92aWQgPT0gc2luX2ltZyA9PSAwLCAnQ09CRVJUVVJBIElOQ09NUExFVEEnCnByaW50KCdDT0JFUlRVUkEgQ09NUExFVEEgMS4zMjQvMS4zMjQg4pyTJykK
+#!/usr/bin/env python3
+# Paso 1 de la construcción de Ironloop: del dataset/v1.2 a la estructura www/ de la v2.
+# Salida: www/data/ejercicios.json (texto) + www/media/img/{id}.jpg + www/media/vid/{id}.mp4
+import json, base64, os, shutil, sys
+
+RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))       # ironloop/
+GYM = os.path.dirname(RAIZ)                                              # gym-app/
+WWW = os.path.join(RAIZ, 'www')
+os.makedirs(os.path.join(WWW, 'data'), exist_ok=True)
+os.makedirs(os.path.join(WWW, 'media', 'img'), exist_ok=True)
+os.makedirs(os.path.join(WWW, 'media', 'vid'), exist_ok=True)
+
+datos = json.load(open(os.path.join(GYM, 'datos.json')))
+nombres = json.load(open(os.path.join(GYM, 'nombres_es.json')))
+
+salida, sin_vid, sin_img = [], 0, 0
+for x in datos:
+    id_ = x['id']
+    # video: por el stem del gif original
+    stem = os.path.basename(x['gif'])[:-4]
+    src_vid = os.path.join(GYM, 'mp4s', stem + '.mp4')
+    if os.path.exists(src_vid):
+        shutil.copyfile(src_vid, os.path.join(WWW, 'media', 'vid', id_ + '.mp4'))
+    else:
+        sin_vid += 1
+    # foto: decodificar el base64 incrustado (fuente mas fiable que el nombre de archivo)
+    img = x.get('img', '')
+    if img.startswith('data:image'):
+        with open(os.path.join(WWW, 'media', 'img', id_ + '.jpg'), 'wb') as f:
+            f.write(base64.b64decode(img.split(',', 1)[1]))
+    else:
+        sin_img += 1
+    salida.append({
+        'id': id_, 'ne': nombres[id_], 'n': x['n'],
+        'p': x['p'], 'e': x['e'], 'o': x['o'], 'm': x.get('m', ''),
+        's': x['s'], 'pasos': x['pasos'],
+    })
+
+with open(os.path.join(WWW, 'data', 'ejercicios.json'), 'w') as f:
+    json.dump(salida, f, ensure_ascii=False, separators=(',', ':'))
+
+n_img = len(os.listdir(os.path.join(WWW, 'media', 'img')))
+n_vid = len(os.listdir(os.path.join(WWW, 'media', 'vid')))
+tam = lambda p: sum(os.path.getsize(os.path.join(p, f)) for f in os.listdir(p))
+print(f'ejercicios.json: {len(salida)} ejercicios, {os.path.getsize(os.path.join(WWW,"data","ejercicios.json"))/1e6:.2f} MB')
+print(f'img: {n_img} archivos, {tam(os.path.join(WWW,"media","img"))/1e6:.2f} MB | vid: {n_vid} archivos, {tam(os.path.join(WWW,"media","vid"))/1e6:.2f} MB')
+print(f'sin video: {sin_vid} | sin foto: {sin_img}')
+assert len(salida) == n_img == n_vid == 1324 and sin_vid == sin_img == 0, 'COBERTURA INCOMPLETA'
+print('COBERTURA COMPLETA 1.324/1.324 ✓')

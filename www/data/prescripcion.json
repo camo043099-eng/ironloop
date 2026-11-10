@@ -1,1 +1,1077 @@
-ewogInZlcnNpb24iOiAiMS4wLjAiLAogImF1dG9yIjogImdlbWluaSIsCiAicmV2aXNhZG9fcG9yIjogInNob3Jla2VlcGVyIiwKICJvYmpldGl2b3MiOiB7CiAgImZ1ZXJ6YSI6IHsKICAgIm5vbWJyZSI6ICJGdWVyemEiLAogICAicG9yX25pdmVsIjogewogICAgInByaW5jaXBpYW50ZSI6IHsKICAgICAiY2FsZW50YW1pZW50byI6IHsKICAgICAgInNlcmllcyI6IDEsCiAgICAgICJyZXBzIjogWwogICAgICAgOCwKICAgICAgIDEyCiAgICAgIF0sCiAgICAgICJkZXNjYW5zb19zIjogMzAKICAgICB9LAogICAgICJwcmluY2lwYWwiOiB7CiAgICAgICJzZXJpZXMiOiAzLAogICAgICAicmVwcyI6IFsKICAgICAgIDUsCiAgICAgICA2CiAgICAgIF0sCiAgICAgICJkZXNjYW5zb19zIjogMTY1LAogICAgICAicmlyIjogWwogICAgICAgMywKICAgICAgIDMKICAgICAgXQogICAgIH0sCiAgICAgImFjY2Vzb3JpbyI6IHsKICAgICAgInNlcmllcyI6IDIsCiAgICAgICJyZXBzIjogWwogICAgICAgNiwKICAgICAgIDgKICAgICAgXSwKICAgICAgImRlc2NhbnNvX3MiOiAxMjAsCiAgICAgICJyaXIiOiBbCiAgICAgICAzLAogICAgICAgMwogICAgICBdCiAgICAgfSwKICAgICAiY29yZSI6IHsKICAgICAgInNlcmllcyI6IDIsCiAgICAgICJyZXBzIjogWwogICAgICAgMTAsCiAgICAgICAyMAogICAgICBdLAogICAgICAidGllbXBvX3MiOiBbCiAgICAgICAyMCwKICAgICAgIDQ1CiAgICAgIF0sCiAgICAgICJkZXNjYW5zb19zIjogNDUKICAgICB9CiAgICB9LAogICAgImludGVybWVkaW8iOiB7CiAgICAgImNhbGVudGFtaWVudG8iOiB7CiAgICAgICJzZXJpZXMiOiAxLAogICAgICAicmVwcyI6IFsKICAgICAgIDgsCiAgICAgICAxMgogICAgICBdLAogICAgICAiZGVzY2Fuc29fcyI6IDMwCiAgICAgfSwKICAgICAicHJpbmNpcGFsIjogewogICAgICAic2VyaWVzIjogNCwKICAgICAgInJlcHMiOiBbCiAgICAgICA0LAogICAgICAgNgogICAgICBdLAogICAgICAiZGVzY2Fuc29fcyI6IDIxMCwKICAgICAgInJpciI6IFsKICAgICAgIDIsCiAgICAgICAyCiAgICAgIF0KICAgICB9LAogICAgICJhY2Nlc29yaW8iOiB7CiAgICAgICJzZXJpZXMiOiAzLAogICAgICAicmVwcyI6IFsKICAgICAgIDYsCiAgICAgICA4CiAgICAgIF0sCiAgICAgICJkZXNjYW5zb19zIjogMTUwLAogICAgICAicmlyIjogWwogICAgICAgMiwKICAgICAgIDIKICAgICAgXQogICAgIH0sCiAgICAgImNvcmUiOiB7CiAgICAgICJzZXJpZXMiOiAyLAogICAgICAicmVwcyI6IFsKICAgICAgIDEwLAogICAgICAgMjAKICAgICAgXSwKICAgICAgInRpZW1wb19zIjogWwogICAgICAgMjAsCiAgICAgICA0NQogICAgICBdLAogICAgICAiZGVzY2Fuc29fcyI6IDQ1CiAgICAgfQogICAgfSwKICAgICJhdmFuemFkbyI6IHsKICAgICAiY2FsZW50YW1pZW50byI6IHsKICAgICAgInNlcmllcyI6IDEsCiAgICAgICJyZXBzIjogWwogICAgICAgOCwKICAgICAgIDEyCiAgICAgIF0sCiAgICAgICJkZXNjYW5zb19zIjogMzAKICAgICB9LAogICAgICJwcmluY2lwYWwiOiB7CiAgICAgICJzZXJpZXMiOiA1LAogICAgICAicmVwcyI6IFsKICAgICAgIDMsCiAgICAgICA1CiAgICAgIF0sCiAgICAgICJkZXNjYW5zb19zIjogMjQwLAogICAgICAicmlyIjogWwogICAgICAgMSwKICAgICAgIDIKICAgICAgXQogICAgIH0sCiAgICAgImFjY2Vzb3JpbyI6IHsKICAgICAgInNlcmllcyI6IDMsCiAgICAgICJyZXBzIjogWwogICAgICAgNSwKICAgICAgIDgKICAgICAgXSwKICAgICAgImRlc2NhbnNvX3MiOiAxODAsCiAgICAgICJyaXIiOiBbCiAgICAgICAxLAogICAgICAgMgogICAgICBdCiAgICAgfSwKICAgICAiY29yZSI6IHsKICAgICAgInNlcmllcyI6IDMsCiAgICAgICJyZXBzIjogWwogICAgICAgMTAsCiAgICAgICAyMAogICAgICBdLAogICAgICAidGllbXBvX3MiOiBbCiAgICAgICAyMCwKICAgICAgIDQ1CiAgICAgIF0sCiAgICAgICJkZXNjYW5zb19zIjogNDUKICAgICB9CiAgICB9CiAgIH0KICB9LAogICJoaXBlcnRyb2ZpYSI6IHsKICAgIm5vbWJyZSI6ICJHYW5hciBtw7pzY3VsbyIsCiAgICJwb3Jfbml2ZWwiOiB7CiAgICAicHJpbmNpcGlhbnRlIjogewogICAgICJjYWxlbnRhbWllbnRvIjogewogICAgICAic2VyaWVzIjogMSwKICAgICAgInJlcHMiOiBbCiAgICAgICA4LAogICAgICAgMTIKICAgICAgXSwKICAgICAgImRlc2NhbnNvX3MiOiAzMAogICAgIH0sCiAgICAgInByaW5jaXBhbCI6IHsKICAgICAgInNlcmllcyI6IDMsCiAgICAgICJyZXBzIjogWwogICAgICAgOCwKICAgICAgIDEyCiAgICAgIF0sCiAgICAgICJkZXNjYW5zb19zIjogMTA1LAogICAgICAicmlyIjogWwogICAgICAgMiwKICAgICAgIDMKICAgICAgXQogICAgIH0sCiAgICAgImFjY2Vzb3JpbyI6IHsKICAgICAgInNlcmllcyI6IDIsCiAgICAgICJyZXBzIjogWwogICAgICAgMTAsCiAgICAgICAxNQogICAgICBdLAogICAgICAiZGVzY2Fuc29fcyI6IDc1LAogICAgICAicmlyIjogWwogICAgICAgMiwKICAgICAgIDMKICAgICAgXQogICAgIH0sCiAgICAgImNvcmUiOiB7CiAgICAgICJzZXJpZXMiOiAyLAogICAgICAicmVwcyI6IFsKICAgICAgIDEwLAogICAgICAgMjAKICAgICAgXSwKICAgICAgInRpZW1wb19zIjogWwogICAgICAgMjAsCiAgICAgICA0NQogICAgICBdLAogICAgICAiZGVzY2Fuc29fcyI6IDQ1CiAgICAgfQogICAgfSwKICAgICJpbnRlcm1lZGlvIjogewogICAgICJjYWxlbnRhbWllbnRvIjogewogICAgICAic2VyaWVzIjogMSwKICAgICAgInJlcHMiOiBbCiAgICAgICA4LAogICAgICAgMTIKICAgICAgXSwKICAgICAgImRlc2NhbnNvX3MiOiAzMAogICAgIH0sCiAgICAgInByaW5jaXBhbCI6IHsKICAgICAgInNlcmllcyI6IDQsCiAgICAgICJyZXBzIjogWwogICAgICAgOCwKICAgICAgIDEyCiAgICAgIF0sCiAgICAgICJkZXNjYW5zb19zIjogMTA1LAogICAgICAicmlyIjogWwogICAgICAgMiwKICAgICAgIDIKICAgICAgXQogICAgIH0sCiAgICAgImFjY2Vzb3JpbyI6IHsKICAgICAgInNlcmllcyI6IDMsCiAgICAgICJyZXBzIjogWwogICAgICAgMTAsCiAgICAgICAxNQogICAgICBdLAogICAgICAiZGVzY2Fuc29fcyI6IDc1LAogICAgICAicmlyIjogWwogICAgICAgMiwKICAgICAgIDIKICAgICAgXQogICAgIH0sCiAgICAgImNvcmUiOiB7CiAgICAgICJzZXJpZXMiOiAzLAogICAgICAicmVwcyI6IFsKICAgICAgIDEwLAogICAgICAgMjAKICAgICAgXSwKICAgICAgInRpZW1wb19zIjogWwogICAgICAgMjAsCiAgICAgICA0NQogICAgICBdLAogICAgICAiZGVzY2Fuc29fcyI6IDQ1CiAgICAgfQogICAgfSwKICAgICJhdmFuemFkbyI6IHsKICAgICAiY2FsZW50YW1pZW50byI6IHsKICAgICAgInNlcmllcyI6IDEsCiAgICAgICJyZXBzIjogWwogICAgICAgOCwKICAgICAgIDEyCiAgICAgIF0sCiAgICAgICJkZXNjYW5zb19zIjogMzAKICAgICB9LAogICAgICJwcmluY2lwYWwiOiB7CiAgICAgICJzZXJpZXMiOiA0LAogICAgICAicmVwcyI6IFsKICAgICAgIDYsCiAgICAgICAxMgogICAgICBdLAogICAgICAiZGVzY2Fuc29fcyI6IDEyMCwKICAgICAgInJpciI6IFsKICAgICAgIDEsCiAgICAgICAxCiAgICAgIF0KICAgICB9LAogICAgICJhY2Nlc29yaW8iOiB7CiAgICAgICJzZXJpZXMiOiAzLAogICAgICAicmVwcyI6IFsKICAgICAgIDEwLAogICAgICAgMTUKICAgICAgXSwKICAgICAgImRlc2NhbnNvX3MiOiA5MCwKICAgICAgInJpciI6IFsKICAgICAgIDEsCiAgICAgICAxCiAgICAgIF0KICAgICB9LAogICAgICJjb3JlIjogewogICAgICAic2VyaWVzIjogMywKICAgICAgInJlcHMiOiBbCiAgICAgICAxMCwKICAgICAgIDIwCiAgICAgIF0sCiAgICAgICJ0aWVtcG9fcyI6IFsKICAgICAgIDIwLAogICAgICAgNDUKICAgICAgXSwKICAgICAgImRlc2NhbnNvX3MiOiA0NQogICAgIH0KICAgIH0KICAgfQogIH0sCiAgInBlcmRpZGFfZ3Jhc2EiOiB7CiAgICJub21icmUiOiAiUGVyZGVyIGdyYXNhIiwKICAgInBvcl9uaXZlbCI6IHsKICAgICJwcmluY2lwaWFudGUiOiB7CiAgICAgImNhbGVudGFtaWVudG8iOiB7CiAgICAgICJzZXJpZXMiOiAxLAogICAgICAicmVwcyI6IFsKICAgICAgIDgsCiAgICAgICAxMgogICAgICBdLAogICAgICAiZGVzY2Fuc29fcyI6IDMwCiAgICAgfSwKICAgICAicHJpbmNpcGFsIjogewogICAgICAic2VyaWVzIjogMywKICAgICAgInJlcHMiOiBbCiAgICAgICAxMiwKICAgICAgIDE1CiAgICAgIF0sCiAgICAgICJkZXNjYW5zb19zIjogNjgsCiAgICAgICJyaXIiOiBbCiAgICAgICAzLAogICAgICAgMwogICAgICBdCiAgICAgfSwKICAgICAiYWNjZXNvcmlvIjogewogICAgICAic2VyaWVzIjogMiwKICAgICAgInJlcHMiOiBbCiAgICAgICAxMiwKICAgICAgIDE1CiAgICAgIF0sCiAgICAgICJkZXNjYW5zb19zIjogNjAsCiAgICAgICJyaXIiOiBbCiAgICAgICAzLAogICAgICAgMwogICAgICBdCiAgICAgfSwKICAgICAiY29yZSI6IHsKICAgICAgInNlcmllcyI6IDIsCiAgICAgICJyZXBzIjogWwogICAgICAgMTAsCiAgICAgICAyMAogICAgICBdLAogICAgICAidGllbXBvX3MiOiBbCiAgICAgICAyMCwKICAgICAgIDQ1CiAgICAgIF0sCiAgICAgICJkZXNjYW5zb19zIjogNDUKICAgICB9CiAgICB9LAogICAgImludGVybWVkaW8iOiB7CiAgICAgImNhbGVudGFtaWVudG8iOiB7CiAgICAgICJzZXJpZXMiOiAxLAogICAgICAicmVwcyI6IFsKICAgICAgIDgsCiAgICAgICAxMgogICAgICBdLAogICAgICAiZGVzY2Fuc29fcyI6IDMwCiAgICAgfSwKICAgICAicHJpbmNpcGFsIjogewogICAgICAic2VyaWVzIjogMywKICAgICAgInJlcHMiOiBbCiAgICAgICAxMiwKICAgICAgIDE1CiAgICAgIF0sCiAgICAgICJkZXNjYW5zb19zIjogNTIsCiAgICAgICJyaXIiOiBbCiAgICAgICAyLAogICAgICAgMwogICAgICBdCiAgICAgfSwKICAgICAiYWNjZXNvcmlvIjogewogICAgICAic2VyaWVzIjogMywKICAgICAgInJlcHMiOiBbCiAgICAgICAxMiwKICAgICAgIDE4CiAgICAgIF0sCiAgICAgICJkZXNjYW5zb19zIjogNDUsCiAgICAgICJyaXIiOiBbCiAgICAgICAyLAogICAgICAgMwogICAgICBdCiAgICAgfSwKICAgICAiY29yZSI6IHsKICAgICAgInNlcmllcyI6IDMsCiAgICAgICJyZXBzIjogWwogICAgICAgMTAsCiAgICAgICAyMAogICAgICBdLAogICAgICAidGllbXBvX3MiOiBbCiAgICAgICAyMCwKICAgICAgIDQ1CiAgICAgIF0sCiAgICAgICJkZXNjYW5zb19zIjogNDUKICAgICB9CiAgICB9LAogICAgImF2YW56YWRvIjogewogICAgICJjYWxlbnRhbWllbnRvIjogewogICAgICAic2VyaWVzIjogMSwKICAgICAgInJlcHMiOiBbCiAgICAgICA4LAogICAgICAgMTIKICAgICAgXSwKICAgICAgImRlc2NhbnNvX3MiOiAzMAogICAgIH0sCiAgICAgInByaW5jaXBhbCI6IHsKICAgICAgInNlcmllcyI6IDQsCiAgICAgICJyZXBzIjogWwogICAgICAgMTIsCiAgICAgICAyMAogICAgICBdLAogICAgICAiZGVzY2Fuc29fcyI6IDUyLAogICAgICAicmlyIjogWwogICAgICAgMiwKICAgICAgIDIKICAgICAgXQogICAgIH0sCiAgICAgImFjY2Vzb3JpbyI6IHsKICAgICAgInNlcmllcyI6IDMsCiAgICAgICJyZXBzIjogWwogICAgICAgMTUsCiAgICAgICAyMAogICAgICBdLAogICAgICAiZGVzY2Fuc29fcyI6IDQ1LAogICAgICAicmlyIjogWwogICAgICAgMiwKICAgICAgIDIKICAgICAgXQogICAgIH0sCiAgICAgImNvcmUiOiB7CiAgICAgICJzZXJpZXMiOiAzLAogICAgICAicmVwcyI6IFsKICAgICAgIDEwLAogICAgICAgMjAKICAgICAgXSwKICAgICAgInRpZW1wb19zIjogWwogICAgICAgMjAsCiAgICAgICA0NQogICAgICBdLAogICAgICAiZGVzY2Fuc29fcyI6IDQ1CiAgICAgfQogICAgfQogICB9CiAgfSwKICAic2FsdWQiOiB7CiAgICJub21icmUiOiAiU2FsdWQgZ2VuZXJhbCIsCiAgICJwb3Jfbml2ZWwiOiB7CiAgICAicHJpbmNpcGlhbnRlIjogewogICAgICJjYWxlbnRhbWllbnRvIjogewogICAgICAic2VyaWVzIjogMSwKICAgICAgInJlcHMiOiBbCiAgICAgICA4LAogICAgICAgMTIKICAgICAgXSwKICAgICAgImRlc2NhbnNvX3MiOiAzMAogICAgIH0sCiAgICAgInByaW5jaXBhbCI6IHsKICAgICAgInNlcmllcyI6IDIsCiAgICAgICJyZXBzIjogWwogICAgICAgMTAsCiAgICAgICAxMgogICAgICBdLAogICAgICAiZGVzY2Fuc29fcyI6IDkwLAogICAgICAicmlyIjogWwogICAgICAgMywKICAgICAgIDQKICAgICAgXQogICAgIH0sCiAgICAgImFjY2Vzb3JpbyI6IHsKICAgICAgInNlcmllcyI6IDIsCiAgICAgICJyZXBzIjogWwogICAgICAgMTAsCiAgICAgICAxMgogICAgICBdLAogICAgICAiZGVzY2Fuc29fcyI6IDc1LAogICAgICAicmlyIjogWwogICAgICAgMywKICAgICAgIDQKICAgICAgXQogICAgIH0sCiAgICAgImNvcmUiOiB7CiAgICAgICJzZXJpZXMiOiAyLAogICAgICAicmVwcyI6IFsKICAgICAgIDEwLAogICAgICAgMjAKICAgICAgXSwKICAgICAgInRpZW1wb19zIjogWwogICAgICAgMjAsCiAgICAgICA0NQogICAgICBdLAogICAgICAiZGVzY2Fuc29fcyI6IDQ1CiAgICAgfQogICAgfSwKICAgICJpbnRlcm1lZGlvIjogewogICAgICJjYWxlbnRhbWllbnRvIjogewogICAgICAic2VyaWVzIjogMSwKICAgICAgInJlcHMiOiBbCiAgICAgICA4LAogICAgICAgMTIKICAgICAgXSwKICAgICAgImRlc2NhbnNvX3MiOiAzMAogICAgIH0sCiAgICAgInByaW5jaXBhbCI6IHsKICAgICAgInNlcmllcyI6IDMsCiAgICAgICJyZXBzIjogWwogICAgICAgMTAsCiAgICAgICAxNQogICAgICBdLAogICAgICAiZGVzY2Fuc29fcyI6IDc1LAogICAgICAicmlyIjogWwogICAgICAgMywKICAgICAgIDMKICAgICAgXQogICAgIH0sCiAgICAgImFjY2Vzb3JpbyI6IHsKICAgICAgInNlcmllcyI6IDIsCiAgICAgICJyZXBzIjogWwogICAgICAgMTAsCiAgICAgICAxNQogICAgICBdLAogICAgICAiZGVzY2Fuc29fcyI6IDYwLAogICAgICAicmlyIjogWwogICAgICAgMywKICAgICAgIDMKICAgICAgXQogICAgIH0sCiAgICAgImNvcmUiOiB7CiAgICAgICJzZXJpZXMiOiAyLAogICAgICAicmVwcyI6IFsKICAgICAgIDEwLAogICAgICAgMjAKICAgICAgXSwKICAgICAgInRpZW1wb19zIjogWwogICAgICAgMjAsCiAgICAgICA0NQogICAgICBdLAogICAgICAiZGVzY2Fuc29fcyI6IDQ1CiAgICAgfQogICAgfSwKICAgICJhdmFuemFkbyI6IHsKICAgICAiY2FsZW50YW1pZW50byI6IHsKICAgICAgInNlcmllcyI6IDEsCiAgICAgICJyZXBzIjogWwogICAgICAgOCwKICAgICAgIDEyCiAgICAgIF0sCiAgICAgICJkZXNjYW5zb19zIjogMzAKICAgICB9LAogICAgICJwcmluY2lwYWwiOiB7CiAgICAgICJzZXJpZXMiOiAzLAogICAgICAicmVwcyI6IFsKICAgICAgIDEwLAogICAgICAgMTUKICAgICAgXSwKICAgICAgImRlc2NhbnNvX3MiOiA2MCwKICAgICAgInJpciI6IFsKICAgICAgIDIsCiAgICAgICAzCiAgICAgIF0KICAgICB9LAogICAgICJhY2Nlc29yaW8iOiB7CiAgICAgICJzZXJpZXMiOiAzLAogICAgICAicmVwcyI6IFsKICAgICAgIDEyLAogICAgICAgMTUKICAgICAgXSwKICAgICAgImRlc2NhbnNvX3MiOiA2MCwKICAgICAgInJpciI6IFsKICAgICAgIDIsCiAgICAgICAzCiAgICAgIF0KICAgICB9LAogICAgICJjb3JlIjogewogICAgICAic2VyaWVzIjogMywKICAgICAgInJlcHMiOiBbCiAgICAgICAxMCwKICAgICAgIDIwCiAgICAgIF0sCiAgICAgICJ0aWVtcG9fcyI6IFsKICAgICAgIDIwLAogICAgICAgNDUKICAgICAgXSwKICAgICAgImRlc2NhbnNvX3MiOiA0NQogICAgIH0KICAgIH0KICAgfQogIH0KIH0sCiAiYWp1c3Rlc19lZGFkIjogWwogIHsKICAgImlkIjogImUxOCIsCiAgICJlZGFkX21pbiI6IDAsCiAgICJlZGFkX21heCI6IDI5LAogICAic2VyaWVzX211bHQiOiAxLjAsCiAgICJkZXNjYW5zb19hZGRfcyI6IDAsCiAgICJldml0YXJfaW1wYWN0byI6IGZhbHNlCiAgfSwKICB7CiAgICJpZCI6ICJlMzAiLAogICAiZWRhZF9taW4iOiAzMCwKICAgImVkYWRfbWF4IjogNDQsCiAgICJzZXJpZXNfbXVsdCI6IDAuOTUsCiAgICJkZXNjYW5zb19hZGRfcyI6IDE1LAogICAiZXZpdGFyX2ltcGFjdG8iOiBmYWxzZQogIH0sCiAgewogICAiaWQiOiAiZTQ1IiwKICAgImVkYWRfbWluIjogNDUsCiAgICJlZGFkX21heCI6IDU5LAogICAic2VyaWVzX211bHQiOiAwLjgsCiAgICJkZXNjYW5zb19hZGRfcyI6IDMwLAogICAiZXZpdGFyX2ltcGFjdG8iOiBmYWxzZSwKICAgInJlcHNfbWluX3ByaW4iOiA2CiAgfSwKICB7CiAgICJpZCI6ICJlNjAiLAogICAiZWRhZF9taW4iOiA2MCwKICAgImVkYWRfbWF4IjogMTIwLAogICAic2VyaWVzX211bHQiOiAwLjcsCiAgICJkZXNjYW5zb19hZGRfcyI6IDUyLAogICAiZXZpdGFyX2ltcGFjdG8iOiB0cnVlLAogICAicmVwc19taW5fcHJpbiI6IDgKICB9CiBdLAogImNhcmdhc19pbmljaWFsZXMiOiBbCiAgewogICAicGF0cm9uIjogInNlbnRhZGlsbGEiLAogICAiZmFjdG9yZXMiOiB7CiAgICAicHJpbmNpcGlhbnRlIjogMC4zNSwKICAgICJpbnRlcm1lZGlvIjogMC42NSwKICAgICJhdmFuemFkbyI6IDAuOQogICB9CiAgfSwKICB7CiAgICJwYXRyb24iOiAicHJlc3MgZGUgYmFuY2EiLAogICAiZmFjdG9yZXMiOiB7CiAgICAicHJpbmNpcGlhbnRlIjogMC4zLAogICAgImludGVybWVkaW8iOiAwLjU1LAogICAgImF2YW56YWRvIjogMC43NQogICB9CiAgfSwKICB7CiAgICJwYXRyb24iOiAicGVzbyBtdWVydG8iLAogICAiZmFjdG9yZXMiOiB7CiAgICAicHJpbmNpcGlhbnRlIjogMC40NSwKICAgICJpbnRlcm1lZGlvIjogMC44LAogICAgImF2YW56YWRvIjogMS4xCiAgIH0KICB9LAogIHsKICAgInBhdHJvbiI6ICJyZW1vIiwKICAgImZhY3RvcmVzIjogewogICAgInByaW5jaXBpYW50ZSI6IDAuMjUsCiAgICAiaW50ZXJtZWRpbyI6IDAuNDUsCiAgICAiYXZhbnphZG8iOiAwLjY1CiAgIH0KICB9LAogIHsKICAgInBhdHJvbiI6ICJwcmVzcyBkZSBob21icm98cHJlc3MgbWlsaXRhcnxwcmVzcyBzb2JyZSBsYSBjYWJlemEiLAogICAiZmFjdG9yZXMiOiB7CiAgICAicHJpbmNpcGlhbnRlIjogMC4yLAogICAgImludGVybWVkaW8iOiAwLjM1LAogICAgImF2YW56YWRvIjogMC41CiAgIH0KICB9CiBdLAogInBlc29fYmFycmFfa2ciOiAyMCwKICJwcm9ncmVzaW9uIjogewogICJ0cmVuX3N1cGVyaW9yX2tnIjogWwogICAxLAogICAyCiAgXSwKICAidHJlbl9pbmZlcmlvcl9rZyI6IFsKICAgMi41LAogICA1CiAgXSwKICAicmVnbGEiOiAiU2kgY29tcGxldGFzIHRvZGFzIGxhcyBzZXJpZXMgZW4gZWwgdG9wZSBkZWwgcmFuZ28gZGUgcmVwZXRpY2lvbmVzIGNvbiBidWVuYSB0w6ljbmljYSwgc3ViZSBsYSBjYXJnYSBlbiBsYSBwcsOzeGltYSBzZXNpw7NuLiIKIH0sCiAic2VtYW5hX3BhdHJvbiI6IHsKICAiMiI6IFsKICAgMCwKICAgMwogIF0sCiAgIjMiOiBbCiAgIDAsCiAgIDIsCiAgIDQKICBdLAogICI0IjogWwogICAwLAogICAxLAogICAzLAogICA0CiAgXSwKICAiNSI6IFsKICAgMCwKICAgMSwKICAgMiwKICAgNCwKICAgNQogIF0sCiAgIjYiOiBbCiAgIDAsCiAgIDEsCiAgIDIsCiAgIDMsCiAgIDQsCiAgIDUKICBdCiB9LAogImRpdmlzaW9uZXMiOiB7CiAgIjIiOiB7CiAgICJub21icmUiOiAiQ3VlcnBvIGNvbXBsZXRvIEEvQiIsCiAgICJzZXNpb25lcyI6IFsKICAgIHsKICAgICAiaWQiOiAiQSIsCiAgICAgIm5vbWJyZSI6ICJDdWVycG8gY29tcGxldG8gQSIsCiAgICAgInNsb3RzIjogWwogICAgICB7CiAgICAgICAiZyI6ICJwaWVybmEiLAogICAgICAgInJvbCI6ICJwcmluY2lwYWwiLAogICAgICAgIm4iOiAxCiAgICAgIH0sCiAgICAgIHsKICAgICAgICJnIjogInBlY2hvIiwKICAgICAgICJyb2wiOiAicHJpbmNpcGFsIiwKICAgICAgICJuIjogMQogICAgICB9LAogICAgICB7CiAgICAgICAiZyI6ICJlc3BhbGRhIiwKICAgICAgICJyb2wiOiAicHJpbmNpcGFsIiwKICAgICAgICJuIjogMQogICAgICB9LAogICAgICB7CiAgICAgICAiZyI6ICJjb3JlIiwKICAgICAgICJyb2wiOiAiY29yZSIsCiAgICAgICAibiI6IDEKICAgICAgfQogICAgIF0KICAgIH0sCiAgICB7CiAgICAgImlkIjogIkIiLAogICAgICJub21icmUiOiAiQ3VlcnBvIGNvbXBsZXRvIEIiLAogICAgICJzbG90cyI6IFsKICAgICAgewogICAgICAgImciOiAiZ2x1dGVvcyIsCiAgICAgICAicm9sIjogInByaW5jaXBhbCIsCiAgICAgICAibiI6IDEKICAgICAgfSwKICAgICAgewogICAgICAgImciOiAiaG9tYnJvIiwKICAgICAgICJyb2wiOiAicHJpbmNpcGFsIiwKICAgICAgICJuIjogMQogICAgICB9LAogICAgICB7CiAgICAgICAiZyI6ICJiaWNlcHMiLAogICAgICAgInJvbCI6ICJhY2Nlc29yaW8iLAogICAgICAgIm4iOiAxCiAgICAgIH0sCiAgICAgIHsKICAgICAgICJnIjogInRyaWNlcHMiLAogICAgICAgInJvbCI6ICJhY2Nlc29yaW8iLAogICAgICAgIm4iOiAxCiAgICAgIH0sCiAgICAgIHsKICAgICAgICJnIjogInBhbnRvcnJpbGxhcyIsCiAgICAgICAicm9sIjogImFjY2Vzb3JpbyIsCiAgICAgICAibiI6IDEKICAgICAgfQogICAgIF0KICAgIH0KICAgXQogIH0sCiAgIjMiOiB7CiAgICJub21icmUiOiAiRW1wdWplIC8gVHJhY2Npw7NuIC8gUGllcm5hcyIsCiAgICJzZXNpb25lcyI6IFsKICAgIHsKICAgICAiaWQiOiAiRSIsCiAgICAgIm5vbWJyZSI6ICJFbXB1amUiLAogICAgICJzbG90cyI6IFsKICAgICAgewogICAgICAgImciOiAicGVjaG8iLAogICAgICAgInJvbCI6ICJwcmluY2lwYWwiLAogICAgICAgIm4iOiAxCiAgICAgIH0sCiAgICAgIHsKICAgICAgICJnIjogInBlY2hvIiwKICAgICAgICJyb2wiOiAiYWNjZXNvcmlvIiwKICAgICAgICJuIjogMQogICAgICB9LAogICAgICB7CiAgICAgICAiZyI6ICJob21icm8iLAogICAgICAgInJvbCI6ICJhY2Nlc29yaW8iLAogICAgICAgIm4iOiAxCiAgICAgIH0sCiAgICAgIHsKICAgICAgICJnIjogInRyaWNlcHMiLAogICAgICAgInJvbCI6ICJhY2Nlc29yaW8iLAogICAgICAgIm4iOiAxCiAgICAgIH0KICAgICBdCiAgICB9LAogICAgewogICAgICJpZCI6ICJUIiwKICAgICAibm9tYnJlIjogIlRyYWNjacOzbiIsCiAgICAgInNsb3RzIjogWwogICAgICB7CiAgICAgICAiZyI6ICJlc3BhbGRhIiwKICAgICAgICJyb2wiOiAicHJpbmNpcGFsIiwKICAgICAgICJuIjogMQogICAgICB9LAogICAgICB7CiAgICAgICAiZyI6ICJlc3BhbGRhX2FsdGEiLAogICAgICAgInJvbCI6ICJhY2Nlc29yaW8iLAogICAgICAgIm4iOiAxCiAgICAgIH0sCiAgICAgIHsKICAgICAgICJnIjogImJpY2VwcyIsCiAgICAgICAicm9sIjogImFjY2Vzb3JpbyIsCiAgICAgICAibiI6IDEKICAgICAgfSwKICAgICAgewogICAgICAgImciOiAiYW50ZWJyYXpvcyIsCiAgICAgICAicm9sIjogImFjY2Vzb3JpbyIsCiAgICAgICAibiI6IDEKICAgICAgfQogICAgIF0KICAgIH0sCiAgICB7CiAgICAgImlkIjogIlAiLAogICAgICJub21icmUiOiAiUGllcm5hcyB5IGNvcmUiLAogICAgICJzbG90cyI6IFsKICAgICAgewogICAgICAgImciOiAicGllcm5hIiwKICAgICAgICJyb2wiOiAicHJpbmNpcGFsIiwKICAgICAgICJuIjogMQogICAgICB9LAogICAgICB7CiAgICAgICAiZyI6ICJnbHV0ZW9zIiwKICAgICAgICJyb2wiOiAiYWNjZXNvcmlvIiwKICAgICAgICJuIjogMQogICAgICB9LAogICAgICB7CiAgICAgICAiZyI6ICJwYW50b3JyaWxsYXMiLAogICAgICAgInJvbCI6ICJhY2Nlc29yaW8iLAogICAgICAgIm4iOiAxCiAgICAgIH0sCiAgICAgIHsKICAgICAgICJnIjogImNvcmUiLAogICAgICAgInJvbCI6ICJjb3JlIiwKICAgICAgICJuIjogMQogICAgICB9CiAgICAgXQogICAgfQogICBdCiAgfSwKICAiNCI6IHsKICAgIm5vbWJyZSI6ICJUb3JzbyAvIFBpZXJuYSDDlzIiLAogICAic2VzaW9uZXMiOiBbCiAgICB7CiAgICAgImlkIjogIlRBIiwKICAgICAibm9tYnJlIjogIlRvcnNvIEEiLAogICAgICJzbG90cyI6IFsKICAgICAgewogICAgICAgImciOiAicGVjaG8iLAogICAgICAgInJvbCI6ICJwcmluY2lwYWwiLAogICAgICAgIm4iOiAxCiAgICAgIH0sCiAgICAgIHsKICAgICAgICJnIjogImVzcGFsZGEiLAogICAgICAgInJvbCI6ICJwcmluY2lwYWwiLAogICAgICAgIm4iOiAxCiAgICAgIH0sCiAgICAgIHsKICAgICAgICJnIjogInRyaWNlcHMiLAogICAgICAgInJvbCI6ICJhY2Nlc29yaW8iLAogICAgICAgIm4iOiAxCiAgICAgIH0sCiAgICAgIHsKICAgICAgICJnIjogImJpY2VwcyIsCiAgICAgICAicm9sIjogImFjY2Vzb3JpbyIsCiAgICAgICAibiI6IDEKICAgICAgfQogICAgIF0KICAgIH0sCiAgICB7CiAgICAgImlkIjogIlBBIiwKICAgICAibm9tYnJlIjogIlBpZXJuYSBBIiwKICAgICAic2xvdHMiOiBbCiAgICAgIHsKICAgICAgICJnIjogInBpZXJuYSIsCiAgICAgICAicm9sIjogInByaW5jaXBhbCIsCiAgICAgICAibiI6IDEKICAgICAgfSwKICAgICAgewogICAgICAgImciOiAicGFudG9ycmlsbGFzIiwKICAgICAgICJyb2wiOiAiYWNjZXNvcmlvIiwKICAgICAgICJuIjogMQogICAgICB9LAogICAgICB7CiAgICAgICAiZyI6ICJjb3JlIiwKICAgICAgICJyb2wiOiAiY29yZSIsCiAgICAgICAibiI6IDEKICAgICAgfQogICAgIF0KICAgIH0sCiAgICB7CiAgICAgImlkIjogIlRCIiwKICAgICAibm9tYnJlIjogIlRvcnNvIEIiLAogICAgICJzbG90cyI6IFsKICAgICAgewogICAgICAgImciOiAiaG9tYnJvIiwKICAgICAgICJyb2wiOiAicHJpbmNpcGFsIiwKICAgICAgICJuIjogMQogICAgICB9LAogICAgICB7CiAgICAgICAiZyI6ICJlc3BhbGRhX2FsdGEiLAogICAgICAgInJvbCI6ICJhY2Nlc29yaW8iLAogICAgICAgIm4iOiAxCiAgICAgIH0sCiAgICAgIHsKICAgICAgICJnIjogInBlY2hvIiwKICAgICAgICJyb2wiOiAiYWNjZXNvcmlvIiwKICAgICAgICJuIjogMQogICAgICB9LAogICAgICB7CiAgICAgICAiZyI6ICJiaWNlcHMiLAogICAgICAgInJvbCI6ICJhY2Nlc29yaW8iLAogICAgICAgIm4iOiAxCiAgICAgIH0KICAgICBdCiAgICB9LAogICAgewogICAgICJpZCI6ICJQQiIsCiAgICAgIm5vbWJyZSI6ICJQaWVybmEgQiIsCiAgICAgInNsb3RzIjogWwogICAgICB7CiAgICAgICAiZyI6ICJnbHV0ZW9zIiwKICAgICAgICJyb2wiOiAicHJpbmNpcGFsIiwKICAgICAgICJuIjogMQogICAgICB9LAogICAgICB7CiAgICAgICAiZyI6ICJpc3F1aW9zIiwKICAgICAgICJyb2wiOiAiYWNjZXNvcmlvIiwKICAgICAgICJuIjogMQogICAgICB9LAogICAgICB7CiAgICAgICAiZyI6ICJwYW50b3JyaWxsYXMiLAogICAgICAgInJvbCI6ICJhY2Nlc29yaW8iLAogICAgICAgIm4iOiAxCiAgICAgIH0sCiAgICAgIHsKICAgICAgICJnIjogImNvcmUiLAogICAgICAgInJvbCI6ICJjb3JlIiwKICAgICAgICJuIjogMQogICAgICB9CiAgICAgXQogICAgfQogICBdCiAgfSwKICAiNSI6IHsKICAgIm5vbWJyZSI6ICJFc3BlY2lhbGl6YWNpw7NuIiwKICAgInNlc2lvbmVzIjogWwogICAgewogICAgICJpZCI6ICJEMSIsCiAgICAgIm5vbWJyZSI6ICJQZWNobyB5IGNvcmUiLAogICAgICJzbG90cyI6IFsKICAgICAgewogICAgICAgImciOiAicGVjaG8iLAogICAgICAgInJvbCI6ICJwcmluY2lwYWwiLAogICAgICAgIm4iOiAxCiAgICAgIH0sCiAgICAgIHsKICAgICAgICJnIjogInBlY2hvIiwKICAgICAgICJyb2wiOiAiYWNjZXNvcmlvIiwKICAgICAgICJuIjogMQogICAgICB9LAogICAgICB7CiAgICAgICAiZyI6ICJ0cmljZXBzIiwKICAgICAgICJyb2wiOiAiYWNjZXNvcmlvIiwKICAgICAgICJuIjogMQogICAgICB9LAogICAgICB7CiAgICAgICAiZyI6ICJjb3JlIiwKICAgICAgICJyb2wiOiAiY29yZSIsCiAgICAgICAibiI6IDEKICAgICAgfQogICAgIF0KICAgIH0sCiAgICB7CiAgICAgImlkIjogIkQyIiwKICAgICAibm9tYnJlIjogIkVzcGFsZGEgeSBwYW50b3JyaWxsYXMiLAogICAgICJzbG90cyI6IFsKICAgICAgewogICAgICAgImciOiAiZXNwYWxkYSIsCiAgICAgICAicm9sIjogInByaW5jaXBhbCIsCiAgICAgICAibiI6IDEKICAgICAgfSwKICAgICAgewogICAgICAgImciOiAiZXNwYWxkYV9hbHRhIiwKICAgICAgICJyb2wiOiAiYWNjZXNvcmlvIiwKICAgICAgICJuIjogMQogICAgICB9LAogICAgICB7CiAgICAgICAiZyI6ICJwYW50b3JyaWxsYXMiLAogICAgICAgInJvbCI6ICJhY2Nlc29yaW8iLAogICAgICAgIm4iOiAxCiAgICAgIH0KICAgICBdCiAgICB9LAogICAgewogICAgICJpZCI6ICJEMyIsCiAgICAgIm5vbWJyZSI6ICJQaWVybmFzIiwKICAgICAic2xvdHMiOiBbCiAgICAgIHsKICAgICAgICJnIjogInBpZXJuYSIsCiAgICAgICAicm9sIjogInByaW5jaXBhbCIsCiAgICAgICAibiI6IDEKICAgICAgfSwKICAgICAgewogICAgICAgImciOiAiZ2x1dGVvcyIsCiAgICAgICAicm9sIjogImFjY2Vzb3JpbyIsCiAgICAgICAibiI6IDEKICAgICAgfSwKICAgICAgewogICAgICAgImciOiAiaXNxdWlvcyIsCiAgICAgICAicm9sIjogImFjY2Vzb3JpbyIsCiAgICAgICAibiI6IDEKICAgICAgfSwKICAgICAgewogICAgICAgImciOiAicGFudG9ycmlsbGFzIiwKICAgICAgICJyb2wiOiAiYWNjZXNvcmlvIiwKICAgICAgICJuIjogMQogICAgICB9CiAgICAgXQogICAgfSwKICAgIHsKICAgICAiaWQiOiAiRDQiLAogICAgICJub21icmUiOiAiSG9tYnJvcyIsCiAgICAgInNsb3RzIjogWwogICAgICB7CiAgICAgICAiZyI6ICJob21icm8iLAogICAgICAgInJvbCI6ICJwcmluY2lwYWwiLAogICAgICAgIm4iOiAxCiAgICAgIH0sCiAgICAgIHsKICAgICAgICJnIjogImhvbWJybyIsCiAgICAgICAicm9sIjogImFjY2Vzb3JpbyIsCiAgICAgICAibiI6IDEKICAgICAgfSwKICAgICAgewogICAgICAgImciOiAiZXNwYWxkYV9hbHRhIiwKICAgICAgICJyb2wiOiAiYWNjZXNvcmlvIiwKICAgICAgICJuIjogMQogICAgICB9CiAgICAgXQogICAgfSwKICAgIHsKICAgICAiaWQiOiAiRDUiLAogICAgICJub21icmUiOiAiQnJhem9zIHkgY29yZSIsCiAgICAgInNsb3RzIjogWwogICAgICB7CiAgICAgICAiZyI6ICJiaWNlcHMiLAogICAgICAgInJvbCI6ICJwcmluY2lwYWwiLAogICAgICAgIm4iOiAxCiAgICAgIH0sCiAgICAgIHsKICAgICAgICJnIjogInRyaWNlcHMiLAogICAgICAgInJvbCI6ICJwcmluY2lwYWwiLAogICAgICAgIm4iOiAxCiAgICAgIH0sCiAgICAgIHsKICAgICAgICJnIjogImFudGVicmF6b3MiLAogICAgICAgInJvbCI6ICJhY2Nlc29yaW8iLAogICAgICAgIm4iOiAxCiAgICAgIH0sCiAgICAgIHsKICAgICAgICJnIjogImNvcmUiLAogICAgICAgInJvbCI6ICJjb3JlIiwKICAgICAgICJuIjogMQogICAgICB9CiAgICAgXQogICAgfQogICBdCiAgfQogfQp9
+{
+ "version": "1.0.0",
+ "autor": "gemini",
+ "revisado_por": "shorekeeper",
+ "objetivos": {
+  "fuerza": {
+   "nombre": "Fuerza",
+   "por_nivel": {
+    "principiante": {
+     "calentamiento": {
+      "series": 1,
+      "reps": [
+       8,
+       12
+      ],
+      "descanso_s": 30
+     },
+     "principal": {
+      "series": 3,
+      "reps": [
+       5,
+       6
+      ],
+      "descanso_s": 165,
+      "rir": [
+       3,
+       3
+      ]
+     },
+     "accesorio": {
+      "series": 2,
+      "reps": [
+       6,
+       8
+      ],
+      "descanso_s": 120,
+      "rir": [
+       3,
+       3
+      ]
+     },
+     "core": {
+      "series": 2,
+      "reps": [
+       10,
+       20
+      ],
+      "tiempo_s": [
+       20,
+       45
+      ],
+      "descanso_s": 45
+     }
+    },
+    "intermedio": {
+     "calentamiento": {
+      "series": 1,
+      "reps": [
+       8,
+       12
+      ],
+      "descanso_s": 30
+     },
+     "principal": {
+      "series": 4,
+      "reps": [
+       4,
+       6
+      ],
+      "descanso_s": 210,
+      "rir": [
+       2,
+       2
+      ]
+     },
+     "accesorio": {
+      "series": 3,
+      "reps": [
+       6,
+       8
+      ],
+      "descanso_s": 150,
+      "rir": [
+       2,
+       2
+      ]
+     },
+     "core": {
+      "series": 2,
+      "reps": [
+       10,
+       20
+      ],
+      "tiempo_s": [
+       20,
+       45
+      ],
+      "descanso_s": 45
+     }
+    },
+    "avanzado": {
+     "calentamiento": {
+      "series": 1,
+      "reps": [
+       8,
+       12
+      ],
+      "descanso_s": 30
+     },
+     "principal": {
+      "series": 5,
+      "reps": [
+       3,
+       5
+      ],
+      "descanso_s": 240,
+      "rir": [
+       1,
+       2
+      ]
+     },
+     "accesorio": {
+      "series": 3,
+      "reps": [
+       5,
+       8
+      ],
+      "descanso_s": 180,
+      "rir": [
+       1,
+       2
+      ]
+     },
+     "core": {
+      "series": 3,
+      "reps": [
+       10,
+       20
+      ],
+      "tiempo_s": [
+       20,
+       45
+      ],
+      "descanso_s": 45
+     }
+    }
+   }
+  },
+  "hipertrofia": {
+   "nombre": "Ganar músculo",
+   "por_nivel": {
+    "principiante": {
+     "calentamiento": {
+      "series": 1,
+      "reps": [
+       8,
+       12
+      ],
+      "descanso_s": 30
+     },
+     "principal": {
+      "series": 3,
+      "reps": [
+       8,
+       12
+      ],
+      "descanso_s": 105,
+      "rir": [
+       2,
+       3
+      ]
+     },
+     "accesorio": {
+      "series": 2,
+      "reps": [
+       10,
+       15
+      ],
+      "descanso_s": 75,
+      "rir": [
+       2,
+       3
+      ]
+     },
+     "core": {
+      "series": 2,
+      "reps": [
+       10,
+       20
+      ],
+      "tiempo_s": [
+       20,
+       45
+      ],
+      "descanso_s": 45
+     }
+    },
+    "intermedio": {
+     "calentamiento": {
+      "series": 1,
+      "reps": [
+       8,
+       12
+      ],
+      "descanso_s": 30
+     },
+     "principal": {
+      "series": 4,
+      "reps": [
+       8,
+       12
+      ],
+      "descanso_s": 105,
+      "rir": [
+       2,
+       2
+      ]
+     },
+     "accesorio": {
+      "series": 3,
+      "reps": [
+       10,
+       15
+      ],
+      "descanso_s": 75,
+      "rir": [
+       2,
+       2
+      ]
+     },
+     "core": {
+      "series": 3,
+      "reps": [
+       10,
+       20
+      ],
+      "tiempo_s": [
+       20,
+       45
+      ],
+      "descanso_s": 45
+     }
+    },
+    "avanzado": {
+     "calentamiento": {
+      "series": 1,
+      "reps": [
+       8,
+       12
+      ],
+      "descanso_s": 30
+     },
+     "principal": {
+      "series": 4,
+      "reps": [
+       6,
+       12
+      ],
+      "descanso_s": 120,
+      "rir": [
+       1,
+       1
+      ]
+     },
+     "accesorio": {
+      "series": 3,
+      "reps": [
+       10,
+       15
+      ],
+      "descanso_s": 90,
+      "rir": [
+       1,
+       1
+      ]
+     },
+     "core": {
+      "series": 3,
+      "reps": [
+       10,
+       20
+      ],
+      "tiempo_s": [
+       20,
+       45
+      ],
+      "descanso_s": 45
+     }
+    }
+   }
+  },
+  "perdida_grasa": {
+   "nombre": "Perder grasa",
+   "por_nivel": {
+    "principiante": {
+     "calentamiento": {
+      "series": 1,
+      "reps": [
+       8,
+       12
+      ],
+      "descanso_s": 30
+     },
+     "principal": {
+      "series": 3,
+      "reps": [
+       12,
+       15
+      ],
+      "descanso_s": 68,
+      "rir": [
+       3,
+       3
+      ]
+     },
+     "accesorio": {
+      "series": 2,
+      "reps": [
+       12,
+       15
+      ],
+      "descanso_s": 60,
+      "rir": [
+       3,
+       3
+      ]
+     },
+     "core": {
+      "series": 2,
+      "reps": [
+       10,
+       20
+      ],
+      "tiempo_s": [
+       20,
+       45
+      ],
+      "descanso_s": 45
+     }
+    },
+    "intermedio": {
+     "calentamiento": {
+      "series": 1,
+      "reps": [
+       8,
+       12
+      ],
+      "descanso_s": 30
+     },
+     "principal": {
+      "series": 3,
+      "reps": [
+       12,
+       15
+      ],
+      "descanso_s": 52,
+      "rir": [
+       2,
+       3
+      ]
+     },
+     "accesorio": {
+      "series": 3,
+      "reps": [
+       12,
+       18
+      ],
+      "descanso_s": 45,
+      "rir": [
+       2,
+       3
+      ]
+     },
+     "core": {
+      "series": 3,
+      "reps": [
+       10,
+       20
+      ],
+      "tiempo_s": [
+       20,
+       45
+      ],
+      "descanso_s": 45
+     }
+    },
+    "avanzado": {
+     "calentamiento": {
+      "series": 1,
+      "reps": [
+       8,
+       12
+      ],
+      "descanso_s": 30
+     },
+     "principal": {
+      "series": 4,
+      "reps": [
+       12,
+       20
+      ],
+      "descanso_s": 52,
+      "rir": [
+       2,
+       2
+      ]
+     },
+     "accesorio": {
+      "series": 3,
+      "reps": [
+       15,
+       20
+      ],
+      "descanso_s": 45,
+      "rir": [
+       2,
+       2
+      ]
+     },
+     "core": {
+      "series": 3,
+      "reps": [
+       10,
+       20
+      ],
+      "tiempo_s": [
+       20,
+       45
+      ],
+      "descanso_s": 45
+     }
+    }
+   }
+  },
+  "salud": {
+   "nombre": "Salud general",
+   "por_nivel": {
+    "principiante": {
+     "calentamiento": {
+      "series": 1,
+      "reps": [
+       8,
+       12
+      ],
+      "descanso_s": 30
+     },
+     "principal": {
+      "series": 2,
+      "reps": [
+       10,
+       12
+      ],
+      "descanso_s": 90,
+      "rir": [
+       3,
+       4
+      ]
+     },
+     "accesorio": {
+      "series": 2,
+      "reps": [
+       10,
+       12
+      ],
+      "descanso_s": 75,
+      "rir": [
+       3,
+       4
+      ]
+     },
+     "core": {
+      "series": 2,
+      "reps": [
+       10,
+       20
+      ],
+      "tiempo_s": [
+       20,
+       45
+      ],
+      "descanso_s": 45
+     }
+    },
+    "intermedio": {
+     "calentamiento": {
+      "series": 1,
+      "reps": [
+       8,
+       12
+      ],
+      "descanso_s": 30
+     },
+     "principal": {
+      "series": 3,
+      "reps": [
+       10,
+       15
+      ],
+      "descanso_s": 75,
+      "rir": [
+       3,
+       3
+      ]
+     },
+     "accesorio": {
+      "series": 2,
+      "reps": [
+       10,
+       15
+      ],
+      "descanso_s": 60,
+      "rir": [
+       3,
+       3
+      ]
+     },
+     "core": {
+      "series": 2,
+      "reps": [
+       10,
+       20
+      ],
+      "tiempo_s": [
+       20,
+       45
+      ],
+      "descanso_s": 45
+     }
+    },
+    "avanzado": {
+     "calentamiento": {
+      "series": 1,
+      "reps": [
+       8,
+       12
+      ],
+      "descanso_s": 30
+     },
+     "principal": {
+      "series": 3,
+      "reps": [
+       10,
+       15
+      ],
+      "descanso_s": 60,
+      "rir": [
+       2,
+       3
+      ]
+     },
+     "accesorio": {
+      "series": 3,
+      "reps": [
+       12,
+       15
+      ],
+      "descanso_s": 60,
+      "rir": [
+       2,
+       3
+      ]
+     },
+     "core": {
+      "series": 3,
+      "reps": [
+       10,
+       20
+      ],
+      "tiempo_s": [
+       20,
+       45
+      ],
+      "descanso_s": 45
+     }
+    }
+   }
+  }
+ },
+ "ajustes_edad": [
+  {
+   "id": "e18",
+   "edad_min": 0,
+   "edad_max": 29,
+   "series_mult": 1.0,
+   "descanso_add_s": 0,
+   "evitar_impacto": false
+  },
+  {
+   "id": "e30",
+   "edad_min": 30,
+   "edad_max": 44,
+   "series_mult": 0.95,
+   "descanso_add_s": 15,
+   "evitar_impacto": false
+  },
+  {
+   "id": "e45",
+   "edad_min": 45,
+   "edad_max": 59,
+   "series_mult": 0.8,
+   "descanso_add_s": 30,
+   "evitar_impacto": false,
+   "reps_min_prin": 6
+  },
+  {
+   "id": "e60",
+   "edad_min": 60,
+   "edad_max": 120,
+   "series_mult": 0.7,
+   "descanso_add_s": 52,
+   "evitar_impacto": true,
+   "reps_min_prin": 8
+  }
+ ],
+ "cargas_iniciales": [
+  {
+   "patron": "sentadilla",
+   "factores": {
+    "principiante": 0.35,
+    "intermedio": 0.65,
+    "avanzado": 0.9
+   }
+  },
+  {
+   "patron": "press de banca",
+   "factores": {
+    "principiante": 0.3,
+    "intermedio": 0.55,
+    "avanzado": 0.75
+   }
+  },
+  {
+   "patron": "peso muerto",
+   "factores": {
+    "principiante": 0.45,
+    "intermedio": 0.8,
+    "avanzado": 1.1
+   }
+  },
+  {
+   "patron": "remo",
+   "factores": {
+    "principiante": 0.25,
+    "intermedio": 0.45,
+    "avanzado": 0.65
+   }
+  },
+  {
+   "patron": "press de hombro|press militar|press sobre la cabeza",
+   "factores": {
+    "principiante": 0.2,
+    "intermedio": 0.35,
+    "avanzado": 0.5
+   }
+  }
+ ],
+ "peso_barra_kg": 20,
+ "progresion": {
+  "tren_superior_kg": [
+   1,
+   2
+  ],
+  "tren_inferior_kg": [
+   2.5,
+   5
+  ],
+  "regla": "Si completas todas las series en el tope del rango de repeticiones con buena técnica, sube la carga en la próxima sesión."
+ },
+ "semana_patron": {
+  "2": [
+   0,
+   3
+  ],
+  "3": [
+   0,
+   2,
+   4
+  ],
+  "4": [
+   0,
+   1,
+   3,
+   4
+  ],
+  "5": [
+   0,
+   1,
+   2,
+   4,
+   5
+  ],
+  "6": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5
+  ]
+ },
+ "divisiones": {
+  "2": {
+   "nombre": "Cuerpo completo A/B",
+   "sesiones": [
+    {
+     "id": "A",
+     "nombre": "Cuerpo completo A",
+     "slots": [
+      {
+       "g": "pierna",
+       "rol": "principal",
+       "n": 1
+      },
+      {
+       "g": "pecho",
+       "rol": "principal",
+       "n": 1
+      },
+      {
+       "g": "espalda",
+       "rol": "principal",
+       "n": 1
+      },
+      {
+       "g": "core",
+       "rol": "core",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "id": "B",
+     "nombre": "Cuerpo completo B",
+     "slots": [
+      {
+       "g": "gluteos",
+       "rol": "principal",
+       "n": 1
+      },
+      {
+       "g": "hombro",
+       "rol": "principal",
+       "n": 1
+      },
+      {
+       "g": "biceps",
+       "rol": "accesorio",
+       "n": 1
+      },
+      {
+       "g": "triceps",
+       "rol": "accesorio",
+       "n": 1
+      },
+      {
+       "g": "pantorrillas",
+       "rol": "accesorio",
+       "n": 1
+      }
+     ]
+    }
+   ]
+  },
+  "3": {
+   "nombre": "Empuje / Tracción / Piernas",
+   "sesiones": [
+    {
+     "id": "E",
+     "nombre": "Empuje",
+     "slots": [
+      {
+       "g": "pecho",
+       "rol": "principal",
+       "n": 1
+      },
+      {
+       "g": "pecho",
+       "rol": "accesorio",
+       "n": 1
+      },
+      {
+       "g": "hombro",
+       "rol": "accesorio",
+       "n": 1
+      },
+      {
+       "g": "triceps",
+       "rol": "accesorio",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "id": "T",
+     "nombre": "Tracción",
+     "slots": [
+      {
+       "g": "espalda",
+       "rol": "principal",
+       "n": 1
+      },
+      {
+       "g": "espalda_alta",
+       "rol": "accesorio",
+       "n": 1
+      },
+      {
+       "g": "biceps",
+       "rol": "accesorio",
+       "n": 1
+      },
+      {
+       "g": "antebrazos",
+       "rol": "accesorio",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "id": "P",
+     "nombre": "Piernas y core",
+     "slots": [
+      {
+       "g": "pierna",
+       "rol": "principal",
+       "n": 1
+      },
+      {
+       "g": "gluteos",
+       "rol": "accesorio",
+       "n": 1
+      },
+      {
+       "g": "pantorrillas",
+       "rol": "accesorio",
+       "n": 1
+      },
+      {
+       "g": "core",
+       "rol": "core",
+       "n": 1
+      }
+     ]
+    }
+   ]
+  },
+  "4": {
+   "nombre": "Torso / Pierna ×2",
+   "sesiones": [
+    {
+     "id": "TA",
+     "nombre": "Torso A",
+     "slots": [
+      {
+       "g": "pecho",
+       "rol": "principal",
+       "n": 1
+      },
+      {
+       "g": "espalda",
+       "rol": "principal",
+       "n": 1
+      },
+      {
+       "g": "triceps",
+       "rol": "accesorio",
+       "n": 1
+      },
+      {
+       "g": "biceps",
+       "rol": "accesorio",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "id": "PA",
+     "nombre": "Pierna A",
+     "slots": [
+      {
+       "g": "pierna",
+       "rol": "principal",
+       "n": 1
+      },
+      {
+       "g": "pantorrillas",
+       "rol": "accesorio",
+       "n": 1
+      },
+      {
+       "g": "core",
+       "rol": "core",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "id": "TB",
+     "nombre": "Torso B",
+     "slots": [
+      {
+       "g": "hombro",
+       "rol": "principal",
+       "n": 1
+      },
+      {
+       "g": "espalda_alta",
+       "rol": "accesorio",
+       "n": 1
+      },
+      {
+       "g": "pecho",
+       "rol": "accesorio",
+       "n": 1
+      },
+      {
+       "g": "biceps",
+       "rol": "accesorio",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "id": "PB",
+     "nombre": "Pierna B",
+     "slots": [
+      {
+       "g": "gluteos",
+       "rol": "principal",
+       "n": 1
+      },
+      {
+       "g": "isquios",
+       "rol": "accesorio",
+       "n": 1
+      },
+      {
+       "g": "pantorrillas",
+       "rol": "accesorio",
+       "n": 1
+      },
+      {
+       "g": "core",
+       "rol": "core",
+       "n": 1
+      }
+     ]
+    }
+   ]
+  },
+  "5": {
+   "nombre": "Especialización",
+   "sesiones": [
+    {
+     "id": "D1",
+     "nombre": "Pecho y core",
+     "slots": [
+      {
+       "g": "pecho",
+       "rol": "principal",
+       "n": 1
+      },
+      {
+       "g": "pecho",
+       "rol": "accesorio",
+       "n": 1
+      },
+      {
+       "g": "triceps",
+       "rol": "accesorio",
+       "n": 1
+      },
+      {
+       "g": "core",
+       "rol": "core",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "id": "D2",
+     "nombre": "Espalda y pantorrillas",
+     "slots": [
+      {
+       "g": "espalda",
+       "rol": "principal",
+       "n": 1
+      },
+      {
+       "g": "espalda_alta",
+       "rol": "accesorio",
+       "n": 1
+      },
+      {
+       "g": "pantorrillas",
+       "rol": "accesorio",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "id": "D3",
+     "nombre": "Piernas",
+     "slots": [
+      {
+       "g": "pierna",
+       "rol": "principal",
+       "n": 1
+      },
+      {
+       "g": "gluteos",
+       "rol": "accesorio",
+       "n": 1
+      },
+      {
+       "g": "isquios",
+       "rol": "accesorio",
+       "n": 1
+      },
+      {
+       "g": "pantorrillas",
+       "rol": "accesorio",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "id": "D4",
+     "nombre": "Hombros",
+     "slots": [
+      {
+       "g": "hombro",
+       "rol": "principal",
+       "n": 1
+      },
+      {
+       "g": "hombro",
+       "rol": "accesorio",
+       "n": 1
+      },
+      {
+       "g": "espalda_alta",
+       "rol": "accesorio",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "id": "D5",
+     "nombre": "Brazos y core",
+     "slots": [
+      {
+       "g": "biceps",
+       "rol": "principal",
+       "n": 1
+      },
+      {
+       "g": "triceps",
+       "rol": "principal",
+       "n": 1
+      },
+      {
+       "g": "antebrazos",
+       "rol": "accesorio",
+       "n": 1
+      },
+      {
+       "g": "core",
+       "rol": "core",
+       "n": 1
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

@@ -1,1 +1,64 @@
-Ly8gUHJ1ZWJhIGRlIGh1bW8gZGUgSXJvbmxvb3AgZW4gQ2hyb21pdW0gcmVhbCAoUHVwcGV0ZWVyKTogb25ib2FyZGluZyDihpIgaG95IOKGkiBydXRpbmEg4oaSIGN1ZXJwbyDihpIgc2VzacOzbiDihpIgcHJvZ3Jlc28g4oaSIHNhbHVkLgppbXBvcnQgeyBjcmVhdGVSZXF1aXJlIH0gZnJvbSAnbm9kZTptb2R1bGUnOwpjb25zdCBwdXBwZXRlZXIgPSBjcmVhdGVSZXF1aXJlKCcvdG1wL3BhY2thZ2UuanNvbicpKCdwdXBwZXRlZXInKTsKCmNvbnN0IEJBU0UgPSAnaHR0cDovLzEyNy4wLjAuMTo4OTMxLyc7CmNvbnN0IHNsZWVwID0gbXMgPT4gbmV3IFByb21pc2UociA9PiBzZXRUaW1lb3V0KHIsIG1zKSk7CmxldCBmYWxsb3MgPSAwOwpjb25zdCBvayA9IChjb25kLCBtc2cpID0+IHsgY29uc29sZS5sb2coKGNvbmQgPyAnICBvayAnIDogJ0ZBTExPICcpICsgbXNnKTsgaWYgKCFjb25kKSBmYWxsb3MrKzsgfTsKCmNvbnN0IGJyb3dzZXIgPSBhd2FpdCBwdXBwZXRlZXIubGF1bmNoKHsgaGVhZGxlc3M6ICduZXcnLCBhcmdzOiBbJy0tbm8tc2FuZGJveCcsICctLWF1dG9wbGF5LXBvbGljeT1uby11c2VyLWdlc3R1cmUtcmVxdWlyZWQnXSB9KTsKY29uc3QgcGFnZSA9IGF3YWl0IGJyb3dzZXIubmV3UGFnZSgpOwphd2FpdCBwYWdlLnNldFZpZXdwb3J0KHsgd2lkdGg6IDQxMiwgaGVpZ2h0OiA4ODAsIGRldmljZVNjYWxlRmFjdG9yOiAyIH0pOwpjb25zdCBlcnJvcmVzID0gW107CnBhZ2Uub24oJ3BhZ2VlcnJvcicsIGUgPT4gZXJyb3Jlcy5wdXNoKCdwYWdlZXJyb3I6ICcgKyBlLm1lc3NhZ2UpKTsKcGFnZS5vbignY29uc29sZScsIG0gPT4geyBpZiAobS50eXBlKCkgPT09ICdlcnJvcicpIGVycm9yZXMucHVzaCgnY29uc29sZTogJyArIG0udGV4dCgpKTsgfSk7CmF3YWl0IHBhZ2UuZ290byhCQVNFLCB7IHdhaXRVbnRpbDogJ25ldHdvcmtpZGxlMCcsIHRpbWVvdXQ6IDYwMDAwIH0pOwphd2FpdCBzbGVlcCg2MDApOwoKb2soYXdhaXQgcGFnZS4kZXZhbCgnI29uYm9hcmRpbmcnLCBlbCA9PiBlbC5jbGFzc0xpc3QuY29udGFpbnMoJ2FjdGl2bycpKSwgJ3NpbiBwZXJmaWwg4oaSIG9uYm9hcmRpbmcgdmlzaWJsZScpOwphd2FpdCBwYWdlLmNsaWNrKCcjb2ItZW50ZW5kaWRvJyk7IGF3YWl0IHNsZWVwKDE1MCk7Cm9rKGF3YWl0IHBhZ2UuJGV2YWwoJyNvYi1mb3JtJywgZWwgPT4gZWwuc3R5bGUuZGlzcGxheSA9PT0gJycpLCAnYXZpc28gYWNlcHRhZG8g4oaSIGZvcm11bGFyaW8gdmlzaWJsZScpOwphd2FpdCBwYWdlLnR5cGUoJyNvYi1lZGFkJywgJzI1Jyk7IGF3YWl0IHBhZ2UudHlwZSgnI29iLXBlc28nLCAnNzInKTsKYXdhaXQgcGFnZS5jbGljaygnI29iLWNyZWFyJyk7IGF3YWl0IHNsZWVwKDQwMCk7Cm9rKGF3YWl0IHBhZ2UuZXZhbHVhdGUoKCkgPT4gISFKU09OLnBhcnNlKGxvY2FsU3RvcmFnZS5nZXRJdGVtKCdmaXQucGVyZmlsJykgfHwgJ251bGwnKSksICdwZXJmaWwgZ3VhcmRhZG8nKTsKb2soYXdhaXQgcGFnZS5ldmFsdWF0ZSgoKSA9PiBKU09OLnBhcnNlKGxvY2FsU3RvcmFnZS5nZXRJdGVtKCdmaXQucnV0aW5hJykpLnNlbWFuYS5maWx0ZXIoQm9vbGVhbikubGVuZ3RoID09PSAzKSwgJ3J1dGluYSBkZSAzIGTDrWFzIGdlbmVyYWRhJyk7Cm9rKGF3YWl0IHBhZ2UuJGV2YWwoJyN2LWhveScsIGVsID0+IGVsLmNsYXNzTGlzdC5jb250YWlucygnYWN0aXZhJykgJiYgZWwuaW5uZXJIVE1MLmluY2x1ZGVzKCdFTVBFWkFSJykpLCAnSG95IGNvbiBzZXNpw7NuIHkgRU1QRVpBUicpOwphd2FpdCBwYWdlLnNjcmVlbnNob3QoeyBwYXRoOiAndG9vbHMvY2FwdHVyYS1ob3kucG5nJyB9KTsKCmF3YWl0IHBhZ2UuY2xpY2soJ1tkYXRhLXZpc3RhPSJydXRpbmEiXScpOyBhd2FpdCBzbGVlcCgyNTApOwpvayhhd2FpdCBwYWdlLiRldmFsKCcjdi1ydXRpbmEnLCBlbCA9PiBlbC5pbm5lckhUTUwuaW5jbHVkZXMoJ0NhbWJpYXInKSksICdSdXRpbmEgY29uIGJvdG9uZXMgQ2FtYmlhcicpOwpjb25zdCBhbnRlcyA9IGF3YWl0IHBhZ2UuZXZhbHVhdGUoKCkgPT4gSlNPTi5wYXJzZShsb2NhbFN0b3JhZ2UuZ2V0SXRlbSgnZml0LnJ1dGluYScpKS5zZW1hbmEuZmxhdE1hcChzID0+IHMgPyBzLmJsb3F1ZXMubWFwKGIgPT4gYi5laikgOiBbXSkuam9pbignLCcpKTsKYXdhaXQgcGFnZS5jbGljaygnW2RhdGEtY2FtYmlhcl0nKTsgYXdhaXQgc2xlZXAoMjUwKTsKY29uc3QgZGVzcHVlcyA9IGF3YWl0IHBhZ2UuZXZhbHVhdGUoKCkgPT4gSlNPTi5wYXJzZShsb2NhbFN0b3JhZ2UuZ2V0SXRlbSgnZml0LnJ1dGluYScpKS5zZW1hbmEuZmxhdE1hcChzID0+IHMgPyBzLmJsb3F1ZXMubWFwKGIgPT4gYi5laikgOiBbXSkuam9pbignLCcpKTsKb2soYW50ZXMgIT09IGRlc3B1ZXMsICdDYW1iaWFyIHN1c3RpdHV5ZSB1biBlamVyY2ljaW8gc2luIHJlcGV0aXInKTsKCmF3YWl0IHBhZ2UuY2xpY2soJ1tkYXRhLXZpc3RhPSJjdWVycG8iXScpOyBhd2FpdCBzbGVlcCgzNTApOwpjb25zdCBuQ2FydGFzID0gYXdhaXQgcGFnZS4kJGV2YWwoJyNjdWVycG8tcmVzdWx0YWRvcyAuY2FydGEnLCBlbHMgPT4gZWxzLmxlbmd0aCk7Cm9rKG5DYXJ0YXMgPT09IDYwLCAnQ3VlcnBvIG11ZXN0cmEgNjAgdGFyamV0YXMgKCcgKyBuQ2FydGFzICsgJyknKTsKYXdhaXQgcGFnZS5jbGljaygnI2N1ZXJwby1yZXN1bHRhZG9zIC5jYXJ0YScpOyBhd2FpdCBzbGVlcCg2MDApOwpvayhhd2FpdCBwYWdlLiRldmFsKCcjaG9qYScsIGVsID0+IGVsLmNsYXNzTGlzdC5jb250YWlucygnYWJpZXJ0YScpKSwgJ2ZpY2hhIGFiaWVydGEnKTsKb2soYXdhaXQgcGFnZS4kJGV2YWwoJyNob2phIG9sLnBhc29zIGxpJywgZWxzID0+IGVscy5sZW5ndGggPiAwKSwgJ2ZpY2hhIGNvbiBwYXNvcyBlbiBlc3Bhw7FvbCcpOwphd2FpdCBwYWdlLmNsaWNrKCcjZmljaGEtY2VycmFyJyk7IGF3YWl0IHNsZWVwKDQwMCk7Cgphd2FpdCBwYWdlLmNsaWNrKCdbZGF0YS12aXN0YT0iaG95Il0nKTsgYXdhaXQgc2xlZXAoMjUwKTsKYXdhaXQgcGFnZS5jbGljaygnI2hveS1lbXBlemFyJyk7IGF3YWl0IHNsZWVwKDUwMCk7Cm9rKGF3YWl0IHBhZ2UuJGV2YWwoJyN2LXNlc2lvbicsIGVsID0+IGVsLmNsYXNzTGlzdC5jb250YWlucygnYWN0aXZhJykpLCAnc2VzacOzbiBhYmllcnRhJyk7Cm9rKChhd2FpdCBwYWdlLiRldmFsKCcjZXN0YWRvLXR4dCcsIGVsID0+IGVsLnRleHRDb250ZW50KSkgPT09ICdQcmVww6FyYXRlJywgJ2Zhc2UgUFJFUEFSQScpOwphd2FpdCBwYWdlLmNsaWNrKCcjYy1zYWx0YXInKTsgYXdhaXQgc2xlZXAoNDAwKTsKb2soKGF3YWl0IHBhZ2UuJGV2YWwoJyNlc3RhZG8tdHh0JywgZWwgPT4gZWwudGV4dENvbnRlbnQpKSA9PT0gJ0EgZGFybGUnLCAnZmFzZSBUUkFCQUpPJyk7CmF3YWl0IHBhZ2Uuc2NyZWVuc2hvdCh7IHBhdGg6ICd0b29scy9jYXB0dXJhLXNlc2lvbi5wbmcnIH0pOwphd2FpdCBwYWdlLmNsaWNrKCcjYy1oZWNobycpOyBhd2FpdCBzbGVlcCg0MDApOwpvaygoYXdhaXQgcGFnZS4kZXZhbCgnI2VzdGFkby10eHQnLCBlbCA9PiBlbC50ZXh0Q29udGVudCkpID09PSAnRGVzY2Fuc2EnLCAnZmFzZSBERVNDQU5TTycpOwphd2FpdCBwYWdlLmNsaWNrKCcjYy10ZXJtaW5hcicpOyBhd2FpdCBzbGVlcCg0MDApOwpvaygoYXdhaXQgcGFnZS4kZXZhbCgnI2VzdGFkby10eHQnLCBlbCA9PiBlbC50ZXh0Q29udGVudCkpID09PSAnU2VzacOzbiBjb21wbGV0YScsICdmYXNlIEZJTicpOwpvayhhd2FpdCBwYWdlLmV2YWx1YXRlKCgpID0+IHsgY29uc3QgaCA9IEpTT04ucGFyc2UobG9jYWxTdG9yYWdlLmdldEl0ZW0oJ2ZpdC5oaXN0b3JpYWwnKSB8fCAnW10nKTsgcmV0dXJuIGgubGVuZ3RoID09PSAxICYmIGhbMF0uc2VyaWVzLmxlbmd0aCA9PT0gMTsgfSksICdzZXNpw7NuIHJlZ2lzdHJhZGEgZW4gZWwgaGlzdG9yaWFsJyk7CmF3YWl0IHBhZ2UuY2xpY2soJyNmaW4tdm9sdmVyJyk7IGF3YWl0IHNsZWVwKDMwMCk7CmF3YWl0IHBhZ2UuY2xpY2soJ1tkYXRhLXZpc3RhPSJwcm9ncmVzbyJdJyk7IGF3YWl0IHNsZWVwKDI1MCk7Cm9rKGF3YWl0IHBhZ2UuJGV2YWwoJyN2LXByb2dyZXNvJywgZWwgPT4gZWwuaW5uZXJIVE1MLmluY2x1ZGVzKCdzZXJpZXMnKSksICdQcm9ncmVzbyBjb24gaGlzdG9yaWFsJyk7CmF3YWl0IHBhZ2UuY2xpY2soJ1tkYXRhLXZpc3RhPSJzYWx1ZCJdJyk7IGF3YWl0IHNsZWVwKDI1MCk7Cm9rKGF3YWl0IHBhZ2UuJGV2YWwoJyN2LXNhbHVkJywgZWwgPT4gZWwuaW5uZXJIVE1MLmluY2x1ZGVzKCdUw6ljbmljYSBzZWd1cmEnKSksICdTYWx1ZCBjb24gc2VjY2lvbmVzJyk7CmlmIChlcnJvcmVzLmxlbmd0aCkgeyBjb25zb2xlLmxvZygnRVJST1JFUyBERSBQw4FHSU5BOicpOyBlcnJvcmVzLnNsaWNlKDAsIDgpLmZvckVhY2goZSA9PiBjb25zb2xlLmxvZygnICAnICsgZSkpOyBmYWxsb3MrKzsgfQpjb25zb2xlLmxvZyhmYWxsb3MgPyBgXG4ke2ZhbGxvc30gRkFMTE9TYCA6ICdcblBSVUVCQSBERSBIVU1PIENPTVBMRVRBIOKckycpOwphd2FpdCBicm93c2VyLmNsb3NlKCk7CnByb2Nlc3MuZXhpdChmYWxsb3MgPyAxIDogMCk7Cg==
+// Prueba de humo de Ironloop en Chromium real (Puppeteer): onboarding → hoy → rutina → cuerpo → sesión → progreso → salud.
+import { createRequire } from 'node:module';
+const puppeteer = createRequire('/tmp/package.json')('puppeteer');
+
+const BASE = 'http://127.0.0.1:8931/';
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+let fallos = 0;
+const ok = (cond, msg) => { console.log((cond ? '  ok ' : 'FALLO ') + msg); if (!cond) fallos++; };
+
+const browser = await puppeteer.launch({ headless: 'new', args: ['--no-sandbox', '--autoplay-policy=no-user-gesture-required'] });
+const page = await browser.newPage();
+await page.setViewport({ width: 412, height: 880, deviceScaleFactor: 2 });
+const errores = [];
+page.on('pageerror', e => errores.push('pageerror: ' + e.message));
+page.on('console', m => { if (m.type() === 'error') errores.push('console: ' + m.text()); });
+await page.goto(BASE, { waitUntil: 'networkidle0', timeout: 60000 });
+await sleep(600);
+
+ok(await page.$eval('#onboarding', el => el.classList.contains('activo')), 'sin perfil → onboarding visible');
+await page.click('#ob-entendido'); await sleep(150);
+ok(await page.$eval('#ob-form', el => el.style.display === ''), 'aviso aceptado → formulario visible');
+await page.type('#ob-edad', '25'); await page.type('#ob-peso', '72');
+await page.click('#ob-crear'); await sleep(400);
+ok(await page.evaluate(() => !!JSON.parse(localStorage.getItem('fit.perfil') || 'null')), 'perfil guardado');
+ok(await page.evaluate(() => JSON.parse(localStorage.getItem('fit.rutina')).semana.filter(Boolean).length === 3), 'rutina de 3 días generada');
+ok(await page.$eval('#v-hoy', el => el.classList.contains('activa') && el.innerHTML.includes('EMPEZAR')), 'Hoy con sesión y EMPEZAR');
+await page.screenshot({ path: 'tools/captura-hoy.png' });
+
+await page.click('[data-vista="rutina"]'); await sleep(250);
+ok(await page.$eval('#v-rutina', el => el.innerHTML.includes('Cambiar')), 'Rutina con botones Cambiar');
+const antes = await page.evaluate(() => JSON.parse(localStorage.getItem('fit.rutina')).semana.flatMap(s => s ? s.bloques.map(b => b.ej) : []).join(','));
+await page.click('[data-cambiar]'); await sleep(250);
+const despues = await page.evaluate(() => JSON.parse(localStorage.getItem('fit.rutina')).semana.flatMap(s => s ? s.bloques.map(b => b.ej) : []).join(','));
+ok(antes !== despues, 'Cambiar sustituye un ejercicio sin repetir');
+
+await page.click('[data-vista="cuerpo"]'); await sleep(350);
+const nCartas = await page.$$eval('#cuerpo-resultados .carta', els => els.length);
+ok(nCartas === 60, 'Cuerpo muestra 60 tarjetas (' + nCartas + ')');
+await page.click('#cuerpo-resultados .carta'); await sleep(600);
+ok(await page.$eval('#hoja', el => el.classList.contains('abierta')), 'ficha abierta');
+ok(await page.$$eval('#hoja ol.pasos li', els => els.length > 0), 'ficha con pasos en español');
+await page.click('#ficha-cerrar'); await sleep(400);
+
+await page.click('[data-vista="hoy"]'); await sleep(250);
+await page.click('#hoy-empezar'); await sleep(500);
+ok(await page.$eval('#v-sesion', el => el.classList.contains('activa')), 'sesión abierta');
+ok((await page.$eval('#estado-txt', el => el.textContent)) === 'Prepárate', 'fase PREPARA');
+await page.click('#c-saltar'); await sleep(400);
+ok((await page.$eval('#estado-txt', el => el.textContent)) === 'A darle', 'fase TRABAJO');
+await page.screenshot({ path: 'tools/captura-sesion.png' });
+await page.click('#c-hecho'); await sleep(400);
+ok((await page.$eval('#estado-txt', el => el.textContent)) === 'Descansa', 'fase DESCANSO');
+await page.click('#c-terminar'); await sleep(400);
+ok((await page.$eval('#estado-txt', el => el.textContent)) === 'Sesión completa', 'fase FIN');
+ok(await page.evaluate(() => { const h = JSON.parse(localStorage.getItem('fit.historial') || '[]'); return h.length === 1 && h[0].series.length === 1; }), 'sesión registrada en el historial');
+await page.click('#fin-volver'); await sleep(300);
+await page.click('[data-vista="progreso"]'); await sleep(250);
+ok(await page.$eval('#v-progreso', el => el.innerHTML.includes('series')), 'Progreso con historial');
+await page.click('[data-vista="salud"]'); await sleep(250);
+ok(await page.$eval('#v-salud', el => el.innerHTML.includes('Técnica segura')), 'Salud con secciones');
+if (errores.length) { console.log('ERRORES DE PÁGINA:'); errores.slice(0, 8).forEach(e => console.log('  ' + e)); fallos++; }
+console.log(fallos ? `\n${fallos} FALLOS` : '\nPRUEBA DE HUMO COMPLETA ✓');
+await browser.close();
+process.exit(fallos ? 1 : 0);

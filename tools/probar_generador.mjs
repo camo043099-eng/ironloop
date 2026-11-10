@@ -1,1 +1,51 @@
-Ly8gUHJ1ZWJhcyBkZSBwcm9waWVkYWRlcyBkZWwgZ2VuZXJhZG9yIChOb2RlLCBzaW4gZGVwZW5kZW5jaWFzKS4KaW1wb3J0IHsgcmVhZEZpbGVTeW5jIH0gZnJvbSAnbm9kZTpmcyc7CmltcG9ydCB7IGdlbmVyYXJSdXRpbmEsIGV4Y2x1aWRvUG9yTGVzaW9uLCBkZXJpdmFyRmxhZ3MgfSBmcm9tICcuLi93d3cvanMvZ2VuZXJhZG9yLmpzJzsKCmNvbnN0IGxlZXIgPSBuID0+IEpTT04ucGFyc2UocmVhZEZpbGVTeW5jKG5ldyBVUkwoJy4uL3d3dy9kYXRhLycgKyBuLCBpbXBvcnQubWV0YS51cmwpKSk7CmNvbnN0IGVqZXJjaWNpb3MgPSBsZWVyKCdlamVyY2ljaW9zLmpzb24nKTsKY29uc3QgdGFibGFzID0geyBwcmVzY3JpcGNpb246IGxlZXIoJ3ByZXNjcmlwY2lvbi5qc29uJyksIGdydXBvczogbGVlcignZ3J1cG9zLmpzb24nKSwgbGVzaW9uZXM6IGxlZXIoJ2xlc2lvbmVzLmpzb24nKSB9Owpjb25zdCBwb3JJZCA9IG5ldyBNYXAoZWplcmNpY2lvcy5tYXAoZSA9PiBbZS5pZCwgZV0pKTsKCmNvbnN0IEVRVUlQT1MgPSB7CiAgJ3NvbG8gY29ycG9yYWwnOiBbJ1Blc28gY29ycG9yYWwnXSwKICAnY2FzYSc6IFsnUGVzbyBjb3Jwb3JhbCcsICdNYW5jdWVybmFzJywgJ0JhbmRhJywgJ0JhbmRhIGRlIHJlc2lzdGVuY2lhJ10sCiAgJ2d5bSBjb21wbGV0byc6IFsuLi5uZXcgU2V0KGVqZXJjaWNpb3MubWFwKGUgPT4gZS5lKSldLAp9Owpjb25zdCBMRVNJT05FUyA9IFtbXSwgWydob21icm8nXSwgWydyb2RpbGxhJ10sIFsnZXNwYWxkYV9iYWphJ10sIFsnaG9tYnJvJywgJ3JvZGlsbGEnXSwgWydtdW5lY2EnXSwgWydjb2RvJ11dOwpsZXQgY2Fzb3MgPSAwLCBmYWxsb3MgPSAwLCB2YWNpb3MgPSAwOwpjb25zdCB0MCA9IERhdGUubm93KCk7Cgpmb3IgKGNvbnN0IGRpYXMgb2YgWzIsIDMsIDQsIDVdKQogIGZvciAoY29uc3Qgbml2ZWwgb2YgWydwcmluY2lwaWFudGUnLCAnaW50ZXJtZWRpbycsICdhdmFuemFkbyddKQogICAgZm9yIChjb25zdCBvYmpldGl2byBvZiBbJ2Z1ZXJ6YScsICdoaXBlcnRyb2ZpYScsICdwZXJkaWRhX2dyYXNhJywgJ3NhbHVkJ10pCiAgICAgIGZvciAoY29uc3QgW2VxTm9tYnJlLCBlcXVpcG9dIG9mIE9iamVjdC5lbnRyaWVzKEVRVUlQT1MpKQogICAgICAgIGZvciAoY29uc3Qgem9uYXMgb2YgTEVTSU9ORVMpCiAgICAgICAgICBmb3IgKGNvbnN0IGVkYWQgb2YgWzI0LCA1MiwgNjddKSB7CiAgICAgICAgICAgIGNvbnN0IHBlcmZpbCA9IHsgZWRhZCwgcGVzb19rZzogNzIsIG5pdmVsLCBvYmpldGl2bywgZXF1aXBvLCBkaWFzLCB6b25hc19sZXNpb25hZGFzOiB6b25hcyB9OwogICAgICAgICAgICBjb25zdCByID0gZ2VuZXJhclJ1dGluYShwZXJmaWwsIGVqZXJjaWNpb3MsIHRhYmxhcywgMTIzNCk7CiAgICAgICAgICAgIGNhc29zKys7CiAgICAgICAgICAgIGNvbnN0IGlkcyA9IFtdOwogICAgICAgICAgICBmb3IgKGNvbnN0IHMgb2Ygci5zZW1hbmEpIHsKICAgICAgICAgICAgICBpZiAoIXMpIGNvbnRpbnVlOwogICAgICAgICAgICAgIGlmICghcy5ibG9xdWVzLmxlbmd0aCkgdmFjaW9zKys7CiAgICAgICAgICAgICAgZm9yIChjb25zdCBiIG9mIHMuYmxvcXVlcykgewogICAgICAgICAgICAgICAgaWRzLnB1c2goYi5laik7CiAgICAgICAgICAgICAgICBjb25zdCBlaiA9IHBvcklkLmdldChiLmVqKTsKICAgICAgICAgICAgICAgIGlmICghZWopIHsgY29uc29sZS5sb2coJ0ZBTExPIGlkIGluZXhpc3RlbnRlJywgYi5laik7IGZhbGxvcysrOyBjb250aW51ZTsgfQogICAgICAgICAgICAgICAgaWYgKCFbLi4uZXF1aXBvLCAnUGVzbyBjb3Jwb3JhbCddLmluY2x1ZGVzKGVqLmUpKSB7IGNvbnNvbGUubG9nKCdGQUxMTyBlcXVpcG8nLCBlcU5vbWJyZSwgZWouZSk7IGZhbGxvcysrOyB9CiAgICAgICAgICAgICAgICBjb25zdCB6ID0gZXhjbHVpZG9Qb3JMZXNpb24oZWosIHpvbmFzLCB0YWJsYXMubGVzaW9uZXMpOwogICAgICAgICAgICAgICAgaWYgKHopIHsgY29uc29sZS5sb2coJ0ZBTExPIGxlc2nDs246IGVudHLDsyB1biBleGNsdWlkbyBwb3InLCB6LCAnLScsIGVqLm5lKTsgZmFsbG9zKys7IH0KICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICAgICAgaWYgKG5ldyBTZXQoaWRzKS5zaXplICE9PSBpZHMubGVuZ3RoKSB7IGNvbnNvbGUubG9nKCdGQUxMTyByZXBldGlkbyBlbiBsYSBzZW1hbmEnLCBkaWFzLCBuaXZlbCwgb2JqZXRpdm8sIGVxTm9tYnJlLCB6b25hcyk7IGZhbGxvcysrOyB9CiAgICAgICAgICAgIC8vIERldGVybWluaXNtbyAoc2luIGxhIG1hcmNhIGRlIHRpZW1wbyBgZ2VuZXJhZGFgLCBxdWUgdmFyaWEgcG9yIGxsYW1hZGEpCiAgICAgICAgICAgIGNvbnN0IHIyID0gZ2VuZXJhclJ1dGluYShwZXJmaWwsIGVqZXJjaWNpb3MsIHRhYmxhcywgMTIzNCk7CiAgICAgICAgICAgIGlmIChKU09OLnN0cmluZ2lmeShyLnNlbWFuYSkgIT09IEpTT04uc3RyaW5naWZ5KHIyLnNlbWFuYSkgfHwKICAgICAgICAgICAgICAgIEpTT04uc3RyaW5naWZ5KHIuYWR2ZXJ0ZW5jaWFzKSAhPT0gSlNPTi5zdHJpbmdpZnkocjIuYWR2ZXJ0ZW5jaWFzKSkgeyBjb25zb2xlLmxvZygnRkFMTE8gZGV0ZXJtaW5pc21vJyk7IGZhbGxvcysrOyB9CiAgICAgICAgICB9Cgpjb25zdCBtcyA9IChEYXRlLm5vdygpIC0gdDApIC8gY2Fzb3M7CmNvbnNvbGUubG9nKGBjYXNvczogJHtjYXNvc30gfCBmYWxsb3M6ICR7ZmFsbG9zfSB8IHNlc2lvbmVzIHZhY8OtYXM6ICR7dmFjaW9zfSB8ICR7bXMudG9GaXhlZCgyKX0gbXMvY2Fzb2ApOwppZiAoZmFsbG9zKSBwcm9jZXNzLmV4aXQoMSk7CmNvbnNvbGUubG9nKCdUT0RBUyBMQVMgUFJPUElFREFERVMgT0sg4pyTJyk7Cg==
+// Pruebas de propiedades del generador (Node, sin dependencias).
+import { readFileSync } from 'node:fs';
+import { generarRutina, excluidoPorLesion, derivarFlags } from '../www/js/generador.js';
+
+const leer = n => JSON.parse(readFileSync(new URL('../www/data/' + n, import.meta.url)));
+const ejercicios = leer('ejercicios.json');
+const tablas = { prescripcion: leer('prescripcion.json'), grupos: leer('grupos.json'), lesiones: leer('lesiones.json') };
+const porId = new Map(ejercicios.map(e => [e.id, e]));
+
+const EQUIPOS = {
+  'solo corporal': ['Peso corporal'],
+  'casa': ['Peso corporal', 'Mancuernas', 'Banda', 'Banda de resistencia'],
+  'gym completo': [...new Set(ejercicios.map(e => e.e))],
+};
+const LESIONES = [[], ['hombro'], ['rodilla'], ['espalda_baja'], ['hombro', 'rodilla'], ['muneca'], ['codo']];
+let casos = 0, fallos = 0, vacios = 0;
+const t0 = Date.now();
+
+for (const dias of [2, 3, 4, 5])
+  for (const nivel of ['principiante', 'intermedio', 'avanzado'])
+    for (const objetivo of ['fuerza', 'hipertrofia', 'perdida_grasa', 'salud'])
+      for (const [eqNombre, equipo] of Object.entries(EQUIPOS))
+        for (const zonas of LESIONES)
+          for (const edad of [24, 52, 67]) {
+            const perfil = { edad, peso_kg: 72, nivel, objetivo, equipo, dias, zonas_lesionadas: zonas };
+            const r = generarRutina(perfil, ejercicios, tablas, 1234);
+            casos++;
+            const ids = [];
+            for (const s of r.semana) {
+              if (!s) continue;
+              if (!s.bloques.length) vacios++;
+              for (const b of s.bloques) {
+                ids.push(b.ej);
+                const ej = porId.get(b.ej);
+                if (!ej) { console.log('FALLO id inexistente', b.ej); fallos++; continue; }
+                if (![...equipo, 'Peso corporal'].includes(ej.e)) { console.log('FALLO equipo', eqNombre, ej.e); fallos++; }
+                const z = excluidoPorLesion(ej, zonas, tablas.lesiones);
+                if (z) { console.log('FALLO lesión: entró un excluido por', z, '-', ej.ne); fallos++; }
+              }
+            }
+            if (new Set(ids).size !== ids.length) { console.log('FALLO repetido en la semana', dias, nivel, objetivo, eqNombre, zonas); fallos++; }
+            // Determinismo (sin la marca de tiempo `generada`, que varia por llamada)
+            const r2 = generarRutina(perfil, ejercicios, tablas, 1234);
+            if (JSON.stringify(r.semana) !== JSON.stringify(r2.semana) ||
+                JSON.stringify(r.advertencias) !== JSON.stringify(r2.advertencias)) { console.log('FALLO determinismo'); fallos++; }
+          }
+
+const ms = (Date.now() - t0) / casos;
+console.log(`casos: ${casos} | fallos: ${fallos} | sesiones vacías: ${vacios} | ${ms.toFixed(2)} ms/caso`);
+if (fallos) process.exit(1);
+console.log('TODAS LAS PROPIEDADES OK ✓');

@@ -1,1 +1,61 @@
-Ly8gSXJvbmxvb3Ag4oCUIHNpbHVldGFzIFNWRyBwcm9waWFzIChmcm9udGFsIGRlbCBwcm90b3RpcG8gYXByb2JhZG8gKyBkb3JzYWwgbnVldmEpLgovLyBDYWRhIG3DunNjdWxvIGxsZXZhIGRhdGEtbSBjb24gZWwgbm9tYnJlIGRlbCBtw7pzY3VsbyBvYmpldGl2byBkZWwgZGF0YXNldC4KY29uc3QgQkFTRSA9ICcjMjQyRDNFJzsKZXhwb3J0IGNvbnN0IENBTE9SRVMgPSBbJyMyNDJEM0UnLCAnIzhDNDMyNicsICcjQzY1MzI4JywgJyNGRjZCM0QnXTsKCmV4cG9ydCBjb25zdCBNVVNDVUxPU19WSVNUQSA9IHsKICBmcm9udGFsOiBbJ1BlY3RvcmFsZXMnLCAnRGVsdG9pZGVzJywgJ0LDrWNlcHMnLCAnQW50ZWJyYXpvcycsICdBYmRvbWluYWxlcycsICdDdcOhZHJpY2VwcycsICdBZHVjdG9yZXMnLCAnUGFudG9ycmlsbGFzJywgJ1RyYXBlY2lvcyddLAogIGRvcnNhbDogWydUcmFwZWNpb3MnLCAnRGVsdG9pZGVzJywgJ1Ryw61jZXBzJywgJ0FudGVicmF6b3MnLCAnRG9yc2FsZXMnLCAnRXNwYWxkYSBhbHRhJywgJ0NvbHVtbmEnLCAnR2zDunRlb3MnLCAnSXNxdWlvdGliaWFsZXMnLCAnUGFudG9ycmlsbGFzJ10sCn07CgpleHBvcnQgZnVuY3Rpb24gc3ZnRnJvbnRhbCgpIHsKICByZXR1cm4gYDxzdmcgdmlld0JveD0iMCAwIDIwMCAzNDAiIHdpZHRoPSIxMDAlIiBhcmlhLWxhYmVsPSJDdWVycG8gZGUgZnJlbnRlIj4KICA8Y2lyY2xlIGN4PSIxMDAiIGN5PSIyNiIgcj0iMTciIGZpbGw9IiR7QkFTRX0iLz4KICA8cGF0aCBkYXRhLW09IlRyYXBlY2lvcyIgZD0iTTc4IDQ4IEwxMjIgNDggTDEzMiA2NiBMNjggNjYgWiIgZmlsbD0iJHtCQVNFfSIvPgogIDxlbGxpcHNlIGRhdGEtbT0iRGVsdG9pZGVzIiBjeD0iNTgiIGN5PSI3NiIgcng9IjE1IiByeT0iMTkiIGZpbGw9IiR7QkFTRX0iLz4KICA8ZWxsaXBzZSBkYXRhLW09IkRlbHRvaWRlcyIgY3g9IjE0MiIgY3k9Ijc2IiByeD0iMTUiIHJ5PSIxOSIgZmlsbD0iJHtCQVNFfSIvPgogIDxwYXRoIGRhdGEtbT0iUGVjdG9yYWxlcyIgZD0iTTcwIDYyIFExMDAgNTIgMTMwIDYyIEwxMjggOTYgUTEwMCAxMDYgNzIgOTYgWiIgZmlsbD0iJHtCQVNFfSIvPgogIDxlbGxpcHNlIGRhdGEtbT0iQsOtY2VwcyIgY3g9IjUwIiBjeT0iMTEyIiByeD0iMTAiIHJ5PSIyNCIgZmlsbD0iJHtCQVNFfSIvPgogIDxlbGxpcHNlIGRhdGEtbT0iQsOtY2VwcyIgY3g9IjE1MCIgY3k9IjExMiIgcng9IjEwIiByeT0iMjQiIGZpbGw9IiR7QkFTRX0iLz4KICA8ZWxsaXBzZSBkYXRhLW09IkFudGVicmF6b3MiIGN4PSI0NiIgY3k9IjE1NiIgcng9IjgiIHJ5PSIyMCIgZmlsbD0iJHtCQVNFfSIvPgogIDxlbGxpcHNlIGRhdGEtbT0iQW50ZWJyYXpvcyIgY3g9IjE1NCIgY3k9IjE1NiIgcng9IjgiIHJ5PSIyMCIgZmlsbD0iJHtCQVNFfSIvPgogIDxwYXRoIGRhdGEtbT0iQWJkb21pbmFsZXMiIGQ9Ik03NiAxMDIgTDEyNCAxMDIgTDEyMCAxNjggTDgwIDE2OCBaIiBmaWxsPSIke0JBU0V9Ii8+CiAgPHBhdGggZGF0YS1tPSJDdcOhZHJpY2VwcyIgZD0iTTc2IDE3NCBMOTcgMTc0IEw5MyAyNTggTDczIDI1OCBaIiBmaWxsPSIke0JBU0V9Ii8+CiAgPHBhdGggZGF0YS1tPSJDdcOhZHJpY2VwcyIgZD0iTTEwMyAxNzQgTDEyNCAxNzQgTDEyNyAyNTggTDEwNyAyNTggWiIgZmlsbD0iJHtCQVNFfSIvPgogIDxwYXRoIGRhdGEtbT0iQWR1Y3RvcmVzIiBkPSJNOTcgMTc4IEwxMDMgMTc4IEwxMDEgMjQwIEw5OSAyNDAgWiIgZmlsbD0iJHtCQVNFfSIvPgogIDxlbGxpcHNlIGRhdGEtbT0iUGFudG9ycmlsbGFzIiBjeD0iODMiIGN5PSIyODgiIHJ4PSIxMCIgcnk9IjI0IiBmaWxsPSIke0JBU0V9Ii8+CiAgPGVsbGlwc2UgZGF0YS1tPSJQYW50b3JyaWxsYXMiIGN4PSIxMTciIGN5PSIyODgiIHJ4PSIxMCIgcnk9IjI0IiBmaWxsPSIke0JBU0V9Ii8+Cjwvc3ZnPmA7Cn0KCmV4cG9ydCBmdW5jdGlvbiBzdmdEb3JzYWwoKSB7CiAgcmV0dXJuIGA8c3ZnIHZpZXdCb3g9IjAgMCAyMDAgMzQwIiB3aWR0aD0iMTAwJSIgYXJpYS1sYWJlbD0iQ3VlcnBvIGRlIGVzcGFsZGFzIj4KICA8Y2lyY2xlIGN4PSIxMDAiIGN5PSIyNiIgcj0iMTciIGZpbGw9IiR7QkFTRX0iLz4KICA8cGF0aCBkYXRhLW09IlRyYXBlY2lvcyIgZD0iTTcyIDQ2IEwxMjggNDYgTDExNiAxMDggTDg0IDEwOCBaIiBmaWxsPSIke0JBU0V9Ii8+CiAgPGVsbGlwc2UgZGF0YS1tPSJEZWx0b2lkZXMiIGN4PSI1OCIgY3k9Ijc2IiByeD0iMTUiIHJ5PSIxOSIgZmlsbD0iJHtCQVNFfSIvPgogIDxlbGxpcHNlIGRhdGEtbT0iRGVsdG9pZGVzIiBjeD0iMTQyIiBjeT0iNzYiIHJ4PSIxNSIgcnk9IjE5IiBmaWxsPSIke0JBU0V9Ii8+CiAgPHBhdGggZGF0YS1tPSJEb3JzYWxlcyIgZD0iTTc0IDk2IEw5NyAxMDggTDk0IDE1OCBMNzIgMTM4IFoiIGZpbGw9IiR7QkFTRX0iLz4KICA8cGF0aCBkYXRhLW09IkRvcnNhbGVzIiBkPSJNMTI2IDk2IEwxMDMgMTA4IEwxMDYgMTU4IEwxMjggMTM4IFoiIGZpbGw9IiR7QkFTRX0iLz4KICA8cGF0aCBkYXRhLW09IkVzcGFsZGEgYWx0YSIgZD0iTTg0IDEwOCBMMTE2IDEwOCBMMTEyIDEyOCBMODggMTI4IFoiIGZpbGw9IiR7QkFTRX0iLz4KICA8ZWxsaXBzZSBkYXRhLW09IlRyw61jZXBzIiBjeD0iNTAiIGN5PSIxMTIiIHJ4PSIxMCIgcnk9IjI0IiBmaWxsPSIke0JBU0V9Ii8+CiAgPGVsbGlwc2UgZGF0YS1tPSJUcsOtY2VwcyIgY3g9IjE1MCIgY3k9IjExMiIgcng9IjEwIiByeT0iMjQiIGZpbGw9IiR7QkFTRX0iLz4KICA8ZWxsaXBzZSBkYXRhLW09IkFudGVicmF6b3MiIGN4PSI0NiIgY3k9IjE1NiIgcng9IjgiIHJ5PSIyMCIgZmlsbD0iJHtCQVNFfSIvPgogIDxlbGxpcHNlIGRhdGEtbT0iQW50ZWJyYXpvcyIgY3g9IjE1NCIgY3k9IjE1NiIgcng9IjgiIHJ5PSIyMCIgZmlsbD0iJHtCQVNFfSIvPgogIDxwYXRoIGRhdGEtbT0iQ29sdW1uYSIgZD0iTTg4IDE0MiBMMTEyIDE0MiBMMTEwIDE2OCBMOTAgMTY4IFoiIGZpbGw9IiR7QkFTRX0iLz4KICA8ZWxsaXBzZSBkYXRhLW09Ikdsw7p0ZW9zIiBjeD0iODYiIGN5PSIxODgiIHJ4PSIxNCIgcnk9IjE3IiBmaWxsPSIke0JBU0V9Ii8+CiAgPGVsbGlwc2UgZGF0YS1tPSJHbMO6dGVvcyIgY3g9IjExNCIgY3k9IjE4OCIgcng9IjE0IiByeT0iMTciIGZpbGw9IiR7QkFTRX0iLz4KICA8cGF0aCBkYXRhLW09IklzcXVpb3RpYmlhbGVzIiBkPSJNNzQgMjA4IEw5NyAyMDggTDkzIDI1OCBMNzMgMjU4IFoiIGZpbGw9IiR7QkFTRX0iLz4KICA8cGF0aCBkYXRhLW09IklzcXVpb3RpYmlhbGVzIiBkPSJNMTAzIDIwOCBMMTI2IDIwOCBMMTI3IDI1OCBMMTA3IDI1OCBaIiBmaWxsPSIke0JBU0V9Ii8+CiAgPGVsbGlwc2UgZGF0YS1tPSJQYW50b3JyaWxsYXMiIGN4PSI4MyIgY3k9IjI4OCIgcng9IjEwIiByeT0iMjQiIGZpbGw9IiR7QkFTRX0iLz4KICA8ZWxsaXBzZSBkYXRhLW09IlBhbnRvcnJpbGxhcyIgY3g9IjExNyIgY3k9IjI4OCIgcng9IjEwIiByeT0iMjQiIGZpbGw9IiR7QkFTRX0iLz4KPC9zdmc+YDsKfQoKLy8gbWFwYToge211c2N1bG86IHNlcmllc30g4oaSIHBpbnRhIGNhZGEgW2RhdGEtbV0gY29uIGVsIGVzY2Fsw7NuIGRlIGNhbG9yLgpleHBvcnQgZnVuY3Rpb24gYXBsaWNhckNhbG9yKHJhaXosIG1hcGEpIHsKICByYWl6LnF1ZXJ5U2VsZWN0b3JBbGwoJ1tkYXRhLW1dJykuZm9yRWFjaChwID0+IHsKICAgIGNvbnN0IHYgPSBtYXBhW3AuZGF0YXNldC5tXSB8fCAwOwogICAgY29uc3Qgbml2ZWwgPSB2ID09PSAwID8gMCA6IHYgPD0gNCA/IDEgOiB2IDw9IDkgPyAyIDogMzsKICAgIHAuc2V0QXR0cmlidXRlKCdmaWxsJywgQ0FMT1JFU1tuaXZlbF0pOwogIH0pOwp9Cg==
+// Ironloop — siluetas SVG propias (frontal del prototipo aprobado + dorsal nueva).
+// Cada músculo lleva data-m con el nombre del músculo objetivo del dataset.
+const BASE = '#242D3E';
+export const CALORES = ['#242D3E', '#8C4326', '#C65328', '#FF6B3D'];
+
+export const MUSCULOS_VISTA = {
+  frontal: ['Pectorales', 'Deltoides', 'Bíceps', 'Antebrazos', 'Abdominales', 'Cuádriceps', 'Aductores', 'Pantorrillas', 'Trapecios'],
+  dorsal: ['Trapecios', 'Deltoides', 'Tríceps', 'Antebrazos', 'Dorsales', 'Espalda alta', 'Columna', 'Glúteos', 'Isquiotibiales', 'Pantorrillas'],
+};
+
+export function svgFrontal() {
+  return `<svg viewBox="0 0 200 340" width="100%" aria-label="Cuerpo de frente">
+  <circle cx="100" cy="26" r="17" fill="${BASE}"/>
+  <path data-m="Trapecios" d="M78 48 L122 48 L132 66 L68 66 Z" fill="${BASE}"/>
+  <ellipse data-m="Deltoides" cx="58" cy="76" rx="15" ry="19" fill="${BASE}"/>
+  <ellipse data-m="Deltoides" cx="142" cy="76" rx="15" ry="19" fill="${BASE}"/>
+  <path data-m="Pectorales" d="M70 62 Q100 52 130 62 L128 96 Q100 106 72 96 Z" fill="${BASE}"/>
+  <ellipse data-m="Bíceps" cx="50" cy="112" rx="10" ry="24" fill="${BASE}"/>
+  <ellipse data-m="Bíceps" cx="150" cy="112" rx="10" ry="24" fill="${BASE}"/>
+  <ellipse data-m="Antebrazos" cx="46" cy="156" rx="8" ry="20" fill="${BASE}"/>
+  <ellipse data-m="Antebrazos" cx="154" cy="156" rx="8" ry="20" fill="${BASE}"/>
+  <path data-m="Abdominales" d="M76 102 L124 102 L120 168 L80 168 Z" fill="${BASE}"/>
+  <path data-m="Cuádriceps" d="M76 174 L97 174 L93 258 L73 258 Z" fill="${BASE}"/>
+  <path data-m="Cuádriceps" d="M103 174 L124 174 L127 258 L107 258 Z" fill="${BASE}"/>
+  <path data-m="Aductores" d="M97 178 L103 178 L101 240 L99 240 Z" fill="${BASE}"/>
+  <ellipse data-m="Pantorrillas" cx="83" cy="288" rx="10" ry="24" fill="${BASE}"/>
+  <ellipse data-m="Pantorrillas" cx="117" cy="288" rx="10" ry="24" fill="${BASE}"/>
+</svg>`;
+}
+
+export function svgDorsal() {
+  return `<svg viewBox="0 0 200 340" width="100%" aria-label="Cuerpo de espaldas">
+  <circle cx="100" cy="26" r="17" fill="${BASE}"/>
+  <path data-m="Trapecios" d="M72 46 L128 46 L116 108 L84 108 Z" fill="${BASE}"/>
+  <ellipse data-m="Deltoides" cx="58" cy="76" rx="15" ry="19" fill="${BASE}"/>
+  <ellipse data-m="Deltoides" cx="142" cy="76" rx="15" ry="19" fill="${BASE}"/>
+  <path data-m="Dorsales" d="M74 96 L97 108 L94 158 L72 138 Z" fill="${BASE}"/>
+  <path data-m="Dorsales" d="M126 96 L103 108 L106 158 L128 138 Z" fill="${BASE}"/>
+  <path data-m="Espalda alta" d="M84 108 L116 108 L112 128 L88 128 Z" fill="${BASE}"/>
+  <ellipse data-m="Tríceps" cx="50" cy="112" rx="10" ry="24" fill="${BASE}"/>
+  <ellipse data-m="Tríceps" cx="150" cy="112" rx="10" ry="24" fill="${BASE}"/>
+  <ellipse data-m="Antebrazos" cx="46" cy="156" rx="8" ry="20" fill="${BASE}"/>
+  <ellipse data-m="Antebrazos" cx="154" cy="156" rx="8" ry="20" fill="${BASE}"/>
+  <path data-m="Columna" d="M88 142 L112 142 L110 168 L90 168 Z" fill="${BASE}"/>
+  <ellipse data-m="Glúteos" cx="86" cy="188" rx="14" ry="17" fill="${BASE}"/>
+  <ellipse data-m="Glúteos" cx="114" cy="188" rx="14" ry="17" fill="${BASE}"/>
+  <path data-m="Isquiotibiales" d="M74 208 L97 208 L93 258 L73 258 Z" fill="${BASE}"/>
+  <path data-m="Isquiotibiales" d="M103 208 L126 208 L127 258 L107 258 Z" fill="${BASE}"/>
+  <ellipse data-m="Pantorrillas" cx="83" cy="288" rx="10" ry="24" fill="${BASE}"/>
+  <ellipse data-m="Pantorrillas" cx="117" cy="288" rx="10" ry="24" fill="${BASE}"/>
+</svg>`;
+}
+
+// mapa: {musculo: series} → pinta cada [data-m] con el escalón de calor.
+export function aplicarCalor(raiz, mapa) {
+  raiz.querySelectorAll('[data-m]').forEach(p => {
+    const v = mapa[p.dataset.m] || 0;
+    const nivel = v === 0 ? 0 : v <= 4 ? 1 : v <= 9 ? 2 : 3;
+    p.setAttribute('fill', CALORES[nivel]);
+  });
+}

@@ -1,1 +1,34 @@
-Ly8gSXJvbmxvb3Ag4oCUIGNhcmdhIGRlIGRhdG9zIGUgw61uZGljZXMgZW4gbWVtb3JpYS4KaW1wb3J0IHsgZGVyaXZhckZsYWdzIH0gZnJvbSAnLi9nZW5lcmFkb3IuanMnOwoKZXhwb3J0IGNvbnN0IEQgPSB7CiAgZWplcmNpY2lvczogW10sIHBvcklkOiBuZXcgTWFwKCksIHByZXNjcmlwY2lvbjogbnVsbCwgZ3J1cG9zOiBudWxsLAogIGxlc2lvbmVzOiBudWxsLCB2b3o6IG51bGwsIHNhbHVkOiBudWxsLCBsaXN0bzogZmFsc2UsCn07Cgpjb25zdCBub3JtID0gcyA9PiAocyB8fCAnJykudG9Mb3dlckNhc2UoKS5ub3JtYWxpemUoJ05GRCcpLnJlcGxhY2UoL1tcdTAzMDAtXHUwMzZmXS9nLCAnJyk7CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gY2FyZ2FyRGF0b3MoKSB7CiAgY29uc3QgW2VqLCBwciwgZ3IsIGxlLCB2bywgc2FdID0gYXdhaXQgUHJvbWlzZS5hbGwoWwogICAgZmV0Y2goJ2RhdGEvZWplcmNpY2lvcy5qc29uJykudGhlbihyID0+IHIuanNvbigpKSwKICAgIGZldGNoKCdkYXRhL3ByZXNjcmlwY2lvbi5qc29uJykudGhlbihyID0+IHIuanNvbigpKSwKICAgIGZldGNoKCdkYXRhL2dydXBvcy5qc29uJykudGhlbihyID0+IHIuanNvbigpKSwKICAgIGZldGNoKCdkYXRhL2xlc2lvbmVzLmpzb24nKS50aGVuKHIgPT4gci5qc29uKCkpLAogICAgZmV0Y2goJ2RhdGEvdm96Lmpzb24nKS50aGVuKHIgPT4gci5qc29uKCkpLAogICAgZmV0Y2goJ2RhdGEvc2FsdWQuanNvbicpLnRoZW4ociA9PiByLmpzb24oKSksCiAgXSk7CiAgRC5lamVyY2ljaW9zID0gZWo7IEQucHJlc2NyaXBjaW9uID0gcHI7IEQuZ3J1cG9zID0gZ3I7IEQubGVzaW9uZXMgPSBsZTsgRC52b3ogPSB2bzsgRC5zYWx1ZCA9IHNhOwogIGZvciAoY29uc3QgZSBvZiBlaikgewogICAgZS5mbGFncyA9IGRlcml2YXJGbGFncyhlKTsKICAgIGUuYnVzY2FyID0gbm9ybShlLm5lICsgJyAnICsgZS5uICsgJyAnICsgZS5vICsgJyAnICsgZS5wICsgJyAnICsgZS5lKTsKICAgIEQucG9ySWQuc2V0KGUuaWQsIGUpOwogIH0KICBELmxpc3RvID0gdHJ1ZTsKICByZXR1cm4gRDsKfQoKZXhwb3J0IGZ1bmN0aW9uIHRhYmxhcygpIHsKICByZXR1cm4geyBwcmVzY3JpcGNpb246IEQucHJlc2NyaXBjaW9uLCBncnVwb3M6IEQuZ3J1cG9zLCBsZXNpb25lczogRC5sZXNpb25lcyB9Owp9CmV4cG9ydCBmdW5jdGlvbiBpbWdEZShpZCkgeyByZXR1cm4gJ21lZGlhL2ltZy8nICsgaWQgKyAnLmpwZyc7IH0KZXhwb3J0IGZ1bmN0aW9uIHZpZERlKGlkKSB7IHJldHVybiAnbWVkaWEvdmlkLycgKyBpZCArICcubXA0JzsgfQo=
+// Ironloop — carga de datos e índices en memoria.
+import { derivarFlags } from './generador.js';
+
+export const D = {
+  ejercicios: [], porId: new Map(), prescripcion: null, grupos: null,
+  lesiones: null, voz: null, salud: null, listo: false,
+};
+
+const norm = s => (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+
+export async function cargarDatos() {
+  const [ej, pr, gr, le, vo, sa] = await Promise.all([
+    fetch('data/ejercicios.json').then(r => r.json()),
+    fetch('data/prescripcion.json').then(r => r.json()),
+    fetch('data/grupos.json').then(r => r.json()),
+    fetch('data/lesiones.json').then(r => r.json()),
+    fetch('data/voz.json').then(r => r.json()),
+    fetch('data/salud.json').then(r => r.json()),
+  ]);
+  D.ejercicios = ej; D.prescripcion = pr; D.grupos = gr; D.lesiones = le; D.voz = vo; D.salud = sa;
+  for (const e of ej) {
+    e.flags = derivarFlags(e);
+    e.buscar = norm(e.ne + ' ' + e.n + ' ' + e.o + ' ' + e.p + ' ' + e.e);
+    D.porId.set(e.id, e);
+  }
+  D.listo = true;
+  return D;
+}
+
+export function tablas() {
+  return { prescripcion: D.prescripcion, grupos: D.grupos, lesiones: D.lesiones };
+}
+export function imgDe(id) { return 'media/img/' + id + '.jpg'; }
+export function vidDe(id) { return 'media/vid/' + id + '.mp4'; }

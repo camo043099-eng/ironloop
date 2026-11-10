@@ -1,1 +1,28 @@
-IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwojIElyb25sb29wOiBpY29ubyBwcm9waW8gKGRvcyBhbmlsbG9zIGVudHJlbGF6YWRvcyBjb3JhbC90dXJxdWVzYSBzb2JyZSBmb25kbyBvc2N1cm8pLgojIFVzbzogcHl0aG9uMyB0b29scy9nZW5lcmFyX2ljb25vcy5weSA8Y2FycGV0YS1yZXMtZGVsLXByb3llY3RvLWFuZHJvaWQ+CmltcG9ydCBvcywgc3lzCmZyb20gUElMIGltcG9ydCBJbWFnZSwgSW1hZ2VEcmF3CgpSRVMgPSBzeXMuYXJndlsxXSBpZiBsZW4oc3lzLmFyZ3YpID4gMSBlbHNlICdhbmRyb2lkL2FwcC9zcmMvbWFpbi9yZXMnCkRFTlMgPSB7J21kcGknOiAoNDgsIDEwOCksICdoZHBpJzogKDcyLCAxNjIpLCAneGhkcGknOiAoOTYsIDIxNiksICd4eGhkcGknOiAoMTQ0LCAzMjQpLCAneHh4aGRwaSc6ICgxOTIsIDQzMil9CkNPUkFMID0gKDI1NSwgMTA3LCA2MSwgMjU1KTsgVEVBTCA9ICg1MywgMjEzLCAxOTUsIDI1NSk7IEZPTkRPID0gKDEwLCAxMiwgMTcsIDI1NSkKCmRlZiBhbmlsbG9zKGRyYXcsIHNpemUsIGVzY2FsYT0xLjApOgogICAgdyA9IHNpemUgKiAwLjM0ICogZXNjYWxhCiAgICBjeCwgY3kgPSBzaXplIC8gMiwgc2l6ZSAvIDIKICAgIHNlcCA9IHNpemUgKiAwLjE0NSAqIGVzY2FsYQogICAgciA9IHcgLyAyCiAgICBzdyA9IG1heCgyLCBpbnQoc2l6ZSAqIDAuMDg1ICogZXNjYWxhKSkKICAgIGRyYXcuZWxsaXBzZShbY3ggLSBzZXAgLSByLCBjeSAtIHIsIGN4IC0gc2VwICsgciwgY3kgKyByXSwgb3V0bGluZT1DT1JBTCwgd2lkdGg9c3cpCiAgICBkcmF3LmVsbGlwc2UoW2N4ICsgc2VwIC0gciwgY3kgLSByLCBjeCArIHNlcCArIHIsIGN5ICsgcl0sIG91dGxpbmU9VEVBTCwgd2lkdGg9c3cpCgpmb3Igbm9tYnJlLCAobGVnLCBmZykgaW4gREVOUy5pdGVtcygpOgogICAgY2FycGV0YSA9IG9zLnBhdGguam9pbihSRVMsICdtaXBtYXAtJyArIG5vbWJyZSkKICAgIG9zLm1ha2VkaXJzKGNhcnBldGEsIGV4aXN0X29rPVRydWUpCiAgICBpbSA9IEltYWdlLm5ldygnUkdCQScsIChsZWcsIGxlZyksIEZPTkRPKTsgYW5pbGxvcyhJbWFnZURyYXcuRHJhdyhpbSksIGxlZykKICAgIGltLnNhdmUob3MucGF0aC5qb2luKGNhcnBldGEsICdpY19sYXVuY2hlci5wbmcnKSkKICAgIGltLnNhdmUob3MucGF0aC5qb2luKGNhcnBldGEsICdpY19sYXVuY2hlcl9yb3VuZC5wbmcnKSkKICAgIGltMiA9IEltYWdlLm5ldygnUkdCQScsIChmZywgZmcpLCAoMCwgMCwgMCwgMCkpOyBhbmlsbG9zKEltYWdlRHJhdy5EcmF3KGltMiksIGZnLCAwLjkyKQogICAgaW0yLnNhdmUob3MucGF0aC5qb2luKGNhcnBldGEsICdpY19sYXVuY2hlcl9mb3JlZ3JvdW5kLnBuZycpKQpwcmludCgnaWNvbm9zIGdlbmVyYWRvcyBlbicsIFJFUykK
+#!/usr/bin/env python3
+# Ironloop: icono propio (dos anillos entrelazados coral/turquesa sobre fondo oscuro).
+# Uso: python3 tools/generar_iconos.py <carpeta-res-del-proyecto-android>
+import os, sys
+from PIL import Image, ImageDraw
+
+RES = sys.argv[1] if len(sys.argv) > 1 else 'android/app/src/main/res'
+DENS = {'mdpi': (48, 108), 'hdpi': (72, 162), 'xhdpi': (96, 216), 'xxhdpi': (144, 324), 'xxxhdpi': (192, 432)}
+CORAL = (255, 107, 61, 255); TEAL = (53, 213, 195, 255); FONDO = (10, 12, 17, 255)
+
+def anillos(draw, size, escala=1.0):
+    w = size * 0.34 * escala
+    cx, cy = size / 2, size / 2
+    sep = size * 0.145 * escala
+    r = w / 2
+    sw = max(2, int(size * 0.085 * escala))
+    draw.ellipse([cx - sep - r, cy - r, cx - sep + r, cy + r], outline=CORAL, width=sw)
+    draw.ellipse([cx + sep - r, cy - r, cx + sep + r, cy + r], outline=TEAL, width=sw)
+
+for nombre, (leg, fg) in DENS.items():
+    carpeta = os.path.join(RES, 'mipmap-' + nombre)
+    os.makedirs(carpeta, exist_ok=True)
+    im = Image.new('RGBA', (leg, leg), FONDO); anillos(ImageDraw.Draw(im), leg)
+    im.save(os.path.join(carpeta, 'ic_launcher.png'))
+    im.save(os.path.join(carpeta, 'ic_launcher_round.png'))
+    im2 = Image.new('RGBA', (fg, fg), (0, 0, 0, 0)); anillos(ImageDraw.Draw(im2), fg, 0.92)
+    im2.save(os.path.join(carpeta, 'ic_launcher_foreground.png'))
+print('iconos generados en', RES)

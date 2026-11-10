@@ -1,1 +1,101 @@
-Ly8gSXJvbmxvb3Ag4oCUIG3DoXF1aW5hIGRlIGVzdGFkb3MgZGUgbGEgc2VzacOzbiBndWlhZGEuCi8vIFJlbG9qIHBvciBtYXJjYXMgZGUgdGllbXBvIChmaW5FbiBjb250cmEgRGF0ZS5ub3coKSk6IHNvYnJldml2ZSBhIHBhdXNhcyBkZWwgV2ViVmlldy4KaW1wb3J0IHsgaGFibGFyLCB2aWJyYXIsIGN1ZW50YUF0cmFzLCBmcmFzZSB9IGZyb20gJy4vdm96LmpzJzsKCmV4cG9ydCBjbGFzcyBTZXNpb24gewogIGNvbnN0cnVjdG9yKGJsb3F1ZXMsIHBvcklkLCBmcmFzZXMsIGFsUGludGFyLCBhbFRlcm1pbmFyKSB7CiAgICB0aGlzLmJsb3F1ZXMgPSBibG9xdWVzOyB0aGlzLnBvcklkID0gcG9ySWQ7IHRoaXMuZnJhc2VzID0gZnJhc2VzOwogICAgdGhpcy5hbFBpbnRhciA9IGFsUGludGFyOyB0aGlzLmFsVGVybWluYXIgPSBhbFRlcm1pbmFyOwogICAgdGhpcy5mYXNlID0gJ0lOQUNUSVZBJzsgdGhpcy5pRWogPSAwOyB0aGlzLnNlcmllID0gMTsgdGhpcy5sYWRvID0gJ0EnOwogICAgdGhpcy5maW5FbiA9IDA7IHRoaXMuZHVyID0gMDsgdGhpcy5wYXVzYSA9IGZhbHNlOyB0aGlzLnJlc3RhbnRlID0gMDsKICAgIHRoaXMuaGVjaGFzID0gW107IHRoaXMudEluaWNpbyA9IG51bGw7IHRoaXMuYXZpc28xMCA9IGZhbHNlOyB0aGlzLnVsdEN1ZW50YSA9IDA7CiAgICB0aGlzLnJlbG9qID0gbnVsbDsKICB9CiAgZ2V0IGJsb3F1ZSgpIHsgcmV0dXJuIHRoaXMuYmxvcXVlc1t0aGlzLmlFal07IH0KICBnZXQgZWplcmNpY2lvKCkgeyByZXR1cm4gdGhpcy5wb3JJZC5nZXQodGhpcy5ibG9xdWUuZWopOyB9CiAgX2VudHJhcihmYXNlLCBkdXJNcywgYW51bmNpbykgewogICAgdGhpcy5mYXNlID0gZmFzZTsgdGhpcy5kdXIgPSBkdXJNczsgdGhpcy5maW5FbiA9IERhdGUubm93KCkgKyBkdXJNczsKICAgIHRoaXMuYXZpc28xMCA9IGZhbHNlOyB0aGlzLnVsdEN1ZW50YSA9IDA7CiAgICBpZiAoYW51bmNpbykgaGFibGFyKGFudW5jaW8pOwogICAgaWYgKGZhc2UgPT09ICdERVNDQU5TTycgfHwgZmFzZSA9PT0gJ1RSQU5TSUNJT04nKSB2aWJyYXIoNjApOwogICAgdGhpcy5hbFBpbnRhcih0aGlzKTsKICB9CiAgaW5pY2lhcigpIHsKICAgIHRoaXMudEluaWNpbyA9IERhdGUubm93KCk7CiAgICBjb25zdCBlID0gdGhpcy5lamVyY2ljaW8sIGIgPSB0aGlzLmJsb3F1ZTsKICAgIHRoaXMuX2VudHJhcignUFJFUEFSQScsIDUwMDAsIGZyYXNlKHRoaXMuZnJhc2VzLnByZXBhcmF0ZSwgeyBlamVyY2ljaW86IGUubmUsIG46IDEsIHRvdGFsOiBiLnNlcmllcyB9KSk7CiAgICB0aGlzLnJlbG9qID0gc2V0SW50ZXJ2YWwoKCkgPT4gdGhpcy5fdGljaygpLCAyMDApOwogIH0KICBfdGljaygpIHsKICAgIGlmICh0aGlzLnBhdXNhIHx8IHRoaXMuZmFzZSA9PT0gJ0ZJTicgfHwgdGhpcy5mYXNlID09PSAnSU5BQ1RJVkEnKSByZXR1cm47CiAgICBjb25zdCByZXN0ID0gdGhpcy5maW5FbiAtIERhdGUubm93KCk7CiAgICBpZiAodGhpcy5mYXNlID09PSAnREVTQ0FOU08nIHx8IHRoaXMuZmFzZSA9PT0gJ1RSQU5TSUNJT04nKSB7CiAgICAgIGlmICghdGhpcy5hdmlzbzEwICYmIHJlc3QgPD0gMTAyMDAgJiYgcmVzdCA+IDMwMDApIHsgdGhpcy5hdmlzbzEwID0gdHJ1ZTsgaGFibGFyKHRoaXMuZnJhc2VzLmF2aXNvXzEwKTsgfQogICAgICBjb25zdCBzZWcgPSBNYXRoLmNlaWwocmVzdCAvIDEwMDApOwogICAgICBpZiAoc2VnIDw9IDMgJiYgc2VnID49IDEgJiYgc2VnICE9PSB0aGlzLnVsdEN1ZW50YSkgeyB0aGlzLnVsdEN1ZW50YSA9IHNlZzsgY3VlbnRhQXRyYXMoc2VnKTsgfQogICAgfQogICAgaWYgKHJlc3QgPD0gMCkgewogICAgICBpZiAodGhpcy5mYXNlID09PSAnUFJFUEFSQScgfHwgdGhpcy5mYXNlID09PSAnREVTQ0FOU08nIHx8IHRoaXMuZmFzZSA9PT0gJ1RSQU5TSUNJT04nKSB0aGlzLl9hdmFuemFyKCk7CiAgICAgIGVsc2UgaWYgKHRoaXMuZmFzZSA9PT0gJ1RSQUJBSk8nICYmIHRoaXMuYmxvcXVlLnRpZW1wb19zKSB0aGlzLmhlY2hvKCk7CiAgICB9CiAgICB0aGlzLmFsUGludGFyKHRoaXMpOwogIH0KICBfYXZhbnphcigpIHsKICAgIGNvbnN0IGUgPSB0aGlzLmVqZXJjaWNpbywgYiA9IHRoaXMuYmxvcXVlOwogICAgaWYgKHRoaXMuZmFzZSA9PT0gJ1BSRVBBUkEnKSB7CiAgICAgIGlmIChiLnRpZW1wb19zKSB0aGlzLl9lbnRyYXIoJ1RSQUJBSk8nLCBiLnRpZW1wb19zICogMTAwMCwgZnJhc2UodGhpcy5mcmFzZXMudHJhYmFqb190aWVtcG8sIHsgc2VnOiBiLnRpZW1wb19zIH0pKTsKICAgICAgZWxzZSB0aGlzLl9lbnRyYXIoJ1RSQUJBSk8nLCAzNjAwMDAwLCBmcmFzZSh0aGlzLmZyYXNlcy50cmFiYWpvX3JlcHMsIHsgcmVwczogYi5yZXBzID8gYi5yZXBzWzFdIDogJycgfSkpOwogICAgfSBlbHNlIGlmICh0aGlzLmZhc2UgPT09ICdUUkFOU0lDSU9OJykgewogICAgICB0aGlzLl9lbnRyYXIoJ1RSQUJBSk8nLCBiLnRpZW1wb19zID8gYi50aWVtcG9fcyAqIDEwMDAgOiAzNjAwMDAwLAogICAgICAgIGZyYXNlKHRoaXMuZnJhc2VzLnZ1ZWx2ZSwgeyBlamVyY2ljaW86IGUubmUsIG46IHRoaXMuc2VyaWUsIHRvdGFsOiBiLnNlcmllcyB9KSk7CiAgICB9IGVsc2UgaWYgKHRoaXMuZmFzZSA9PT0gJ0RFU0NBTlNPJykgewogICAgICBpZiAoYi50aWVtcG9fcykgdGhpcy5fZW50cmFyKCdUUkFCQUpPJywgYi50aWVtcG9fcyAqIDEwMDAsIGZyYXNlKHRoaXMuZnJhc2VzLnRyYWJham9fdGllbXBvLCB7IHNlZzogYi50aWVtcG9fcyB9KSk7CiAgICAgIGVsc2UgdGhpcy5fZW50cmFyKCdUUkFCQUpPJywgMzYwMDAwMCwgZnJhc2UodGhpcy5mcmFzZXMudnVlbHZlLCB7IGVqZXJjaWNpbzogZS5uZSwgbjogdGhpcy5zZXJpZSwgdG90YWw6IGIuc2VyaWVzIH0pKTsKICAgIH0KICB9CiAgaGVjaG8oKSB7CiAgICBjb25zdCBiID0gdGhpcy5ibG9xdWUsIGUgPSB0aGlzLmVqZXJjaWNpbzsKICAgIHRoaXMuaGVjaGFzLnB1c2goeyBlajogYi5laiwgbjogdGhpcy5zZXJpZSwgbGFkbzogYi51bmlsYXRlcmFsID8gdGhpcy5sYWRvIDogbnVsbCB9KTsKICAgIHZpYnJhcig0MCk7CiAgICBpZiAoYi51bmlsYXRlcmFsICYmIHRoaXMubGFkbyA9PT0gJ0EnKSB7CiAgICAgIHRoaXMubGFkbyA9ICdCJzsKICAgICAgdGhpcy5fZW50cmFyKCdUUkFOU0lDSU9OJywgMTUwMDAsIHRoaXMuZnJhc2VzLmNhbWJpb19sYWRvKTsKICAgICAgcmV0dXJuOwogICAgfQogICAgdGhpcy5sYWRvID0gJ0EnOwogICAgaWYgKHRoaXMuc2VyaWUgPCBiLnNlcmllcykgewogICAgICB0aGlzLnNlcmllKys7CiAgICAgIHRoaXMuX2VudHJhcignREVTQ0FOU08nLCBiLmRlc2NhbnNvX3MgKiAxMDAwLCBmcmFzZSh0aGlzLmZyYXNlcy5kZXNjYW5zbywgeyBzZWc6IGIuZGVzY2Fuc29fcyB9KSk7CiAgICB9IGVsc2UgaWYgKHRoaXMuaUVqIDwgdGhpcy5ibG9xdWVzLmxlbmd0aCAtIDEpIHsKICAgICAgdGhpcy5pRWorKzsgdGhpcy5zZXJpZSA9IDE7CiAgICAgIGNvbnN0IHNpZyA9IHRoaXMuZWplcmNpY2lvOwogICAgICB0aGlzLl9lbnRyYXIoJ0RFU0NBTlNPJywgYi5kZXNjYW5zb19zICogMTAwMCwgZnJhc2UodGhpcy5mcmFzZXMudHJhbnNpY2lvbiwgeyBlamVyY2ljaW86IHNpZy5uZSB9KSk7CiAgICB9IGVsc2UgdGhpcy5fZmluKHRydWUpOwogIH0KICBzYWx0YXIoKSB7CiAgICBpZiAodGhpcy5mYXNlID09PSAnUFJFUEFSQScgfHwgdGhpcy5mYXNlID09PSAnREVTQ0FOU08nIHx8IHRoaXMuZmFzZSA9PT0gJ1RSQU5TSUNJT04nKSB0aGlzLl9hdmFuemFyKCk7CiAgICB0aGlzLmFsUGludGFyKHRoaXMpOwogIH0KICBtYXMxNSgpIHsKICAgIGlmICh0aGlzLmZhc2UgPT09ICdERVNDQU5TTycgfHwgdGhpcy5mYXNlID09PSAnVFJBTlNJQ0lPTicpIHsgdGhpcy5maW5FbiArPSAxNTAwMDsgdGhpcy5kdXIgKz0gMTUwMDA7IHRoaXMuYWxQaW50YXIodGhpcyk7IH0KICB9CiAgcGF1c2FUb2dnbGUoKSB7CiAgICBpZiAodGhpcy5mYXNlID09PSAnRklOJykgcmV0dXJuOwogICAgdGhpcy5wYXVzYSA9ICF0aGlzLnBhdXNhOwogICAgaWYgKHRoaXMucGF1c2EpIHsgdGhpcy5yZXN0YW50ZSA9IHRoaXMuZmluRW4gLSBEYXRlLm5vdygpOyBoYWJsYXIodGhpcy5mcmFzZXMucGF1c2EpOyB9CiAgICBlbHNlIHRoaXMuZmluRW4gPSBEYXRlLm5vdygpICsgdGhpcy5yZXN0YW50ZTsKICAgIHRoaXMuYWxQaW50YXIodGhpcyk7CiAgfQogIHRlcm1pbmFyKCkgeyB0aGlzLl9maW4oZmFsc2UpOyB9CiAgX2Zpbihjb21wbGV0YWRhKSB7CiAgICB0aGlzLmZhc2UgPSAnRklOJzsKICAgIGlmICh0aGlzLnJlbG9qKSBjbGVhckludGVydmFsKHRoaXMucmVsb2opOwogICAgaGFibGFyKHRoaXMuZnJhc2VzLmZpbik7IHZpYnJhcihbODAsIDYwLCA4MF0pOwogICAgdGhpcy5hbFBpbnRhcih0aGlzKTsKICAgIHRoaXMuYWxUZXJtaW5hcih7CiAgICAgIHRzOiBuZXcgRGF0ZSgpLnRvSVNPU3RyaW5nKCksIGR1cmFjaW9uX3M6IE1hdGgucm91bmQoKERhdGUubm93KCkgLSB0aGlzLnRJbmljaW8pIC8gMTAwMCksCiAgICAgIGNvbXBsZXRhZGEsIHNlcmllczogdGhpcy5oZWNoYXMsCiAgICB9KTsKICB9CiAgcmVzdGFudGVNcygpIHsgcmV0dXJuIHRoaXMucGF1c2EgPyB0aGlzLnJlc3RhbnRlIDogTWF0aC5tYXgoMCwgdGhpcy5maW5FbiAtIERhdGUubm93KCkpOyB9Cn0K
+// Ironloop — máquina de estados de la sesión guiada.
+// Reloj por marcas de tiempo (finEn contra Date.now()): sobrevive a pausas del WebView.
+import { hablar, vibrar, cuentaAtras, frase } from './voz.js';
+
+export class Sesion {
+  constructor(bloques, porId, frases, alPintar, alTerminar) {
+    this.bloques = bloques; this.porId = porId; this.frases = frases;
+    this.alPintar = alPintar; this.alTerminar = alTerminar;
+    this.fase = 'INACTIVA'; this.iEj = 0; this.serie = 1; this.lado = 'A';
+    this.finEn = 0; this.dur = 0; this.pausa = false; this.restante = 0;
+    this.hechas = []; this.tInicio = null; this.aviso10 = false; this.ultCuenta = 0;
+    this.reloj = null;
+  }
+  get bloque() { return this.bloques[this.iEj]; }
+  get ejercicio() { return this.porId.get(this.bloque.ej); }
+  _entrar(fase, durMs, anuncio) {
+    this.fase = fase; this.dur = durMs; this.finEn = Date.now() + durMs;
+    this.aviso10 = false; this.ultCuenta = 0;
+    if (anuncio) hablar(anuncio);
+    if (fase === 'DESCANSO' || fase === 'TRANSICION') vibrar(60);
+    this.alPintar(this);
+  }
+  iniciar() {
+    this.tInicio = Date.now();
+    const e = this.ejercicio, b = this.bloque;
+    this._entrar('PREPARA', 5000, frase(this.frases.preparate, { ejercicio: e.ne, n: 1, total: b.series }));
+    this.reloj = setInterval(() => this._tick(), 200);
+  }
+  _tick() {
+    if (this.pausa || this.fase === 'FIN' || this.fase === 'INACTIVA') return;
+    const rest = this.finEn - Date.now();
+    if (this.fase === 'DESCANSO' || this.fase === 'TRANSICION') {
+      if (!this.aviso10 && rest <= 10200 && rest > 3000) { this.aviso10 = true; hablar(this.frases.aviso_10); }
+      const seg = Math.ceil(rest / 1000);
+      if (seg <= 3 && seg >= 1 && seg !== this.ultCuenta) { this.ultCuenta = seg; cuentaAtras(seg); }
+    }
+    if (rest <= 0) {
+      if (this.fase === 'PREPARA' || this.fase === 'DESCANSO' || this.fase === 'TRANSICION') this._avanzar();
+      else if (this.fase === 'TRABAJO' && this.bloque.tiempo_s) this.hecho();
+    }
+    this.alPintar(this);
+  }
+  _avanzar() {
+    const e = this.ejercicio, b = this.bloque;
+    if (this.fase === 'PREPARA') {
+      if (b.tiempo_s) this._entrar('TRABAJO', b.tiempo_s * 1000, frase(this.frases.trabajo_tiempo, { seg: b.tiempo_s }));
+      else this._entrar('TRABAJO', 3600000, frase(this.frases.trabajo_reps, { reps: b.reps ? b.reps[1] : '' }));
+    } else if (this.fase === 'TRANSICION') {
+      this._entrar('TRABAJO', b.tiempo_s ? b.tiempo_s * 1000 : 3600000,
+        frase(this.frases.vuelve, { ejercicio: e.ne, n: this.serie, total: b.series }));
+    } else if (this.fase === 'DESCANSO') {
+      if (b.tiempo_s) this._entrar('TRABAJO', b.tiempo_s * 1000, frase(this.frases.trabajo_tiempo, { seg: b.tiempo_s }));
+      else this._entrar('TRABAJO', 3600000, frase(this.frases.vuelve, { ejercicio: e.ne, n: this.serie, total: b.series }));
+    }
+  }
+  hecho() {
+    const b = this.bloque, e = this.ejercicio;
+    this.hechas.push({ ej: b.ej, n: this.serie, lado: b.unilateral ? this.lado : null });
+    vibrar(40);
+    if (b.unilateral && this.lado === 'A') {
+      this.lado = 'B';
+      this._entrar('TRANSICION', 15000, this.frases.cambio_lado);
+      return;
+    }
+    this.lado = 'A';
+    if (this.serie < b.series) {
+      this.serie++;
+      this._entrar('DESCANSO', b.descanso_s * 1000, frase(this.frases.descanso, { seg: b.descanso_s }));
+    } else if (this.iEj < this.bloques.length - 1) {
+      this.iEj++; this.serie = 1;
+      const sig = this.ejercicio;
+      this._entrar('DESCANSO', b.descanso_s * 1000, frase(this.frases.transicion, { ejercicio: sig.ne }));
+    } else this._fin(true);
+  }
+  saltar() {
+    if (this.fase === 'PREPARA' || this.fase === 'DESCANSO' || this.fase === 'TRANSICION') this._avanzar();
+    this.alPintar(this);
+  }
+  mas15() {
+    if (this.fase === 'DESCANSO' || this.fase === 'TRANSICION') { this.finEn += 15000; this.dur += 15000; this.alPintar(this); }
+  }
+  pausaToggle() {
+    if (this.fase === 'FIN') return;
+    this.pausa = !this.pausa;
+    if (this.pausa) { this.restante = this.finEn - Date.now(); hablar(this.frases.pausa); }
+    else this.finEn = Date.now() + this.restante;
+    this.alPintar(this);
+  }
+  terminar() { this._fin(false); }
+  _fin(completada) {
+    this.fase = 'FIN';
+    if (this.reloj) clearInterval(this.reloj);
+    hablar(this.frases.fin); vibrar([80, 60, 80]);
+    this.alPintar(this);
+    this.alTerminar({
+      ts: new Date().toISOString(), duracion_s: Math.round((Date.now() - this.tInicio) / 1000),
+      completada, series: this.hechas,
+    });
+  }
+  restanteMs() { return this.pausa ? this.restante : Math.max(0, this.finEn - Date.now()); }
+}

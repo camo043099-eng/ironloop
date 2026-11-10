@@ -1,1 +1,43 @@
-Ly8gSXJvbmxvb3Ag4oCUIGd1w61hIHBvciB2b3ogY29uIGRlZ3JhZGFjacOzbiBlbiB0cmVzIG5pdmVsZXM6Ci8vIDEpIFRUUyAocGx1Z2luIGRlIENhcGFjaXRvciBzaSBleGlzdGU7IHNpIG5vLCBzcGVlY2hTeW50aGVzaXMpIDIpIHBpdGlkb3MgKyB2aWJyYWNpw7NuIDMpIHNvbG8gcGFudGFsbGEuCmltcG9ydCB7IGFqdXN0ZXMgfSBmcm9tICcuL2FsbWFjZW4uanMnOwoKbGV0IGN0eEF1ZGlvID0gbnVsbDsKZnVuY3Rpb24gcGl0aWRvKGZyZXEgPSA4ODAsIG1zID0gMTQwKSB7CiAgdHJ5IHsKICAgIGN0eEF1ZGlvID0gY3R4QXVkaW8gfHwgbmV3ICh3aW5kb3cuQXVkaW9Db250ZXh0IHx8IHdpbmRvdy53ZWJraXRBdWRpb0NvbnRleHQpKCk7CiAgICBjb25zdCBvID0gY3R4QXVkaW8uY3JlYXRlT3NjaWxsYXRvcigpLCBnID0gY3R4QXVkaW8uY3JlYXRlR2FpbigpOwogICAgby5mcmVxdWVuY3kudmFsdWUgPSBmcmVxOyBvLnR5cGUgPSAnc2luZSc7CiAgICBnLmdhaW4uc2V0VmFsdWVBdFRpbWUoMC4xNSwgY3R4QXVkaW8uY3VycmVudFRpbWUpOwogICAgZy5nYWluLmV4cG9uZW50aWFsUmFtcFRvVmFsdWVBdFRpbWUoMC4wMDEsIGN0eEF1ZGlvLmN1cnJlbnRUaW1lICsgbXMgLyAxMDAwKTsKICAgIG8uY29ubmVjdChnKTsgZy5jb25uZWN0KGN0eEF1ZGlvLmRlc3RpbmF0aW9uKTsKICAgIG8uc3RhcnQoKTsgby5zdG9wKGN0eEF1ZGlvLmN1cnJlbnRUaW1lICsgbXMgLyAxMDAwKTsKICB9IGNhdGNoIHsgLyogc2luIGF1ZGlvICovIH0KfQpleHBvcnQgZnVuY3Rpb24gdmlicmFyKHBhdHJvbiA9IDYwKSB7CiAgaWYgKGFqdXN0ZXMoKS52aWJyYWNpb24gJiYgbmF2aWdhdG9yLnZpYnJhdGUpIG5hdmlnYXRvci52aWJyYXRlKHBhdHJvbik7Cn0KZXhwb3J0IGZ1bmN0aW9uIGhhYmxhcih0ZXh0bykgewogIGlmICghdGV4dG8pIHJldHVybjsKICBjb25zdCBhaiA9IGFqdXN0ZXMoKTsKICBpZiAoYWoudm96KSB7CiAgICB0cnkgewogICAgICBjb25zdCBwbHVnaW4gPSB3aW5kb3cuQ2FwYWNpdG9yICYmIHdpbmRvdy5DYXBhY2l0b3IuUGx1Z2lucyAmJiB3aW5kb3cuQ2FwYWNpdG9yLlBsdWdpbnMuVGV4dFRvU3BlZWNoOwogICAgICBpZiAocGx1Z2luKSB7IHBsdWdpbi5zcGVhayh7IHRleHQ6IHRleHRvLCBsYW5nOiAnZXMtRVMnLCByYXRlOiAxLjAgfSk7IHJldHVybjsgfQogICAgICBpZiAoJ3NwZWVjaFN5bnRoZXNpcycgaW4gd2luZG93KSB7CiAgICAgICAgY29uc3QgdSA9IG5ldyBTcGVlY2hTeW50aGVzaXNVdHRlcmFuY2UodGV4dG8pOwogICAgICAgIHUubGFuZyA9ICdlcy1FUyc7IHUucmF0ZSA9IDEuMDI7CiAgICAgICAgc3BlZWNoU3ludGhlc2lzLmNhbmNlbCgpOyBzcGVlY2hTeW50aGVzaXMuc3BlYWsodSk7CiAgICAgICAgcmV0dXJuOwogICAgICB9CiAgICB9IGNhdGNoIHsgLyogY2FlIGEgcGl0aWRvcyAqLyB9CiAgfQogIGlmIChhai5waXRpZG9zKSB7IHBpdGlkbyg4ODAsIDE1MCk7IHNldFRpbWVvdXQoKCkgPT4gcGl0aWRvKDg4MCwgMTUwKSwgMjIwKTsgfQp9CmV4cG9ydCBmdW5jdGlvbiBjdWVudGFBdHJhcyhuKSB7IC8vIDMsIDIsIDEKICBpZiAoYWp1c3RlcygpLnBpdGlkb3MpIHBpdGlkbyhuID09PSAxID8gMTMyMCA6IDg4MCwgbiA9PT0gMSA/IDIyMCA6IDEyMCk7CiAgdmlicmFyKDMwKTsKfQpleHBvcnQgZnVuY3Rpb24gZnJhc2UocGxhbnRpbGxhLCB2YXJzKSB7CiAgcmV0dXJuIChwbGFudGlsbGEgfHwgJycpLnJlcGxhY2UoL1x7KFx3KylcfS9nLCAoXywgaykgPT4gdmFyc1trXSA/PyAnJyk7Cn0K
+// Ironloop — guía por voz con degradación en tres niveles:
+// 1) TTS (plugin de Capacitor si existe; si no, speechSynthesis) 2) pitidos + vibración 3) solo pantalla.
+import { ajustes } from './almacen.js';
+
+let ctxAudio = null;
+function pitido(freq = 880, ms = 140) {
+  try {
+    ctxAudio = ctxAudio || new (window.AudioContext || window.webkitAudioContext)();
+    const o = ctxAudio.createOscillator(), g = ctxAudio.createGain();
+    o.frequency.value = freq; o.type = 'sine';
+    g.gain.setValueAtTime(0.15, ctxAudio.currentTime);
+    g.gain.exponentialRampToValueAtTime(0.001, ctxAudio.currentTime + ms / 1000);
+    o.connect(g); g.connect(ctxAudio.destination);
+    o.start(); o.stop(ctxAudio.currentTime + ms / 1000);
+  } catch { /* sin audio */ }
+}
+export function vibrar(patron = 60) {
+  if (ajustes().vibracion && navigator.vibrate) navigator.vibrate(patron);
+}
+export function hablar(texto) {
+  if (!texto) return;
+  const aj = ajustes();
+  if (aj.voz) {
+    try {
+      const plugin = window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.TextToSpeech;
+      if (plugin) { plugin.speak({ text: texto, lang: 'es-ES', rate: 1.0 }); return; }
+      if ('speechSynthesis' in window) {
+        const u = new SpeechSynthesisUtterance(texto);
+        u.lang = 'es-ES'; u.rate = 1.02;
+        speechSynthesis.cancel(); speechSynthesis.speak(u);
+        return;
+      }
+    } catch { /* cae a pitidos */ }
+  }
+  if (aj.pitidos) { pitido(880, 150); setTimeout(() => pitido(880, 150), 220); }
+}
+export function cuentaAtras(n) { // 3, 2, 1
+  if (ajustes().pitidos) pitido(n === 1 ? 1320 : 880, n === 1 ? 220 : 120);
+  vibrar(30);
+}
+export function frase(plantilla, vars) {
+  return (plantilla || '').replace(/\{(\w+)\}/g, (_, k) => vars[k] ?? '');
+}

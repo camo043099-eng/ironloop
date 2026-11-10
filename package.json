@@ -1,1 +1,18 @@
-ewogICJuYW1lIjogImlyb25sb29wIiwKICAidmVyc2lvbiI6ICIyLjAuMCIsCiAgInByaXZhdGUiOiB0cnVlLAogICJkZXNjcmlwdGlvbiI6ICJJcm9ubG9vcCDigJQgdGFibGVybyBkZSBlbnRyZW5hbWllbnRvIChhcHAgZGUgZWplcmNpY2lvcyBlbiBlc3Bhw7FvbCkiLAogICJzY3JpcHRzIjogewogICAgImNhcCI6ICJjYXAiLAogICAgInN5bmMiOiAiY2FwIHN5bmMgYW5kcm9pZCIKICB9LAogICJkZXBlbmRlbmNpZXMiOiB7CiAgICAiQGNhcGFjaXRvci9hbmRyb2lkIjogIl43LjQuMCIsCiAgICAiQGNhcGFjaXRvci9jb3JlIjogIl43LjQuMCIsCiAgICAiQGNhcGFjaXRvci1jb21tdW5pdHkvdGV4dC10by1zcGVlY2giOiAiXjYuMS4wIgogIH0sCiAgImRldkRlcGVuZGVuY2llcyI6IHsKICAgICJAY2FwYWNpdG9yL2NsaSI6ICJeNy40LjAiCiAgfQp9Cg==
+{
+  "name": "ironloop",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Ironloop — tablero de entrenamiento (app de ejercicios en español)",
+  "scripts": {
+    "cap": "cap",
+    "sync": "cap sync android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.4.0",
+    "@capacitor/core": "^7.4.0",
+    "@capacitor-community/text-to-speech": "^6.1.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.4.0"
+  }
+}

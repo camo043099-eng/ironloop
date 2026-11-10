@@ -1,1 +1,14 @@
-IyBJcm9ubG9vcAoKVGFibGVybyBkZSBlbnRyZW5hbWllbnRvIGVuIGVzcGHDsW9sOiBydXRpbmFzIGdlbmVyYWRhcyBzZWfDum4gdHUgb2JqZXRpdm8sIG5pdmVsLCBlcXVpcG8geQpsZXNpb25lczsgc2VzaW9uZXMgZ3VpYWRhcyBwb3Igdm96IGNvbiBjcm9uw7NtZXRybyBkZSBkZXNjYW5zbzsgMS4zMjQgZWplcmNpY2lvcyBjb24gdmlkZW8KeSBwYXNvcyBlbiBlc3Bhw7FvbC4KCi0gTGEgbWVkaWEgKGZvdG9zIHkgdmlkZW9zKSBubyB2aXZlIGVuIGVzdGUgcmVwbzogbGEgQ0kgbGEgcmVjb25zdHJ1eWUgZGVzZGUKICBbZXhlcmNpc2VzLWRhdGFzZXRdKGh0dHBzOi8vZ2l0aHViLmNvbS9jYW1vMDQzMDk5LWVuZy9leGVyY2lzZXMtZGF0YXNldCkgY29uCiAgYHRvb2xzL3ByZXBhcmFyX21lZGlhLnB5YC4KLSBFbCBwcm95ZWN0byBBbmRyb2lkIHNlIGdlbmVyYSBlbiBsYSBDSSBjb24gQ2FwYWNpdG9yIChgbnB4IGNhcCBhZGQgYW5kcm9pZGApIHkgc2UKICBhanVzdGEgY29uIGB0b29scy9hanVzdGFyX2FuZHJvaWQubWpzYCB5IGB0b29scy9nZW5lcmFyX2ljb25vcy5weWAuCi0gQ2FkYSBwdXNoIGEgYG1haW5gIGNvbXBpbGEgZWwgQVBLIHkgbG8gcHVibGljYSBlbiBsYSDDumx0aW1hIHJlbGVhc2UuCgpBbmltYWNpb25lcyBlIGltw6FnZW5lczogwqkgR3ltIHZpc3VhbCDigJQgaHR0cHM6Ly9neW12aXN1YWwuY29tLwo=
+# Ironloop
+
+Tablero de entrenamiento en español: rutinas generadas según tu objetivo, nivel, equipo y
+lesiones; sesiones guiadas por voz con cronómetro de descanso; 1.324 ejercicios con video
+y pasos en español.
+
+- La media (fotos y videos) no vive en este repo: la CI la reconstruye desde
+  [exercises-dataset](https://github.com/camo043099-eng/exercises-dataset) con
+  `tools/preparar_media.py`.
+- El proyecto Android se genera en la CI con Capacitor (`npx cap add android`) y se
+  ajusta con `tools/ajustar_android.mjs` y `tools/generar_iconos.py`.
+- Cada push a `main` compila el APK y lo publica en la última release.
+
+Animaciones e imágenes: © Gym visual — https://gymvisual.com/

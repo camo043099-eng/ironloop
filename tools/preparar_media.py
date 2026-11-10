@@ -1,1 +1,48 @@
-IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwojIElyb25sb29wIENJOiByZWNvbnN0cnV5ZSB3d3cvbWVkaWEgZGVzZGUgZWwgcmVwbyBww7pibGljbyBkZWwgZGF0YXNldC4KIyBVc286IHB5dGhvbjMgdG9vbHMvcHJlcGFyYXJfbWVkaWEucHkgPHJ1dGEtZGVsLWRhdGFzZXQ+CiMgTGVlIHd3dy9kYXRhL2VqZXJjaWNpb3MuanNvbiArIHd3dy9kYXRhL21hcGEtbWVkaWEuanNvbiAoaWQgLT4gc3RlbSksCiMgY29waWEgbGFzIGZvdG9zIHkgY29udmllcnRlIGxvcyBHSUYgYSBNUDQgKEguMjY0LCB5dXY0MjBwLCBjcmYgMjYsIHNpbiBhdWRpbykuCmltcG9ydCBqc29uLCBvcywgc2h1dGlsLCBzdWJwcm9jZXNzLCBzeXMKClJBSVogPSBvcy5wYXRoLmRpcm5hbWUob3MucGF0aC5kaXJuYW1lKG9zLnBhdGguYWJzcGF0aChfX2ZpbGVfXykpKQoKIyBFbCBKU09OIGRlIGVqZXJjaWNpb3MgdmlhamEgY29tcHJpbWlkbyB5IHBhcnRpZG8gKGxpbWl0ZSBkZSB0YW1hbm8gZGUgbGEgQVBJKToKIyB0b29scy9kYXRvc19wYXJ0ZXMvZWplcmNpY2lvcy5qc29uLmd6LjEsIC4yLCAuLi4gLT4gd3d3L2RhdGEvZWplcmNpY2lvcy5qc29uCmltcG9ydCBnbG9iLCBnemlwCl9wYXJ0ZXMgPSBzb3J0ZWQoZ2xvYi5nbG9iKG9zLnBhdGguam9pbihSQUlaLCAndG9vbHMnLCAnZGF0b3NfcGFydGVzJywgJ2VqZXJjaWNpb3MuanNvbi5nei4qJykpLAogICAgICAgICAgICAgICAgIGtleT1sYW1iZGEgcDogaW50KHAucnNwbGl0KCcuJywgMSlbMV0pKQppZiBfcGFydGVzOgogICAgX2RhdG9zID0gYicnLmpvaW4ob3BlbihwLCAncmInKS5yZWFkKCkgZm9yIHAgaW4gX3BhcnRlcykKICAgIHdpdGggb3Blbihvcy5wYXRoLmpvaW4oUkFJWiwgJ3d3dycsICdkYXRhJywgJ2VqZXJjaWNpb3MuanNvbicpLCAnd2InKSBhcyBfZjoKICAgICAgICBfZi53cml0ZShnemlwLmRlY29tcHJlc3MoX2RhdG9zKSkKICAgIHByaW50KGYnZWplcmNpY2lvcy5qc29uIHJlZW5zYW1ibGFkbyBkZXNkZSB7bGVuKF9wYXJ0ZXMpfSBwYXJ0ZXMnKQoKZGF0YXNldCA9IHN5cy5hcmd2WzFdIGlmIGxlbihzeXMuYXJndikgPiAxIGVsc2UgJ2RhdGFzZXQnCm1hcGEgPSBqc29uLmxvYWQob3Blbihvcy5wYXRoLmpvaW4oUkFJWiwgJ3d3dycsICdkYXRhJywgJ21hcGEtbWVkaWEuanNvbicpKSkKZGlyX2ltZyA9IG9zLnBhdGguam9pbihSQUlaLCAnd3d3JywgJ21lZGlhJywgJ2ltZycpCmRpcl92aWQgPSBvcy5wYXRoLmpvaW4oUkFJWiwgJ3d3dycsICdtZWRpYScsICd2aWQnKQpvcy5tYWtlZGlycyhkaXJfaW1nLCBleGlzdF9vaz1UcnVlKQpvcy5tYWtlZGlycyhkaXJfdmlkLCBleGlzdF9vaz1UcnVlKQoKZmFsbG9zID0gW10KZm9yIGlkXywgc3RlbSBpbiBtYXBhLml0ZW1zKCk6CiAgICBzcmNfaW1nID0gb3MucGF0aC5qb2luKGRhdGFzZXQsICdpbWFnZXMnLCBzdGVtICsgJy5qcGcnKQogICAgc3JjX2dpZiA9IG9zLnBhdGguam9pbihkYXRhc2V0LCAndmlkZW9zJywgc3RlbSArICcuZ2lmJykKICAgIGRzdF9pbWcgPSBvcy5wYXRoLmpvaW4oZGlyX2ltZywgaWRfICsgJy5qcGcnKQogICAgZHN0X3ZpZCA9IG9zLnBhdGguam9pbihkaXJfdmlkLCBpZF8gKyAnLm1wNCcpCiAgICB0cnk6CiAgICAgICAgc2h1dGlsLmNvcHlmaWxlKHNyY19pbWcsIGRzdF9pbWcpCiAgICBleGNlcHQgT1NFcnJvcjoKICAgICAgICBmYWxsb3MuYXBwZW5kKCdpbWcgJyArIGlkXykKICAgIGlmIG5vdCBvcy5wYXRoLmV4aXN0cyhkc3RfdmlkKToKICAgICAgICByID0gc3VicHJvY2Vzcy5ydW4oWydmZm1wZWcnLCAnLXknLCAnLWxvZ2xldmVsJywgJ2Vycm9yJywgJy1pJywgc3JjX2dpZiwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICctbW92ZmxhZ3MnLCAnZmFzdHN0YXJ0JywgJy1waXhfZm10JywgJ3l1djQyMHAnLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgJy12ZicsICdzY2FsZT10cnVuYyhpdy8yKSoyOnRydW5jKGloLzIpKjInLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgJy1jOnYnLCAnbGlieDI2NCcsICctY3JmJywgJzI2JywgJy1hbicsIGRzdF92aWRdKQogICAgICAgIGlmIHIucmV0dXJuY29kZSAhPSAwOgogICAgICAgICAgICBmYWxsb3MuYXBwZW5kKCd2aWQgJyArIGlkXykKbl9pbWcgPSBsZW4ob3MubGlzdGRpcihkaXJfaW1nKSk7IG5fdmlkID0gbGVuKG9zLmxpc3RkaXIoZGlyX3ZpZCkpCnByaW50KGYnbWVkaWEgbGlzdGE6IHtuX2ltZ30gZm90b3MsIHtuX3ZpZH0gdmlkZW9zOyBmYWxsb3M6IHtsZW4oZmFsbG9zKX0nKQppZiBmYWxsb3Mgb3Igbl9pbWcgIT0gbGVuKG1hcGEpIG9yIG5fdmlkICE9IGxlbihtYXBhKToKICAgIHByaW50KCdGQUxMT1M6JywgZmFsbG9zWzoxMF0pOyBzeXMuZXhpdCgxKQo=
+#!/usr/bin/env python3
+# Ironloop CI: reconstruye www/media desde el repo público del dataset.
+# Uso: python3 tools/preparar_media.py <ruta-del-dataset>
+# Lee www/data/ejercicios.json + www/data/mapa-media.json (id -> stem),
+# copia las fotos y convierte los GIF a MP4 (H.264, yuv420p, crf 26, sin audio).
+import json, os, shutil, subprocess, sys
+
+RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# El JSON de ejercicios viaja comprimido y partido (limite de tamano de la API):
+# tools/datos_partes/ejercicios.json.gz.1, .2, ... -> www/data/ejercicios.json
+import glob, gzip
+_partes = sorted(glob.glob(os.path.join(RAIZ, 'tools', 'datos_partes', 'ejercicios.json.gz.*')),
+                 key=lambda p: int(p.rsplit('.', 1)[1]))
+if _partes:
+    _datos = b''.join(open(p, 'rb').read() for p in _partes)
+    with open(os.path.join(RAIZ, 'www', 'data', 'ejercicios.json'), 'wb') as _f:
+        _f.write(gzip.decompress(_datos))
+    print(f'ejercicios.json reensamblado desde {len(_partes)} partes')
+
+dataset = sys.argv[1] if len(sys.argv) > 1 else 'dataset'
+mapa = json.load(open(os.path.join(RAIZ, 'www', 'data', 'mapa-media.json')))
+dir_img = os.path.join(RAIZ, 'www', 'media', 'img')
+dir_vid = os.path.join(RAIZ, 'www', 'media', 'vid')
+os.makedirs(dir_img, exist_ok=True)
+os.makedirs(dir_vid, exist_ok=True)
+
+fallos = []
+for id_, stem in mapa.items():
+    src_img = os.path.join(dataset, 'images', stem + '.jpg')
+    src_gif = os.path.join(dataset, 'videos', stem + '.gif')
+    dst_img = os.path.join(dir_img, id_ + '.jpg')
+    dst_vid = os.path.join(dir_vid, id_ + '.mp4')
+    try:
+        shutil.copyfile(src_img, dst_img)
+    except OSError:
+        fallos.append('img ' + id_)
+    if not os.path.exists(dst_vid):
+        r = subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', src_gif,
+                            '-movflags', 'faststart', '-pix_fmt', 'yuv420p',
+                            '-vf', 'scale=trunc(iw/2)*2:trunc(ih/2)*2',
+                            '-c:v', 'libx264', '-crf', '26', '-an', dst_vid])
+        if r.returncode != 0:
+            fallos.append('vid ' + id_)
+n_img = len(os.listdir(dir_img)); n_vid = len(os.listdir(dir_vid))
+print(f'media lista: {n_img} fotos, {n_vid} videos; fallos: {len(fallos)}')
+if fallos or n_img != len(mapa) or n_vid != len(mapa):
+    print('FALLOS:', fallos[:10]); sys.exit(1)

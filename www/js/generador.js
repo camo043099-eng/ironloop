@@ -1,1 +1,165 @@
-Ly8gSXJvbmxvb3Ag4oCUIGdlbmVyYWRvciBkZSBydXRpbmFzIChKUyBwdXJvLCBzaW4gRE9NOyB0ZXN0ZWFibGUgZW4gTm9kZSkKLy8gRGlzZcOxbyBkZWwgdHLDrW86IGFsZ29yaXRtbyBkZSBDbGF1ZGUsIHRhYmxhcyBkZSBHZW1pbmksIHZlcmlmaWNhY2nDs24gZGUgU2hvcmVrZWVwZXIuCgpleHBvcnQgZnVuY3Rpb24gbXVsYmVycnkzMihzZW1pbGxhKSB7CiAgbGV0IGEgPSBzZW1pbGxhID4+PiAwOwogIHJldHVybiBmdW5jdGlvbiAoKSB7CiAgICBhIHw9IDA7IGEgPSAoYSArIDB4NkQyQjc5RjUpIHwgMDsKICAgIGxldCB0ID0gTWF0aC5pbXVsKGEgXiAoYSA+Pj4gMTUpLCAxIHwgYSk7CiAgICB0ID0gKHQgKyBNYXRoLmltdWwodCBeICh0ID4+PiA3KSwgNjEgfCB0KSkgXiB0OwogICAgcmV0dXJuICgodCBeICh0ID4+PiAxNCkpID4+PiAwKSAvIDQyOTQ5NjcyOTY7CiAgfTsKfQoKY29uc3QgUkVfVElFTVBPID0gL3BsYW5jaGF8aXNvbcOpdHJ8ZXN0w6F0aWNvfGNvbnRyYSBsYSBwYXJlZHxwb3NpY2nDs24gZGV8c29zdMOpbi9pOwpjb25zdCBSRV9VTklMQVRFUkFMID0gL2EgdW4gYnJhem98YSB1bmEgcGllcm5hfHVuaWxhdGVyYWx8Y29uIHVuIGJyYXpvfGNvbiB1bmEgcGllcm5hfGEgdW4gc29sbyBicmF6by9pOwpjb25zdCBSRV9JTVBBQ1RPID0gL3NhbHRvfHBsaW9tw6l0cnxicmluY298YnVycGVlL2k7CgpleHBvcnQgZnVuY3Rpb24gZGVyaXZhckZsYWdzKGVqKSB7CiAgcmV0dXJuIHsKICAgIHBvcl90aWVtcG86IFJFX1RJRU1QTy50ZXN0KGVqLm5lKSwKICAgIHVuaWxhdGVyYWw6IFJFX1VOSUxBVEVSQUwudGVzdChlai5uZSksCiAgICBpbXBhY3RvOiBSRV9JTVBBQ1RPLnRlc3QoZWoubmUpLAogICAgY29tcHVlc3RvOiAoZWoucyB8fCBbXSkubGVuZ3RoID49IDIsCiAgfTsKfQoKLy8gVW5hIHJlZ2xhIGRlIGxlc2lvbmVzLmpzb24gY29pbmNpZGUgc2kgVE9ET1Mgc3VzIGNhbXBvcyBjb2luY2lkZW4gKEFORCkuCmV4cG9ydCBmdW5jdGlvbiBjdW1wbGVSZWdsYShlaiwgcmVnbGEpIHsKICBpZiAocmVnbGEubyAmJiBlai5vICE9PSByZWdsYS5vKSByZXR1cm4gZmFsc2U7CiAgaWYgKHJlZ2xhLm9faW4gJiYgIXJlZ2xhLm9faW4uaW5jbHVkZXMoZWoubykpIHJldHVybiBmYWxzZTsKICBpZiAocmVnbGEuZSAmJiBlai5lICE9PSByZWdsYS5lKSByZXR1cm4gZmFsc2U7CiAgaWYgKHJlZ2xhLmVfaW4gJiYgIXJlZ2xhLmVfaW4uaW5jbHVkZXMoZWouZSkpIHJldHVybiBmYWxzZTsKICBpZiAocmVnbGEubm9tYnJlX3JlZ2V4ICYmICEobmV3IFJlZ0V4cChyZWdsYS5ub21icmVfcmVnZXgsICdpJykpLnRlc3QoZWoubmUpKSByZXR1cm4gZmFsc2U7CiAgcmV0dXJuIHRydWU7Cn0KCmV4cG9ydCBmdW5jdGlvbiBleGNsdWlkb1Bvckxlc2lvbihlaiwgem9uYXMsIGxlc2lvbmVzKSB7CiAgZm9yIChjb25zdCB6IG9mIHpvbmFzIHx8IFtdKSB7CiAgICBjb25zdCBkZWYgPSBsZXNpb25lcy56b25hc1t6XTsKICAgIGlmICghZGVmKSBjb250aW51ZTsKICAgIGZvciAoY29uc3QgcmVnbGEgb2YgZGVmLmV4Y2x1aXIgfHwgW10pIGlmIChjdW1wbGVSZWdsYShlaiwgcmVnbGEpKSByZXR1cm4gejsKICB9CiAgcmV0dXJuIG51bGw7Cn0KCmZ1bmN0aW9uIGFqdXN0ZUVkYWQocHJlc2NyaXBjaW9uLCBlZGFkKSB7CiAgZm9yIChjb25zdCBhIG9mIHByZXNjcmlwY2lvbi5hanVzdGVzX2VkYWQpIGlmIChlZGFkID49IGEuZWRhZF9taW4gJiYgZWRhZCA8PSBhLmVkYWRfbWF4KSByZXR1cm4gYTsKICByZXR1cm4gcHJlc2NyaXBjaW9uLmFqdXN0ZXNfZWRhZFswXTsKfQoKZnVuY3Rpb24gY2FyZ2FJbmljaWFsKGVqLCBwZXJmaWwsIHByZXNjcmlwY2lvbikgewogIGNvbnN0IG5lID0gZWoubmUudG9Mb3dlckNhc2UoKTsKICBmb3IgKGNvbnN0IGMgb2YgcHJlc2NyaXBjaW9uLmNhcmdhc19pbmljaWFsZXMpIHsKICAgIGlmIChuZXcgUmVnRXhwKGMucGF0cm9uLCAnaScpLnRlc3QobmUpKSB7CiAgICAgIGNvbnN0IGtnID0gTWF0aC5yb3VuZChwZXJmaWwucGVzb19rZyAqIGMuZmFjdG9yZXNbcGVyZmlsLm5pdmVsXSAqIDIpIC8gMjsKICAgICAgY29uc3Qgbm90YSA9IChrZyA8IHByZXNjcmlwY2lvbi5wZXNvX2JhcnJhX2tnICYmIC9iYXJyYS8udGVzdChlai5lLnRvTG93ZXJDYXNlKCkpKQogICAgICAgID8gJ0VtcGllemEgY29uIG1hbmN1ZXJuYXM6IGVsIGPDoWxjdWxvIGRhIG1lbm9zIHF1ZSBsYSBiYXJyYSAoMjAga2cpLicgOiAnJzsKICAgICAgcmV0dXJuIHsga2csIG5vdGEgfTsKICAgIH0KICB9CiAgcmV0dXJuIG51bGw7Cn0KCmZ1bmN0aW9uIHByZXNjcmlwY2lvbkRlQmxvcXVlKGUsIHNsb3QsIGN0eCkgewogIGNvbnN0IHsgcm9sZXMsIGFqdXN0ZSwgcHJlc2NyaXBjaW9uLCBwZXJmaWwsIGJhbmRlcmFzIH0gPSBjdHg7CiAgY29uc3QgZiA9IGJhbmRlcmFzLmdldChlLmlkKTsKICBjb25zdCB0YWJsYSA9IHJvbGVzW3Nsb3Qucm9sXSB8fCByb2xlcy5hY2Nlc29yaW87CiAgbGV0IHNlcmllcyA9IE1hdGgubWF4KDEsIE1hdGgucm91bmQodGFibGEuc2VyaWVzICogYWp1c3RlLnNlcmllc19tdWx0KSk7CiAgaWYgKHNsb3Qucm9sID09PSAncHJpbmNpcGFsJykgc2VyaWVzID0gTWF0aC5tYXgoMiwgc2VyaWVzKTsKICBjb25zdCBibG9xdWUgPSB7CiAgICBlajogZS5pZCwgcm9sOiBzbG90LnJvbCwgZ3J1cG86IHNsb3QuZywgc2VyaWVzLAogICAgZGVzY2Fuc29fczogdGFibGEuZGVzY2Fuc29fcyArIChhanVzdGUuZGVzY2Fuc29fYWRkX3MgfHwgMCksCiAgICB1bmlsYXRlcmFsOiBmLnVuaWxhdGVyYWwsCiAgfTsKICBpZiAoZi5wb3JfdGllbXBvKSBibG9xdWUudGllbXBvX3MgPSB0YWJsYS50aWVtcG9fcyA/IE1hdGgucm91bmQoKHRhYmxhLnRpZW1wb19zWzBdICsgdGFibGEudGllbXBvX3NbMV0pIC8gMikgOiA0MDsKICBlbHNlIHsKICAgIGJsb3F1ZS5yZXBzID0gWy4uLih0YWJsYS5yZXBzIHx8IFs4LCAxMl0pXTsKICAgIGlmIChhanVzdGUucmVwc19taW5fcHJpbiAmJiBzbG90LnJvbCA9PT0gJ3ByaW5jaXBhbCcpIGJsb3F1ZS5yZXBzWzBdID0gTWF0aC5tYXgoYmxvcXVlLnJlcHNbMF0sIGFqdXN0ZS5yZXBzX21pbl9wcmluKTsKICAgIGlmICh0YWJsYS5yaXIpIGJsb3F1ZS5yaXIgPSB0YWJsYS5yaXI7CiAgfQogIGNvbnN0IGNhcmdhID0gY2FyZ2FJbmljaWFsKGUsIHBlcmZpbCwgcHJlc2NyaXBjaW9uKTsKICBpZiAoY2FyZ2EpIHsgYmxvcXVlLmtnX3N1Z2VyaWRvID0gY2FyZ2Eua2c7IGlmIChjYXJnYS5ub3RhKSBibG9xdWUubm90YSA9IGNhcmdhLm5vdGE7IH0KICByZXR1cm4gYmxvcXVlOwp9CgovLyBQYXJhIGVsIGJvdMOzbiDCq0NhbWJpYXLCuzogb3RyYSBvcGNpw7NuIHbDoWxpZGEgZGVsIG1pc21vIGdydXBvL3JvbCwgc2luIHJlcGV0aXIgaWRzIGRhZG9zLgpleHBvcnQgZnVuY3Rpb24gZWxlZ2lyQWx0ZXJuYXRpdmEocGVyZmlsLCBlamVyY2ljaW9zLCB0YWJsYXMsIGdydXBvS2V5LCByb2wsIGV4Y2x1aXJJZHMsIHNlbWlsbGEpIHsKICBjb25zdCB7IHByZXNjcmlwY2lvbiwgZ3J1cG9zLCBsZXNpb25lcyB9ID0gdGFibGFzOwogIGNvbnN0IHJuZCA9IG11bGJlcnJ5MzIoc2VtaWxsYSk7CiAgY29uc3QgYWp1c3RlID0gYWp1c3RlRWRhZChwcmVzY3JpcGNpb24sIHBlcmZpbC5lZGFkIHx8IDI4KTsKICBjb25zdCBiYW5kZXJhcyA9IG5ldyBNYXAoZWplcmNpY2lvcy5tYXAoZSA9PiBbZS5pZCwgZGVyaXZhckZsYWdzKGUpXSkpOwogIGNvbnN0IGVxdWlwb09rID0gbmV3IFNldChbLi4uKHBlcmZpbC5lcXVpcG8gfHwgW10pLCAnUGVzbyBjb3Jwb3JhbCddKTsKICBjb25zdCBnID0gZ3J1cG9zW2dydXBvS2V5XTsKICBpZiAoIWcpIHJldHVybiBudWxsOwogIGNvbnN0IGNhbmRpZGF0b3MgPSBlamVyY2ljaW9zLmZpbHRlcihlID0+CiAgICAhZXhjbHVpcklkcy5pbmNsdWRlcyhlLmlkKSAmJiBlcXVpcG9Pay5oYXMoZS5lKSAmJgogICAgIWV4Y2x1aWRvUG9yTGVzaW9uKGUsIHBlcmZpbC56b25hc19sZXNpb25hZGFzLCBsZXNpb25lcykgJiYKICAgICEoYWp1c3RlLmV2aXRhcl9pbXBhY3RvICYmIGJhbmRlcmFzLmdldChlLmlkKS5pbXBhY3RvKSAmJgogICAgKChnLm11c2N1bG9zIHx8IFtdKS5pbmNsdWRlcyhlLm8pIHx8IChnLnBhcnRlcyB8fCBbXSkuaW5jbHVkZXMoZS5wKSkpOwogIGlmICghY2FuZGlkYXRvcy5sZW5ndGgpIHJldHVybiBudWxsOwogIGNvbnN0IGVsZWdpZG8gPSBjYW5kaWRhdG9zW01hdGguZmxvb3Iocm5kKCkgKiBjYW5kaWRhdG9zLmxlbmd0aCldOwogIGNvbnN0IHJvbGVzID0gcHJlc2NyaXBjaW9uLm9iamV0aXZvc1twZXJmaWwub2JqZXRpdm9dLnBvcl9uaXZlbFtwZXJmaWwubml2ZWxdOwogIHJldHVybiBwcmVzY3JpcGNpb25EZUJsb3F1ZShlbGVnaWRvLCB7IGc6IGdydXBvS2V5LCByb2wgfSwgeyByb2xlcywgYWp1c3RlLCBwcmVzY3JpcGNpb24sIHBlcmZpbCwgYmFuZGVyYXMgfSk7Cn0KCmV4cG9ydCBmdW5jdGlvbiBnZW5lcmFyUnV0aW5hKHBlcmZpbCwgZWplcmNpY2lvcywgdGFibGFzLCBzZW1pbGxhKSB7CiAgY29uc3QgeyBwcmVzY3JpcGNpb24sIGdydXBvcywgbGVzaW9uZXMgfSA9IHRhYmxhczsKICBjb25zdCBybmQgPSBtdWxiZXJyeTMyKHNlbWlsbGEpOwogIGNvbnN0IGFqdXN0ZSA9IGFqdXN0ZUVkYWQocHJlc2NyaXBjaW9uLCBwZXJmaWwuZWRhZCB8fCAyOCk7CiAgY29uc3QgYmFuZGVyYXMgPSBuZXcgTWFwKGVqZXJjaWNpb3MubWFwKGUgPT4gW2UuaWQsIGRlcml2YXJGbGFncyhlKV0pKTsKCiAgLy8gUG9vbCBkdXJvOiBlcXVpcG8gZGlzcG9uaWJsZSAocGVzbyBjb3Jwb3JhbCBzaWVtcHJlKSB5IGNlcm8gZXhjbHVpZG9zIHBvciBsZXNpw7NuLgogIGNvbnN0IGVxdWlwb09rID0gbmV3IFNldChbLi4uKHBlcmZpbC5lcXVpcG8gfHwgW10pLCAnUGVzbyBjb3Jwb3JhbCddKTsKICBjb25zdCBwb29sID0gZWplcmNpY2lvcy5maWx0ZXIoZSA9PiB7CiAgICBpZiAoIWVxdWlwb09rLmhhcyhlLmUpKSByZXR1cm4gZmFsc2U7CiAgICBpZiAoZXhjbHVpZG9Qb3JMZXNpb24oZSwgcGVyZmlsLnpvbmFzX2xlc2lvbmFkYXMsIGxlc2lvbmVzKSkgcmV0dXJuIGZhbHNlOwogICAgaWYgKGFqdXN0ZS5ldml0YXJfaW1wYWN0byAmJiBiYW5kZXJhcy5nZXQoZS5pZCkuaW1wYWN0bykgcmV0dXJuIGZhbHNlOwogICAgcmV0dXJuIHRydWU7CiAgfSk7CgogIGNvbnN0IGRpdmlzaW9uID0gcHJlc2NyaXBjaW9uLmRpdmlzaW9uZXNbU3RyaW5nKHBlcmZpbC5kaWFzKV0gfHwgcHJlc2NyaXBjaW9uLmRpdmlzaW9uZXNbJzMnXTsKICBjb25zdCBwYXRyb24gPSBwcmVzY3JpcGNpb24uc2VtYW5hX3BhdHJvbltTdHJpbmcocGVyZmlsLmRpYXMpXSB8fCBwcmVzY3JpcGNpb24uc2VtYW5hX3BhdHJvblsnMyddOwogIGNvbnN0IHJvbGVzID0gcHJlc2NyaXBjaW9uLm9iamV0aXZvc1twZXJmaWwub2JqZXRpdm9dLnBvcl9uaXZlbFtwZXJmaWwubml2ZWxdOwogIGNvbnN0IHVzYWRvcyA9IG5ldyBTZXQoKTsKICBjb25zdCBhZHZlcnRlbmNpYXMgPSBbXTsKICBjb25zdCBzZW1hbmEgPSBwYXRyb24ubWFwKCgpID0+IG51bGwpOwoKICBkaXZpc2lvbi5zZXNpb25lcy5mb3JFYWNoKChzZXNpb25EZWYsIGkpID0+IHsKICAgIGNvbnN0IGJsb3F1ZXMgPSBbXTsKICAgIGZvciAoY29uc3Qgc2xvdCBvZiBzZXNpb25EZWYuc2xvdHMpIHsKICAgICAgY29uc3QgZyA9IGdydXBvc1tzbG90LmddOwogICAgICBpZiAoIWcpIGNvbnRpbnVlOwogICAgICBsZXQgY2FuZGlkYXRvcyA9IHBvb2wuZmlsdGVyKGUgPT4gIXVzYWRvcy5oYXMoZS5pZCkgJiYKICAgICAgICAoKGcubXVzY3Vsb3MgfHwgW10pLmluY2x1ZGVzKGUubykgfHwgKGcucGFydGVzIHx8IFtdKS5pbmNsdWRlcyhlLnApKSk7CiAgICAgIGNhbmRpZGF0b3MgPSBjYW5kaWRhdG9zCiAgICAgICAgLm1hcChlID0+IHsKICAgICAgICAgIGNvbnN0IGYgPSBiYW5kZXJhcy5nZXQoZS5pZCk7CiAgICAgICAgICBsZXQgc2NvcmUgPSBybmQoKSAqIDAuOTsKICAgICAgICAgIGlmIChzbG90LnJvbCA9PT0gJ3ByaW5jaXBhbCcgJiYgZi5jb21wdWVzdG8pIHNjb3JlICs9IDI7CiAgICAgICAgICBpZiAoc2xvdC5yb2wgIT09ICdwcmluY2lwYWwnICYmICFmLmNvbXB1ZXN0bykgc2NvcmUgKz0gMTsKICAgICAgICAgIGlmIChzbG90LnJvbCA9PT0gJ3ByaW5jaXBhbCcgJiYgKGcubXVzY3Vsb3MgfHwgW10pWzBdID09PSBlLm8pIHNjb3JlICs9IDAuNTsKICAgICAgICAgIHJldHVybiB7IGUsIHNjb3JlIH07CiAgICAgICAgfSkKICAgICAgICAuc29ydCgoYSwgYikgPT4gYi5zY29yZSAtIGEuc2NvcmUpOwogICAgICBjb25zdCBlbGVnaWRvcyA9IGNhbmRpZGF0b3Muc2xpY2UoMCwgc2xvdC5uKTsKICAgICAgaWYgKGVsZWdpZG9zLmxlbmd0aCA8IHNsb3QubikKICAgICAgICBhZHZlcnRlbmNpYXMucHVzaChgU2VzacOzbiAke3Nlc2lvbkRlZi5ub21icmV9OiBmYWx0YXJvbiBlamVyY2ljaW9zIGRlICR7Zy5ub21icmV9IGNvbiB0dSBlcXVpcG8geSBmaWx0cm9zIGRlIGxlc2nDs24uYCk7CiAgICAgIGZvciAoY29uc3QgeyBlIH0gb2YgZWxlZ2lkb3MpIHsKICAgICAgICB1c2Fkb3MuYWRkKGUuaWQpOwogICAgICAgIGJsb3F1ZXMucHVzaChwcmVzY3JpcGNpb25EZUJsb3F1ZShlLCBzbG90LCB7IHJvbGVzLCBhanVzdGUsIHByZXNjcmlwY2lvbiwgcGVyZmlsLCBiYW5kZXJhcyB9KSk7CiAgICAgIH0KICAgIH0KICAgIC8vIER1cmFjacOzbiBlc3RpbWFkYTogc2VyaWVzIMOXICg0MCBzIGRlIHRyYWJham8gKyBkZXNjYW5zbykgZW50cmUgZWplcmNpY2lvcy4KICAgIGNvbnN0IHNlZyA9IGJsb3F1ZXMucmVkdWNlKCh0LCBiKSA9PiB0ICsgYi5zZXJpZXMgKiAoNDAgKyBiLmRlc2NhbnNvX3MpLCAwKTsKICAgIHNlbWFuYVtwYXRyb25baV1dID0gewogICAgICBzZXNpb25faWQ6IHNlc2lvbkRlZi5pZCwgbm9tYnJlOiBzZXNpb25EZWYubm9tYnJlLCBibG9xdWVzLAogICAgICBkdXJhY2lvbl9lc3RfbWluOiBNYXRoLnJvdW5kKHNlZyAvIDYwKSwKICAgIH07CiAgfSk7CgogIHJldHVybiB7CiAgICB2OiAyLCBzZW1pbGxhLCBnZW5lcmFkYTogbmV3IERhdGUoKS50b0lTT1N0cmluZygpLAogICAgdGFibGFzX3ZlcnNpb246IHByZXNjcmlwY2lvbi52ZXJzaW9uLCBhZHZlcnRlbmNpYXMsIHNlbWFuYSwKICB9Owp9Cg==
+// Ironloop — generador de rutinas (JS puro, sin DOM; testeable en Node)
+// Diseño del trío: algoritmo de Claude, tablas de Gemini, verificación de Shorekeeper.
+
+export function mulberry32(semilla) {
+  let a = semilla >>> 0;
+  return function () {
+    a |= 0; a = (a + 0x6D2B79F5) | 0;
+    let t = Math.imul(a ^ (a >>> 15), 1 | a);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+const RE_TIEMPO = /plancha|isométr|estático|contra la pared|posición de|sostén/i;
+const RE_UNILATERAL = /a un brazo|a una pierna|unilateral|con un brazo|con una pierna|a un solo brazo/i;
+const RE_IMPACTO = /salto|pliométr|brinco|burpee/i;
+
+export function derivarFlags(ej) {
+  return {
+    por_tiempo: RE_TIEMPO.test(ej.ne),
+    unilateral: RE_UNILATERAL.test(ej.ne),
+    impacto: RE_IMPACTO.test(ej.ne),
+    compuesto: (ej.s || []).length >= 2,
+  };
+}
+
+// Una regla de lesiones.json coincide si TODOS sus campos coinciden (AND).
+export function cumpleRegla(ej, regla) {
+  if (regla.o && ej.o !== regla.o) return false;
+  if (regla.o_in && !regla.o_in.includes(ej.o)) return false;
+  if (regla.e && ej.e !== regla.e) return false;
+  if (regla.e_in && !regla.e_in.includes(ej.e)) return false;
+  if (regla.nombre_regex && !(new RegExp(regla.nombre_regex, 'i')).test(ej.ne)) return false;
+  return true;
+}
+
+export function excluidoPorLesion(ej, zonas, lesiones) {
+  for (const z of zonas || []) {
+    const def = lesiones.zonas[z];
+    if (!def) continue;
+    for (const regla of def.excluir || []) if (cumpleRegla(ej, regla)) return z;
+  }
+  return null;
+}
+
+function ajusteEdad(prescripcion, edad) {
+  for (const a of prescripcion.ajustes_edad) if (edad >= a.edad_min && edad <= a.edad_max) return a;
+  return prescripcion.ajustes_edad[0];
+}
+
+function cargaInicial(ej, perfil, prescripcion) {
+  const ne = ej.ne.toLowerCase();
+  for (const c of prescripcion.cargas_iniciales) {
+    if (new RegExp(c.patron, 'i').test(ne)) {
+      const kg = Math.round(perfil.peso_kg * c.factores[perfil.nivel] * 2) / 2;
+      const nota = (kg < prescripcion.peso_barra_kg && /barra/.test(ej.e.toLowerCase()))
+        ? 'Empieza con mancuernas: el cálculo da menos que la barra (20 kg).' : '';
+      return { kg, nota };
+    }
+  }
+  return null;
+}
+
+function prescripcionDeBloque(e, slot, ctx) {
+  const { roles, ajuste, prescripcion, perfil, banderas } = ctx;
+  const f = banderas.get(e.id);
+  const tabla = roles[slot.rol] || roles.accesorio;
+  let series = Math.max(1, Math.round(tabla.series * ajuste.series_mult));
+  if (slot.rol === 'principal') series = Math.max(2, series);
+  const bloque = {
+    ej: e.id, rol: slot.rol, grupo: slot.g, series,
+    descanso_s: tabla.descanso_s + (ajuste.descanso_add_s || 0),
+    unilateral: f.unilateral,
+  };
+  if (f.por_tiempo) bloque.tiempo_s = tabla.tiempo_s ? Math.round((tabla.tiempo_s[0] + tabla.tiempo_s[1]) / 2) : 40;
+  else {
+    bloque.reps = [...(tabla.reps || [8, 12])];
+    if (ajuste.reps_min_prin && slot.rol === 'principal') bloque.reps[0] = Math.max(bloque.reps[0], ajuste.reps_min_prin);
+    if (tabla.rir) bloque.rir = tabla.rir;
+  }
+  const carga = cargaInicial(e, perfil, prescripcion);
+  if (carga) { bloque.kg_sugerido = carga.kg; if (carga.nota) bloque.nota = carga.nota; }
+  return bloque;
+}
+
+// Para el botón «Cambiar»: otra opción válida del mismo grupo/rol, sin repetir ids dados.
+export function elegirAlternativa(perfil, ejercicios, tablas, grupoKey, rol, excluirIds, semilla) {
+  const { prescripcion, grupos, lesiones } = tablas;
+  const rnd = mulberry32(semilla);
+  const ajuste = ajusteEdad(prescripcion, perfil.edad || 28);
+  const banderas = new Map(ejercicios.map(e => [e.id, derivarFlags(e)]));
+  const equipoOk = new Set([...(perfil.equipo || []), 'Peso corporal']);
+  const g = grupos[grupoKey];
+  if (!g) return null;
+  const candidatos = ejercicios.filter(e =>
+    !excluirIds.includes(e.id) && equipoOk.has(e.e) &&
+    !excluidoPorLesion(e, perfil.zonas_lesionadas, lesiones) &&
+    !(ajuste.evitar_impacto && banderas.get(e.id).impacto) &&
+    ((g.musculos || []).includes(e.o) || (g.partes || []).includes(e.p)));
+  if (!candidatos.length) return null;
+  const elegido = candidatos[Math.floor(rnd() * candidatos.length)];
+  const roles = prescripcion.objetivos[perfil.objetivo].por_nivel[perfil.nivel];
+  return prescripcionDeBloque(elegido, { g: grupoKey, rol }, { roles, ajuste, prescripcion, perfil, banderas });
+}
+
+export function generarRutina(perfil, ejercicios, tablas, semilla) {
+  const { prescripcion, grupos, lesiones } = tablas;
+  const rnd = mulberry32(semilla);
+  const ajuste = ajusteEdad(prescripcion, perfil.edad || 28);
+  const banderas = new Map(ejercicios.map(e => [e.id, derivarFlags(e)]));
+
+  // Pool duro: equipo disponible (peso corporal siempre) y cero excluidos por lesión.
+  const equipoOk = new Set([...(perfil.equipo || []), 'Peso corporal']);
+  const pool = ejercicios.filter(e => {
+    if (!equipoOk.has(e.e)) return false;
+    if (excluidoPorLesion(e, perfil.zonas_lesionadas, lesiones)) return false;
+    if (ajuste.evitar_impacto && banderas.get(e.id).impacto) return false;
+    return true;
+  });
+
+  const division = prescripcion.divisiones[String(perfil.dias)] || prescripcion.divisiones['3'];
+  const patron = prescripcion.semana_patron[String(perfil.dias)] || prescripcion.semana_patron['3'];
+  const roles = prescripcion.objetivos[perfil.objetivo].por_nivel[perfil.nivel];
+  const usados = new Set();
+  const advertencias = [];
+  const semana = patron.map(() => null);
+
+  division.sesiones.forEach((sesionDef, i) => {
+    const bloques = [];
+    for (const slot of sesionDef.slots) {
+      const g = grupos[slot.g];
+      if (!g) continue;
+      let candidatos = pool.filter(e => !usados.has(e.id) &&
+        ((g.musculos || []).includes(e.o) || (g.partes || []).includes(e.p)));
+      candidatos = candidatos
+        .map(e => {
+          const f = banderas.get(e.id);
+          let score = rnd() * 0.9;
+          if (slot.rol === 'principal' && f.compuesto) score += 2;
+          if (slot.rol !== 'principal' && !f.compuesto) score += 1;
+          if (slot.rol === 'principal' && (g.musculos || [])[0] === e.o) score += 0.5;
+          return { e, score };
+        })
+        .sort((a, b) => b.score - a.score);
+      const elegidos = candidatos.slice(0, slot.n);
+      if (elegidos.length < slot.n)
+        advertencias.push(`Sesión ${sesionDef.nombre}: faltaron ejercicios de ${g.nombre} con tu equipo y filtros de lesión.`);
+      for (const { e } of elegidos) {
+        usados.add(e.id);
+        bloques.push(prescripcionDeBloque(e, slot, { roles, ajuste, prescripcion, perfil, banderas }));
+      }
+    }
+    // Duración estimada: series × (40 s de trabajo + descanso) entre ejercicios.
+    const seg = bloques.reduce((t, b) => t + b.series * (40 + b.descanso_s), 0);
+    semana[patron[i]] = {
+      sesion_id: sesionDef.id, nombre: sesionDef.nombre, bloques,
+      duracion_est_min: Math.round(seg / 60),
+    };
+  });
+
+  return {
+    v: 2, semilla, generada: new Date().toISOString(),
+    tablas_version: prescripcion.version, advertencias, semana,
+  };
+}
