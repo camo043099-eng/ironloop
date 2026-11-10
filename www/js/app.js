@@ -482,7 +482,7 @@ function pintarSesion(s) {
     const total = s.bloques.reduce((t, b) => t + b.series * (b.unilateral ? 2 : 1), 0);
     frac = total ? s.hechas.length / total : 0;
     $('#reloj').textContent = mmss(s.dur - s.restanteMs());
-  } else if (s.fase === 'FIN') { $('#reloj').textContent = '✓'; frac = 1; }
+  } else if (s.fase === 'FIN') { $('#reloj').innerHTML = icono('check', 'ic-reloj'); frac = 1; }
   else { frac = s.dur ? 1 - s.restanteMs() / s.dur : 0; $('#reloj').textContent = mmss(s.restanteMs()); }
   anillo.setAttribute('stroke-dashoffset', String(766.5 * (1 - Math.min(1, Math.max(0, frac)))));
   const e = s.ejercicio, b = s.bloque;
@@ -524,7 +524,7 @@ function pintarSesion(s) {
     const c = $('#controles');
     if (s.fase === 'FIN') { c.innerHTML = ''; return; }
     if (s.fase === 'TRABAJO') {
-      c.innerHTML = `<button class="btn btn-hecho" id="c-hecho">HECHO ✓</button>
+      c.innerHTML = `<button class="btn btn-hecho" id="c-hecho">HECHO ${icono('check')}</button>
         <button class="btn" id="c-pausa">${s.pausa ? 'Continuar' : 'Pausa'}</button>
         <button class="btn" id="c-terminar">Terminar</button>`;
       $('#c-hecho').addEventListener('click', () => s.hecho());

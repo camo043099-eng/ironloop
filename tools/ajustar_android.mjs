@@ -11,6 +11,28 @@ tocar('android/variables.gradle', x => x.replace(/minSdkVersion = \d+/, 'minSdkV
 tocar('android/app/build.gradle', x => x.includes('noCompress')
   ? x
   : x + "\n// Ironloop: media sin compresión AAPT\nandroid {\n    aaptOptions {\n        noCompress 'mp4', 'jpg', 'json'\n    }\n}\n");
+tocar('android/app/build.gradle', x => x.includes('IRONLOOP_KEYSTORE')
+  ? x
+  : x + `
+// Ironloop: firma release con la llave fija (secretos del repo).
+if (System.getenv("IRONLOOP_KEYSTORE")) {
+    android {
+        signingConfigs {
+            release {
+                storeFile file(System.getenv("IRONLOOP_KEYSTORE"))
+                storePassword System.getenv("IRONLOOP_KEYSTORE_PASS")
+                keyAlias System.getenv("IRONLOOP_KEY_ALIAS")
+                keyPassword System.getenv("IRONLOOP_KEY_PASS")
+            }
+        }
+        buildTypes {
+            release {
+                signingConfig signingConfigs.release
+            }
+        }
+    }
+}
+`);
 tocar('android/app/src/main/AndroidManifest.xml', x => x.includes('<queries>')
   ? x
   : x.replace('</manifest>', `

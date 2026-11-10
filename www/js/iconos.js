@@ -25,6 +25,7 @@ export const ICONOS = {
   mas: trazo('<path d="M12 5v14M5 12h14"/>'),
   volver: trazo('<path d="M14.5 5.5L8 12l6.5 6.5"/>'),
   estrella: trazo('<path d="M12 3.6l2.5 5.2 5.7.7-4.2 4 1.1 5.6L12 16.4l-5.1 2.7L8 13.5l-4.2-4 5.7-.7z"/>'),
+  check: trazo('<path d="M4.5 12.5l5 5L19.5 7"/>'),
   cerrar: trazo('<path d="M6 6l12 12M18 6L6 18"/>'),
 };
 

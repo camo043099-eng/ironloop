@@ -228,3 +228,4 @@ nav.oculta{display:none}
 .guia-aviso{color:var(--texto-3);font-size:11.5px;margin-top:9px}
 .fav-ic{display:inline-flex;color:var(--alerta)}
 .fav-ic .ic{width:14px;height:14px}
+.ic-reloj{width:54px;height:54px;vertical-align:middle}
