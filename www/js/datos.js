@@ -8,6 +8,16 @@ export const D = {
 
 const norm = s => (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 
+// El dataset trae algunos músculos en inglés: se traducen al cargar para que
+// las fichas, el buscador y el mapa de calor hablen siempre en español.
+const TRAD_MUSCULOS = {
+  'abdominals': 'Abdominales', 'deltoids': 'Deltoides', 'rear deltoids': 'Deltoides',
+  'latissimus dorsi': 'Dorsales', 'rotator cuff': 'Manguito rotador', 'shins': 'Tibial anterior',
+  'trapezius': 'Trapecios', 'upper chest': 'Pectorales',
+  'wrist extensors': 'Antebrazos', 'wrist flexors': 'Antebrazos',
+};
+const tradMusculo = m => TRAD_MUSCULOS[(m || '').toLowerCase()] || m;
+
 export async function cargarDatos() {
   const [ej, pr, gr, le, vo, sa] = await Promise.all([
     fetch('data/ejercicios.json').then(r => r.json()),
@@ -19,6 +29,8 @@ export async function cargarDatos() {
   ]);
   D.ejercicios = ej; D.prescripcion = pr; D.grupos = gr; D.lesiones = le; D.voz = vo; D.salud = sa;
   for (const e of ej) {
+    e.m = tradMusculo(e.m);
+    if (Array.isArray(e.s)) e.s = [...new Set(e.s.map(tradMusculo))];
     e.flags = derivarFlags(e);
     e.buscar = norm(e.ne + ' ' + e.n + ' ' + e.o + ' ' + e.p + ' ' + e.e);
     D.porId.set(e.id, e);
