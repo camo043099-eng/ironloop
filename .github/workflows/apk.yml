@@ -10,34 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Reparar codificacion de archivos y guardar la reparacion
-        run: |
-          python3 - <<'PYEOF'
-          import base64, os, re
-          for root, dirs, files in os.walk('.'):
-              dirs[:] = [d for d in dirs if d not in ('.git', '.github', 'node_modules', 'dataset', 'android')]
-              for f in files:
-                  p = os.path.join(root, f)
-                  try:
-                      data = open(p, 'rb').read()
-                      txt = data.decode('ascii').strip()
-                  except Exception:
-                      continue
-                  limpia = txt.replace('\n', '').replace('\r', '')
-                  if len(limpia) > 20 and re.fullmatch(r'[A-Za-z0-9+/=]+', limpia):
-                      try:
-                          dec = base64.b64decode(limpia)
-                      except Exception:
-                          continue
-                      if dec and dec != data:
-                          open(p, 'wb').write(dec)
-                          print('reparado', p)
-          PYEOF
-          git config user.name "ironloop-ci"
-          git config user.email "ci@ironloop.local"
-          git add -A
-          git diff --cached --quiet || git commit -m "Reparar codificacion de archivos [skip ci]"
-          git push origin HEAD:main || true
       - name: Traer el dataset (fotos y GIF oficiales)
         run: git clone --depth 1 https://github.com/camo043099-eng/exercises-dataset.git dataset
       - name: Preparar media (fotos + GIF convertidos a MP4)
@@ -54,6 +26,8 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: '8.11.1'
+      - name: Restaurar la llave de firma fija
+        run: echo "${{ secrets.IRONLOOP_KEYSTORE_B64 }}" | base64 -d > "$RUNNER_TEMP/ironloop-release.jks"
       - name: Instalar dependencias y crear el proyecto Android
         run: |
           npm ci
@@ -62,19 +36,24 @@ jobs:
           pip install --quiet pillow
           python3 tools/generar_iconos.py android/app/src/main/res
           npx cap sync android
-      - name: Compilar APK (debug firmada, instalable)
+      - name: Compilar APK (release, firma fija)
         working-directory: android
-        run: gradle assembleDebug --no-daemon
+        env:
+          IRONLOOP_KEYSTORE: ${{ runner.temp }}/ironloop-release.jks
+          IRONLOOP_KEYSTORE_PASS: ${{ secrets.IRONLOOP_KEYSTORE_PASS }}
+          IRONLOOP_KEY_ALIAS: ${{ secrets.IRONLOOP_KEY_ALIAS }}
+          IRONLOOP_KEY_PASS: ${{ secrets.IRONLOOP_KEY_PASS }}
+        run: gradle assembleRelease --no-daemon
       - name: Publicar el APK en una release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: apk-${{ github.run_number }}
           name: Ironloop APK ${{ github.run_number }}
-          files: android/app/build/outputs/apk/debug/app-debug.apk
+          files: android/app/build/outputs/apk/release/app-release.apk
           make_latest: true
       - name: Publicar el APK como artefacto (respaldo)
         uses: actions/upload-artifact@v4
         with:
           name: ironloop-apk
-          path: android/app/build/outputs/apk/debug/app-debug.apk
+          path: android/app/build/outputs/apk/release/app-release.apk
           retention-days: 30
