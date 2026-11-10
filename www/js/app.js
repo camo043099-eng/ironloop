@@ -82,16 +82,17 @@ function mostrarOnboarding(primeraVez) {
     ${primeraVez ? `<div class="aviso-salud"><b>Antes de empezar:</b> ${esc(D.salud.aviso)}</div>
     <button class="btn-empezar" id="ob-entendido">ENTIENDO, CONTINUAR</button>
     <div id="ob-form" style="display:none">` : '<div id="ob-form">'}
-      <div class="campo"><label>Tu nombre (opcional)</label><input type="text" id="ob-nombre" value="${esc(previo.nombre || '')}" placeholder="Ej.: Alejo"></div>
+      <div class="campo"><label>Tu nombre</label><input type="text" id="ob-nombre" value="${esc(previo.nombre || '')}" placeholder="Ej.: Alejo"></div>
+      <div class="campo"><label>Cuerpo</label><div class="opciones" id="ob-cuerpo"></div></div>
       <div class="dos-col">
         <div class="campo"><label>Edad</label><input type="number" id="ob-edad" min="10" max="100" value="${previo.edad || ''}" placeholder="25"></div>
-        <div class="campo"><label>Peso corporal (kg)</label><input type="number" id="ob-peso" min="30" max="250" value="${previo.peso_kg || ''}" placeholder="70"></div>
+        <div class="campo"><label>Peso (kg)</label><input type="number" id="ob-peso" min="30" max="250" value="${previo.peso_kg || ''}" placeholder="70"></div>
       </div>
       <div class="campo"><label>Nivel</label><div class="opciones" id="ob-nivel"></div></div>
       <div class="campo"><label>Objetivo</label><div class="opciones" id="ob-objetivo"></div></div>
       <div class="campo"><label>Días por semana</label><div class="opciones" id="ob-dias"></div></div>
-      <div class="campo"><label>Equipo que tienes (toca todo lo que aplique)</label><div class="opciones" id="ob-equipo"></div></div>
-      <div class="campo"><label>¿Alguna zona lesionada o que debas cuidar?</label><div class="opciones" id="ob-zonas"></div></div>
+      <div class="campo"><label>¿Dónde entrenas?</label><div class="opciones" id="ob-lugar"></div><div class="opciones" id="ob-equipo" style="display:none;margin-top:8px"></div></div>
+      <div class="campo"><label>¿Algo que cuidar? (si no, déjalo así)</label><div class="opciones" id="ob-zonas"></div></div>
       <div class="error-form" id="ob-error"></div>
       <button class="btn-empezar" id="ob-crear">${primeraVez ? 'CREAR MI RUTINA' : 'GUARDAR Y REGENERAR'}</button>
       ${primeraVez ? '' : '<button class="btn" id="ob-cancelar" style="width:100%;margin-top:10px">Cancelar</button>'}
@@ -99,6 +100,9 @@ function mostrarOnboarding(primeraVez) {
   if (primeraVez) $('#ob-entendido').addEventListener('click', () => {
     $('#ob-entendido').remove(); $('#ob-form').style.display = '';
   });
+  const leerCuerpo = grupoOpciones($('#ob-cuerpo'),
+    [{ val: 'masculino', etiqueta: 'Hombre' }, { val: 'femenino', etiqueta: 'Mujer' }],
+    previo.cuerpo || 'masculino', false, () => {});
   const leerNivel = grupoOpciones($('#ob-nivel'),
     [{ val: 'principiante', etiqueta: 'Principiante' }, { val: 'intermedio', etiqueta: 'Intermedio' }, { val: 'avanzado', etiqueta: 'Avanzado' }],
     previo.nivel || 'principiante', false, () => {});
@@ -107,8 +111,15 @@ function mostrarOnboarding(primeraVez) {
     previo.objetivo || 'hipertrofia', false, () => {});
   const leerDias = grupoOpciones($('#ob-dias'),
     [2, 3, 4, 5].map(n => ({ val: n, etiqueta: n + ' días' })), previo.dias || 3, false, () => {});
+  const EQUIPO_CASA = ['Peso corporal', 'Mancuernas', 'Banda', 'Banda de resistencia', 'Pesa rusa', 'Rueda abdominal'];
+  const esDeCasa = eq => eq && eq.length <= EQUIPO_CASA.length && eq.every(x => EQUIPO_CASA.includes(x));
+  const lugarPrevio = !previo.equipo ? 'gym' : (previo.equipo.length >= equipos.length ? 'gym' : (esDeCasa(previo.equipo) ? 'casa' : 'mano'));
   const leerEquipo = grupoOpciones($('#ob-equipo'),
     equipos.map(e => ({ val: e, etiqueta: e })), previo.equipo || ['Peso corporal'], true, () => {});
+  const leerLugar = grupoOpciones($('#ob-lugar'),
+    [{ val: 'gym', etiqueta: '🏋️ Gimnasio' }, { val: 'casa', etiqueta: '🏠 Casa' }, { val: 'mano', etiqueta: '✋ Elegir a mano' }],
+    lugarPrevio, false, () => { $('#ob-equipo').style.display = leerLugar() === 'mano' ? '' : 'none'; });
+  $('#ob-equipo').style.display = lugarPrevio === 'mano' ? '' : 'none';
   const leerZonas = grupoOpciones($('#ob-zonas'), zonas, previo.zonas_lesionadas || [], true, () => {});
   const cancelar = $('#ob-cancelar');
   if (cancelar) cancelar.addEventListener('click', () => ob.classList.remove('activo'));
@@ -117,10 +128,11 @@ function mostrarOnboarding(primeraVez) {
     if (!(edad >= 10 && edad <= 100) || !(peso >= 30 && peso <= 250)) {
       $('#ob-error').textContent = 'Revisa la edad (10–100) y el peso (30–250 kg).'; return;
     }
-    const equipoSel = leerEquipo();
+    const lugar = leerLugar();
+    const equipoSel = lugar === 'gym' ? [...equipos] : lugar === 'casa' ? [...EQUIPO_CASA] : leerEquipo();
     if (!equipoSel.includes('Peso corporal')) equipoSel.push('Peso corporal');
     const perfil = {
-      nombre: $('#ob-nombre').value.trim(), edad, peso_kg: peso,
+      nombre: $('#ob-nombre').value.trim(), cuerpo: leerCuerpo(), edad, peso_kg: peso,
       nivel: leerNivel(), objetivo: leerObjetivo(), dias: leerDias(),
       equipo: equipoSel, zonas_lesionadas: leerZonas(),
       semilla: (previo.semilla || Math.floor(Math.random() * 1e9)),
@@ -166,7 +178,7 @@ function pintarHoy() {
   }).join('') : '';
   el.innerHTML = `
   <div class="hoy-grid">
-    <div class="silueta-wrap"><div id="hoy-silueta">${svgFrontal()}</div><div class="cap">Tu semana por músculo</div></div>
+    <div class="silueta-wrap"><div id="hoy-silueta">${svgFrontal(A.perfil()?.cuerpo === 'femenino')}</div><div class="cap">Tu semana por músculo</div></div>
     <div class="metricas">
       <div class="metro"><div class="num">${sesiones}<span>/${p.dias}</span></div><div class="lbl">Sesiones</div></div>
       <div class="metro"><div class="num">${minutos}</div><div class="lbl">Minutos</div></div>
@@ -194,7 +206,7 @@ function pintarCuerpo() {
   const equipos = [...new Set(D.ejercicios.map(e => e.e))].sort();
   el.innerHTML = `
   <div class="cuerpo-top">
-    <div class="silueta-wrap"><div id="cuerpo-silueta">${cuerpoVista === 'frontal' ? svgFrontal() : svgDorsal()}</div><div class="cap">Toca un músculo</div></div>
+    <div class="silueta-wrap"><div id="cuerpo-silueta">${cuerpoVista === 'frontal' ? svgFrontal(A.perfil()?.cuerpo === 'femenino') : svgDorsal(A.perfil()?.cuerpo === 'femenino')}</div><div class="cap">Toca un músculo</div></div>
     <div class="cuerpo-lado">
       <button class="btn vista-btn" id="cuerpo-girar">Ver ${cuerpoVista === 'frontal' ? 'espalda' : 'frente'}</button>
       <div class="tarjeta" style="margin-top:0"><h3 class="tit">Explorar</h3>
