@@ -6,6 +6,9 @@
   --r-m:18px; --r-l:28px;
 }
 *{box-sizing:border-box; margin:0; padding:0; -webkit-tap-highlight-color:transparent}
+button, select, input{touch-action:manipulation}
+.opcion:active, .carta:active{transform:scale(.97)}
+.carta{transition:transform .12s}
 body{background:var(--fondo); color:var(--texto); font-family:system-ui,'Segoe UI',Roboto,sans-serif; min-height:100vh; overflow-x:hidden}
 .display{font-family:'Arial Narrow',system-ui,sans-serif; font-stretch:condensed; letter-spacing:.04em}
 header{padding:20px 20px 6px; display:flex; align-items:baseline; gap:10px; max-width:520px; margin:0 auto}
@@ -25,7 +28,7 @@ h3.tit{font-size:12px; letter-spacing:.2em; text-transform:uppercase; color:var(
 .hoy-grid{display:flex; gap:14px; align-items:stretch; margin-top:10px}
 .silueta-wrap{flex:0 0 46%; background:linear-gradient(180deg,var(--capa-1),transparent); border:1px solid var(--linea); border-radius:var(--r-l); padding:10px 4px 4px; text-align:center}
 .silueta-wrap .cap{font-size:10px; letter-spacing:.22em; color:var(--texto-3); text-transform:uppercase; margin-top:2px}
-.silueta-wrap [data-m]{cursor:pointer}
+.silueta-wrap [data-m]{cursor:default}
 .metricas{flex:1; display:flex; flex-direction:column; gap:10px}
 .metro{background:var(--capa-1); border:1px solid var(--linea); border-radius:var(--r-m); padding:12px 14px}
 .metro .num{font-size:34px; font-weight:800; font-variant-numeric:tabular-nums; line-height:1}
@@ -51,6 +54,10 @@ h3.tit{font-size:12px; letter-spacing:.2em; text-transform:uppercase; color:var(
 .cuerpo-top .silueta-wrap{flex:0 0 52%}
 .cuerpo-top [data-m]{cursor:pointer; transition:fill .15s}
 .cuerpo-top [data-m]:active{fill:var(--trabajo)}
+.cuerpo-top [data-m].sel{fill:var(--trabajo); stroke:#FFE3D3; stroke-width:5}
+.cuerpo-top [data-m].salto{animation:salto .24s cubic-bezier(.2,.8,.2,1); transform-box:fill-box; transform-origin:center}
+@keyframes salto{0%{transform:scale(1)}45%{transform:scale(1.07)}100%{transform:scale(1)}}
+@media (prefers-reduced-motion: reduce){.cuerpo-top [data-m].salto{animation:none}}
 .cuerpo-lado{flex:1; display:flex; flex-direction:column; gap:10px}
 .vista-btn{align-self:flex-start}
 .busca{width:100%; background:var(--capa-1); border:1px solid var(--linea); border-radius:999px; padding:13px 18px; color:var(--texto); font-size:15px; margin-top:14px; outline:none}
@@ -84,7 +91,24 @@ h3.tit{font-size:12px; letter-spacing:.2em; text-transform:uppercase; color:var(
 .descanso-txt{color:var(--texto-3); font-size:13px; margin-top:6px}
 .advertencias{background:rgba(255,194,71,.08); border:1px solid rgba(255,194,71,.35); color:var(--alerta); border-radius:14px; padding:11px 13px; font-size:13px; line-height:1.5; margin-top:12px}
 /* SESION */
-#v-sesion{position:relative; overflow:hidden; margin-top:10px}
+#v-sesion{position:relative; overflow:hidden; margin-top:10px; border-radius:var(--r-l); transition:background .6s}
+#v-sesion[data-fase="TRABAJO"]{background:radial-gradient(120% 90% at 50% 0%, rgba(255,107,61,.13), transparent 62%)}
+#v-sesion[data-fase="DESCANSO"]{background:radial-gradient(120% 90% at 50% 0%, rgba(53,213,195,.12), transparent 62%)}
+#v-sesion[data-fase="PREPARA"], #v-sesion[data-fase="TRANSICION"]{background:radial-gradient(120% 90% at 50% 0%, rgba(156,140,255,.12), transparent 62%)}
+#v-sesion[data-fase="FIN"]{background:radial-gradient(120% 90% at 50% 0%, rgba(182,242,74,.12), transparent 62%)}
+#v-sesion[data-fase="DESCANSO"] .anillo-wrap{animation:respira 4.2s ease-in-out infinite; border-radius:50%}
+@keyframes respira{0%,100%{box-shadow:0 0 0 0 rgba(53,213,195,0)}50%{box-shadow:0 0 42px 6px rgba(53,213,195,.16)}}
+.continuar{display:flex; justify-content:space-between; align-items:center; gap:12px; background:linear-gradient(135deg, rgba(182,242,74,.13), var(--capa-1)); border:1px solid rgba(182,242,74,.45); border-radius:var(--r-l); padding:14px 16px; margin-top:14px}
+.continuar .c-det{color:var(--texto-2); font-size:13px; margin-top:2px}
+.continuar .c-btns{display:flex; gap:8px; flex:0 0 auto}
+.fin-stats{display:flex; gap:10px; justify-content:center; margin:4px 0 16px}
+.fin-stats div{background:var(--capa-1); border:1px solid var(--linea); border-radius:14px; padding:10px 14px; min-width:84px; animation:entrar .45s cubic-bezier(.2,.8,.2,1)}
+.fin-stats b{display:block; font-size:26px; color:var(--exito); font-variant-numeric:tabular-nums}
+.fin-stats span{font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--texto-2)}
+#error-global{position:fixed; inset:0; background:rgba(4,6,10,.82); z-index:60; display:flex; align-items:center; justify-content:center; padding:20px}
+#error-global .eg-caja{background:var(--capa-1); border:1px solid var(--linea); border-radius:var(--r-l); padding:22px; text-align:center; max-width:340px}
+#error-global .eg-tit{font-size:19px; font-weight:800; margin-bottom:6px}
+#error-global p{color:var(--texto-2); font-size:14px; line-height:1.5; margin-bottom:14px}
 #resplandor{position:absolute; inset:0; transition:background .6s; pointer-events:none}
 .sesion-inner{position:relative; padding:20px 6px 24px; text-align:center}
 .estado-txt{font-size:13px; letter-spacing:.34em; font-weight:800; text-transform:uppercase}
@@ -137,7 +161,7 @@ h3.tit{font-size:12px; letter-spacing:.2em; text-transform:uppercase; color:var(
 .opcion.sel{background:var(--trabajo); color:#14100C; border-color:var(--trabajo)}
 .error-form{color:var(--alerta); font-size:13px; margin-top:10px; min-height:18px}
 /* NAV */
-nav{position:fixed; left:50%; transform:translateX(-50%); bottom:16px; background:rgba(17,21,29,.92); border:1px solid var(--linea); border-radius:999px; display:flex; gap:2px; padding:6px; backdrop-filter:blur(8px); z-index:20}
+nav{position:fixed; left:50%; transform:translateX(-50%); bottom:calc(16px + env(safe-area-inset-bottom)); background:rgba(17,21,29,.92); border:1px solid var(--linea); border-radius:999px; display:flex; gap:2px; padding:6px; backdrop-filter:blur(8px); z-index:20}
 nav button{border:none; background:transparent; color:var(--texto-3); font-size:13.5px; font-weight:700; padding:10px 13px; border-radius:999px; cursor:pointer}
 nav button.activo{background:var(--capa-2); color:var(--texto)}
 nav.oculta{display:none}
