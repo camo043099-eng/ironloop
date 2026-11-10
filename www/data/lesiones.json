@@ -139,8 +139,11 @@
    "etiqueta": "Cuello",
    "excluir": [
     {
-     "o": "Deltoides",
+     "o": "Trapecios",
      "nombre_regex": "encogimiento|shrug"
+    },
+    {
+     "o": "Elevador de la escápula"
     }
    ],
    "preferir_equipo": []
