@@ -48,9 +48,21 @@ document.querySelectorAll('#nav button').forEach(b => b.addEventListener('click'
 cargarDatos().then(() => {
   $('#cargando').remove();
   const p = A.perfil();
-  if (!p) mostrarOnboarding(true);
+  const pValido = p && D.prescripcion.objetivos[p.objetivo] &&
+    D.prescripcion.objetivos[p.objetivo].por_nivel[p.nivel] &&
+    D.prescripcion.divisiones[String(p.dias)];
+  if (!pValido) mostrarOnboarding(true);
   else ir('hoy');
 }).catch(() => { $('#cargando').textContent = 'No se pudieron cargar los datos.'; });
+
+/* ---------- Error global amable ---------- */
+window.addEventListener('error', () => {
+  if (document.getElementById('error-global')) return;
+  const d = document.createElement('div');
+  d.id = 'error-global';
+  d.innerHTML = '<div class="eg-caja"><div class="eg-tit">Algo falló</div><p>Tu progreso está a salvo en este teléfono.</p><button class="btn btn-coral" onclick="location.reload()">Reintentar</button></div>';
+  document.body.appendChild(d);
+});
 
 /* ---------- Onboarding ---------- */
 function grupoOpciones(contenedor, valores, inicial, multiple, alCambiar) {
@@ -187,6 +199,7 @@ function pintarHoy() {
     </div>
   </div>
   <div class="barras-wrap"><h3 class="tit">Series por día</h3><svg id="barras" viewBox="0 0 340 110">${barras}</svg></div>
+  ${A.sesionActiva() ? `<div class="continuar"><div><b>Sesión en curso</b><div class="c-det">${A.sesionActiva().hechas.length} series hechas · retómala donde ibas</div></div><div class="c-btns"><button class="btn btn-coral" id="hoy-continuar">CONTINUAR</button><button class="btn" id="hoy-descartar">Descartar</button></div></div>` : ''}
   ${sesion ? `<div class="sesion-hoy"><h3 class="tit">${tituloSesion}</h3>
     <div class="nombre display">${esc(sesion.nombre)}</div>
     <div class="detalle">${sesion.bloques.length} ejercicios · ~${sesion.duracion_est_min} min — con voz guía y descansos cronometrados.</div>
@@ -196,6 +209,10 @@ function pintarHoy() {
   aplicarCalor($('#hoy-silueta'), mapaCalorSemana());
   const btn = $('#hoy-empezar');
   if (btn) btn.addEventListener('click', () => iniciarSesion(sesion.bloques));
+  const bc = $('#hoy-continuar');
+  if (bc) bc.addEventListener('click', () => { const sa = A.sesionActiva(); if (sa) iniciarSesion(sa.bloques, sa); });
+  const bd = $('#hoy-descartar');
+  if (bd) bd.addEventListener('click', () => { A.borrarSesionActiva(); pintarHoy(); });
 }
 
 /* ---------- CUERPO ---------- */
@@ -221,9 +238,21 @@ function pintarCuerpo() {
     ${cuerpoFiltro.musculo ? `<button class="btn btn-coral" id="cuerpo-limpiar">Músculo: ${esc(cuerpoFiltro.musculo)} ✕</button>` : ''}
   </div>
   <div id="cuerpo-resultados"></div>`;
-  aplicarCalor($('#cuerpo-silueta'), mapaCalorSemana());
+  // Sin calor semanal aquí: en Cuerpo solo se marca lo que la persona toca.
+  const selM = cuerpoFiltro.musculo;
+  if (selM) {
+    const n = D.ejercicios.filter(e => e.o === selM).length;
+    $('#cuerpo-silueta').querySelectorAll('[data-m]').forEach(pth => {
+      if (pth.dataset.m === selM) pth.classList.add('sel', 'salto');
+    });
+    const cap = $('#v-cuerpo .silueta-wrap .cap');
+    if (cap) cap.textContent = selM + ' · ' + n + ' ejercicios';
+  }
   $('#cuerpo-silueta').querySelectorAll('[data-m]').forEach(pth =>
-    pth.addEventListener('click', () => { cuerpoFiltro.musculo = pth.dataset.m; pintarCuerpo(); }));
+    pth.addEventListener('click', () => {
+      cuerpoFiltro.musculo = cuerpoFiltro.musculo === pth.dataset.m ? '' : pth.dataset.m;
+      pintarCuerpo();
+    }));
   $('#cuerpo-girar').addEventListener('click', () => { cuerpoVista = cuerpoVista === 'frontal' ? 'dorsal' : 'frontal'; pintarCuerpo(); });
   $('#cuerpo-busca').addEventListener('input', e => { cuerpoFiltro.texto = e.target.value; pintarResultados(); });
   $('#cuerpo-parte').addEventListener('change', e => { cuerpoFiltro.parte = e.target.value; pintarResultados(); });
@@ -263,7 +292,7 @@ function abrirFicha(id) {
       <h3 class="tit">${esc(e.p)} · ${esc(e.o)}</h3>
       <button class="btn" id="ficha-cerrar">Cerrar ✕</button>
     </div>
-    <video src="${vidDe(e.id)}" poster="${imgDe(e.id)}" autoplay loop muted playsinline></video>
+    <video class="ficha-video" src="${vidDe(e.id)}" poster="${imgDe(e.id)}" autoplay loop muted playsinline></video>
     <div class="f-nom">${esc(e.ne)}</div><div class="f-en">${esc(e.n)}</div>
     <div class="chips">
       <span class="chip">Equipo <b>${esc(e.e)}</b></span>
@@ -277,7 +306,9 @@ function abrirFicha(id) {
     </div>
     <p class="atribucion">© Gym visual — https://gymvisual.com/</p>`;
   hoja.classList.add('abierta'); fondo.classList.add('abierto'); hoja.setAttribute('aria-hidden', 'false');
-  const cerrar = () => { hoja.classList.remove('abierta'); fondo.classList.remove('abierto'); hoja.setAttribute('aria-hidden', 'true'); const v = hoja.querySelector('video'); if (v) v.pause(); };
+  const vf = hoja.querySelector('video');
+  if (vf) vf.addEventListener('loadeddata', () => vf.classList.add('listo'));
+  const cerrar = () => { hoja.classList.remove('abierta'); fondo.classList.remove('abierto'); hoja.setAttribute('aria-hidden', 'true'); const v = hoja.querySelector('video'); if (v) { v.pause(); v.removeAttribute('src'); v.load(); } };
   $('#ficha-cerrar').addEventListener('click', cerrar);
   fondo.onclick = cerrar;
   $('#ficha-fav').addEventListener('click', ev => {
@@ -299,7 +330,7 @@ function pintarRutina() {
       <h3 class="tit">${esc(division ? division.nombre : 'Tu semana')}</h3>
       <p style="color:var(--texto-2); font-size:13px; line-height:1.55; margin-top:8px">
         ${esc(D.prescripcion.objetivos[p.objetivo].nombre)} · ${esc(p.nivel)} · ${p.dias} días/semana.
-        Generada con tus filtros de equipo${p.zonas_lesionadas.length ? ' y lesión (' + p.zonas_lesionadas.map(z => D.lesiones.zonas[z].etiqueta).join(', ') + ')' : ''}.</p>
+        Generada con tus filtros de equipo${p.zonas_lesionadas.filter(z => D.lesiones.zonas[z]).length ? ' y lesión (' + p.zonas_lesionadas.filter(z => D.lesiones.zonas[z]).map(z => D.lesiones.zonas[z].etiqueta).join(', ') + ')' : ''}.</p>
       <div style="display:flex; gap:8px; margin-top:12px; flex-wrap:wrap">
         <button class="btn" id="rut-regenerar">Regenerar rutina</button>
         <button class="btn" id="rut-perfil">Editar perfil</button>
@@ -342,20 +373,33 @@ function pintarRutina() {
 const FASE_COLOR = { PREPARA: '#9C8CFF', TRABAJO: '#FF6B3D', DESCANSO: '#35D5C3', TRANSICION: '#9C8CFF', FIN: '#B6F24A' };
 const FASE_TXT = { PREPARA: 'Prepárate', TRABAJO: 'A darle', DESCANSO: 'Descansa', TRANSICION: 'Cambia de lado', FIN: 'Sesión completa' };
 let sesionActiva = null, ultimaVid = null, ultimoControles = '', wakeLock = null;
+let ultimaFirmaSesion = '', preVid = null, preVidSrc = null;
 function mmss(ms) { const s = Math.max(0, Math.round(ms / 1000)); return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0'); }
-function iniciarSesion(bloques) {
+function iniciarSesion(bloques, reanudar = null) {
   if (!bloques || !bloques.length) return;
+  if (sesionActiva) { sesionActiva.detener(); sesionActiva = null; }
   ir('sesion');
-  ultimaVid = null; ultimoControles = '';
+  ultimaVid = null; ultimoControles = ''; ultimaFirmaSesion = ''; preVidSrc = null;
   sesionActiva = new Sesion(bloques, D.porId, D.voz, pintarSesion, reg => {
     A.registrarSesion(reg);
+    A.borrarSesionActiva();
     if (wakeLock) { try { wakeLock.release(); } catch { } wakeLock = null; }
   });
   if (navigator.wakeLock) navigator.wakeLock.request('screen').then(w => { wakeLock = w; }).catch(() => {});
-  sesionActiva.iniciar();
+  if (reanudar) sesionActiva.continuar(reanudar); else sesionActiva.iniciar();
 }
 function pintarSesion(s) {
   if (!s) return;
+  $('#v-sesion').dataset.fase = s.fase;
+  // Persistir el avance al cambiar algo relevante: si la app muere, Hoy
+  // ofrecerá continuar en el mismo bloque y serie, sin duplicar series.
+  const firma = [s.fase, s.iEj, s.serie, s.lado, s.hechas.length, s.pausa ? 1 : 0].join('|');
+  if (firma !== ultimaFirmaSesion) {
+    ultimaFirmaSesion = firma;
+    if (s.fase !== 'FIN' && s.fase !== 'INACTIVA') {
+      A.guardarSesionActiva({ bloques: s.bloques, iEj: s.iEj, serie: s.serie, lado: s.lado, hechas: s.hechas, tInicio: s.tInicio, ts: Date.now() });
+    }
+  }
   const color = FASE_COLOR[s.fase] || '#9C8CFF';
   $('#resplandor').style.background = `radial-gradient(circle at 50% 36%, ${color}38, transparent 72%)`;
   $('#estado-txt').textContent = s.pausa ? 'En pausa' : (FASE_TXT[s.fase] || s.fase);
@@ -383,14 +427,24 @@ function pintarSesion(s) {
   const sig = $('#siguiente');
   if (s.fase === 'FIN') {
     const mins = s.hechas.length ? Math.max(1, Math.round((Date.now() - s.tInicio) / 60000)) : 0;
-    sig.innerHTML = `<span class="fin-resumen">Registrado: <b>${s.hechas.length} series</b> · <b>${mins} min</b>.</span><br><br>
+    const unicos = new Set(s.hechas.map(h => h.ej)).size;
+    sig.innerHTML = `<div class="fin-stats"><div><b>${s.hechas.length}</b><span>series</span></div><div><b>${unicos}</b><span>ejercicios</span></div><div><b>${mins}</b><span>min</span></div></div>
       <button class="btn btn-coral" id="fin-volver">VOLVER A HOY</button>`;
     $('#fin-volver').addEventListener('click', () => ir('hoy'));
   } else if (s.fase === 'DESCANSO' || s.fase === 'TRANSICION') {
-    const esUltimaSerie = s.serie > b.series || (s.serie === b.series && !b.unilateral) || (s.serie === b.series && s.lado === 'B');
-    sig.textContent = s.iEj < s.bloques.length - 1 && esUltimaSerie
-      ? 'Sigue: ' + D.porId.get(s.bloques[s.iEj + 1].ej).ne
-      : 'Sigue: ' + e.ne + ' — serie ' + Math.min(s.serie + (s.fase === 'TRANSICION' ? 0 : 0), b.series);
+    // Tras hecho(), el estado YA apunta a lo que sigue: bloque y serie actuales.
+    sig.textContent = s.fase === 'TRANSICION'
+      ? 'Sigue: ' + e.ne + ' — otro lado'
+      : 'Sigue: ' + e.ne + (s.serie > 1 ? ' — serie ' + s.serie : '');
+    // Precargar el video del siguiente ejercicio para que el cambio sea instantáneo.
+    if (s.serie === 1 && s.iEj < s.bloques.length - 1) {
+      const sigEj = D.porId.get(s.bloques[s.iEj + 1].ej);
+      if (sigEj && preVidSrc !== sigEj.id) {
+        preVidSrc = sigEj.id;
+        if (!preVid) { preVid = document.createElement('video'); preVid.muted = true; preVid.preload = 'auto'; }
+        preVid.src = vidDe(sigEj.id);
+      }
+    }
   } else sig.textContent = 'Ejercicio ' + (s.iEj + 1) + ' de ' + s.bloques.length;
   const clave = s.fase + '|' + s.pausa;
   if (clave !== ultimoControles) {
@@ -457,7 +511,7 @@ function pintarSalud() {
     <div class="interruptor"><span>${et}</span><button data-ajuste="${k}" aria-pressed="${!!aj[k]}" aria-label="${et}"></button></div>`).join('')}
   </div>
   ${p ? `<div class="tarjeta"><h3 class="tit">Mi perfil</h3>
-    <p style="color:var(--texto-2); font-size:14px; line-height:1.6; margin-top:8px">${esc(p.nombre || 'Sin nombre')} · ${p.edad} años · ${p.peso_kg} kg · ${esc(p.nivel)} · ${esc(D.prescripcion.objetivos[p.objetivo].nombre)} · ${p.dias} días/semana${p.zonas_lesionadas.length ? ' · cuidando: ' + p.zonas_lesionadas.map(z => D.lesiones.zonas[z].etiqueta).join(', ') : ''}</p>
+    <p style="color:var(--texto-2); font-size:14px; line-height:1.6; margin-top:8px">${esc(p.nombre || 'Sin nombre')} · ${p.edad} años · ${p.peso_kg} kg · ${esc(p.nivel)} · ${esc(D.prescripcion.objetivos[p.objetivo].nombre)} · ${p.dias} días/semana${p.zonas_lesionadas.filter(z => D.lesiones.zonas[z]).length ? ' · cuidando: ' + p.zonas_lesionadas.filter(z => D.lesiones.zonas[z]).map(z => D.lesiones.zonas[z].etiqueta).join(', ') : ''}</p>
     <button class="btn" id="salud-perfil" style="margin-top:12px">Rehacer perfil y rutina</button></div>` : ''}
   <p class="atribucion">Animaciones e imágenes: © Gym visual — https://gymvisual.com/<br>Ironloop no es un médico: ante dolor o una condición de salud, consulta a un profesional.</p>`;
   el.querySelectorAll('[data-acor]').forEach(b => b.addEventListener('click', () => b.parentElement.classList.toggle('abierto')));
