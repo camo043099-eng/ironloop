@@ -5,6 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Ironloop</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23FF6B3D'/%3E%3Cstop offset='1' stop-color='%2335D5C3'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='%230A0C11'/%3E%3Ccircle cx='32' cy='32' r='13' fill='%23151B26'/%3E%3Cellipse cx='32' cy='32' rx='21' ry='7.5' fill='none' stroke='url(%23g)' stroke-width='4.5' transform='rotate(-24 32 32)'/%3E%3C/svg%3E">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0A0C11">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Ironloop">
+<link rel="apple-touch-icon" href="icons-pwa/apple-touch-icon.png">
 <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
@@ -57,5 +64,15 @@
 <aside id="hoja" aria-hidden="true"></aside>
 <div id="onboarding"></div>
 <script type="module" src="js/app.js"></script>
+<script>
+// PWA: registra el service worker solo en la web (http/https) y nunca dentro
+// del contenedor nativo de Capacitor, donde la app ya va empaquetada.
+if ('serviceWorker' in navigator && /^https?:$/.test(location.protocol)
+    && !(window.Capacitor && window.Capacitor.isNativePlatform && window.Capacitor.isNativePlatform())) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('sw.js').catch(() => { /* sin SW: la app sigue en línea */ });
+  });
+}
+</script>
 </body>
 </html>
