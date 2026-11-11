@@ -21,6 +21,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: Traer el dataset (fotos y GIF oficiales)
         run: git clone --depth 1 https://github.com/camo043099-eng/exercises-dataset.git dataset
+      - name: Instalar ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
       - name: Reensamblar datos y preparar media
         run: python3 tools/preparar_media.py dataset
       - uses: actions/configure-pages@v5
