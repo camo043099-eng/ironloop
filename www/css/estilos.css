@@ -11,7 +11,7 @@ button, select, input{touch-action:manipulation}
 .carta{transition:transform .12s}
 body{background:var(--fondo); color:var(--texto); font-family:system-ui,'Segoe UI',Roboto,sans-serif; min-height:100vh; overflow-x:hidden}
 .display{font-family:'Arial Narrow',system-ui,sans-serif; font-stretch:condensed; letter-spacing:.04em}
-header{padding:20px 20px 6px; display:flex; align-items:baseline; gap:10px; max-width:520px; margin:0 auto}
+header{padding:calc(20px + env(safe-area-inset-top)) 20px 6px; display:flex; align-items:baseline; gap:10px; max-width:520px; margin:0 auto}
 .logo{font-size:30px; font-weight:900; letter-spacing:.06em}
 .logo .iron{color:var(--texto)} .logo .loop{color:var(--trabajo)}
 .tag{color:var(--texto-3); font-size:11px; letter-spacing:.28em; text-transform:uppercase}
@@ -72,7 +72,7 @@ h3.tit{font-size:12px; letter-spacing:.2em; text-transform:uppercase; color:var(
 .mas{display:block; margin:16px auto 0}
 /* FICHA (hoja inferior) */
 #hoja-fondo{position:fixed; inset:0; background:rgba(4,6,10,.66); z-index:30; display:none}
-#hoja{position:fixed; left:0; right:0; bottom:0; z-index:31; background:var(--capa-1); border-top:1px solid var(--linea); border-radius:26px 26px 0 0; max-height:88vh; overflow-y:auto; padding:18px 18px 30px; transform:translateY(105%); transition:transform .3s cubic-bezier(.2,.8,.2,1); max-width:560px; margin:0 auto}
+#hoja{position:fixed; left:0; right:0; bottom:0; z-index:31; background:var(--capa-1); border-top:1px solid var(--linea); border-radius:26px 26px 0 0; max-height:88vh; overflow-y:auto; padding:18px 18px calc(30px + env(safe-area-inset-bottom)); transform:translateY(105%); transition:transform .3s cubic-bezier(.2,.8,.2,1); max-width:560px; margin:0 auto}
 #hoja.abierta{transform:none}
 #hoja-fondo.abierto{display:block}
 #hoja video{width:100%; border-radius:16px; background:#000; margin-top:10px}
@@ -148,7 +148,7 @@ h3.tit{font-size:12px; letter-spacing:.2em; text-transform:uppercase; color:var(
 /* ONBOARDING / FORMULARIOS */
 #onboarding{position:fixed; inset:0; background:var(--fondo); z-index:40; overflow-y:auto; display:none}
 #onboarding.activo{display:block}
-.ob-inner{max-width:520px; margin:0 auto; padding:26px 20px 60px}
+.ob-inner{max-width:520px; margin:0 auto; padding:calc(26px + env(safe-area-inset-top)) 20px calc(60px + env(safe-area-inset-bottom))}
 .ob-inner h1{font-size:26px; font-weight:900; line-height:1.2; margin-top:8px}
 .ob-inner p{color:var(--texto-2); line-height:1.6; margin-top:10px; font-size:15px}
 .campo{margin-top:18px}
